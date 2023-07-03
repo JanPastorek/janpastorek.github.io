@@ -12,43 +12,50 @@
   contents:
     - title: PhD in Informatics
       institution: Faculty of Math, Physics and Informatics, Department of Applied informatics, Comenius University, Bratislava, Slovakia
-      year: 2023
+      year: 2023-now
       description:
         - Investigating partial symmetries (inverse monoids and partial automorphisms) on graphs.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        # - title: Description 3.
+        #   contents:
+        #     - Sub-description 1.
+        #     - Sub-description 2.
     - title: MSc in Cognitive science
       institution: MEI:CogSci - Comenius University in Bratislava, Slovakia & University of Vienna, Austria
-      year: 1900
-    - title: Post-Bachelaurate certificate
+      year: 2021-2023
+    - title: Post-Bachelaurate certificate in Liberal Arts
       institution: St Johns College, New Mexico, US
-      year: 2022
+      year: 2021-2022
       description:
         - Liberal arts with focus on philosophy, math and science
     - title: BSc in Computer Science
       institution: Comenius University in Bratislava, Slovakia
-      year: 2021
+      year: 2018-2021
+    - title: Exctracullicular liberal arts studies
+      institution: Collegium of Anton Neuwirth, Slovakia
+      year: 2018-2020
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Data Scientist - Complex systems
+      institution: Culturepulse.ai
+      year: 2022 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Agent based modeling in JAVA - computational model of how information (specifically emotions
+anxiety) can spread and escalate among members of groups in conflict zones, project is in conjunction
+with Cambridge University's Woolf Institute.
+      url: https://www.woolf.cam.ac.uk/research/projects/forgiveness-and-future-building
+    - title: Researcher
+      institution: Dekk institute
+      year: 2021 - 2023
+      description:
+        - Investigating social cohesion in Slovak society using data from social media, polls and computational ABM models.
+      url: https://www.dekk.institute/
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
@@ -56,14 +63,14 @@
     - year: 2023
       items:
         - Student Conference Laureacy
-        - MSc in Cognitive science with Honors
+        - MSc in Cognitive science with Honors - Bachelor Thesis - "Global versus Local symmetries"
     - year: 2022
       items:
         - 2nd place at Misinformation Detection Hackathon
         - 2nd place Data and Art faculty competition
     - year: 2021
       items:
-        - BSc in Computer science with Honors
+        - BSc in Computer science with Honors - Bachelor Thesis - "Machine learning for nonlocal games"
         - Dean's Award for excellent BSc thesis
 
 - title: Academic Interests
