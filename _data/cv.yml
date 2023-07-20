@@ -72,6 +72,14 @@
         - BSc in Computer science with Honors - Bachelor Thesis - "Machine learning for nonlocal games"
         - Dean's Award for excellent BSc thesis
 
+- title: Professional Memberships and Affiliations
+  type: nested_list
+  contents:
+    items:
+      - <a href="https://netscisociety.net/">Network Science Society</a>
+      - <a href="https://cognitivesciencesociety.org">Cognitive Science Society</a>
+      - <a href="https://fmph.uniba.sk/en/">Comenius University in Bratislava</a>
+
 - title: Academic Interests
   type: nested_list
   contents:
