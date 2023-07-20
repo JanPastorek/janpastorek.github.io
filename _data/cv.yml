@@ -75,10 +75,13 @@
 - title: Professional Memberships and Affiliations
   type: nested_list
   contents:
-    items:
-      - <a href="https://netscisociety.net/">Network Science Society</a>
-      - <a href="https://cognitivesciencesociety.org">Cognitive Science Society</a>
-      - <a href="https://fmph.uniba.sk/en/">Comenius University in Bratislava</a>
+    - title: Memberships
+      items:
+        - <a href="https://netscisociety.net/">Network Science Society</a>
+        - <a href="https://cognitivesciencesociety.org">Cognitive Science Society</a>
+    - title: Affiliations
+      items:
+        - <a href="https://fmph.uniba.sk/en/">Comenius University in Bratislava</a>
 
 - title: Academic Interests
   type: nested_list
