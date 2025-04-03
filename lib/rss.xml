@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jan Pastorek]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Jan Pastorek</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Thu, 03 Apr 2025 14:35:26 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Thu, 03 Apr 2025 14:35:24 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[images]]></title><description><![CDATA[ 
+ <br>]]></description><link>files\images\images.html</link><guid isPermaLink="false">files/images/images.md</guid><pubDate>Wed, 14 Feb 2024 07:41:55 GMT</pubDate></item><item><title><![CDATA[Untitled]]></title><description><![CDATA[ 
+ <br>]]></description><link>files\images\untitled.html</link><guid isPermaLink="false">files/images/Untitled.md</guid><pubDate>Wed, 14 Feb 2024 07:41:53 GMT</pubDate></item><item><title><![CDATA[Global Versus Local Symmetries, 2023]]></title><description><![CDATA[ 
+ <br><br>
+<br><a data-href="symmetries_extended_abstract_2023.pdf" href="files\publications\symmetries_extended_abstract_2023.pdf" class="internal-link" target="_self" rel="noopener nofollow">symmetries_extended_abstract_2023.pdf</a>
+<br>
+Symmetry has been a cornerstone of human thought and aesthetics since ancient times in various civilizations. While the ancient interpretation of symmetry encompassed the idea of equal arrangement and proportion, the modern understanding is limited to the set of transformations that leave the object invariant. We investigate the concept of partial (local) symmetry, which may be viewed as a sort of return to the original meaning of the term symmetry, stressing the importance of proportionality but capturing the current meaning of symmetry as well. Moreover, we investigate its significance in various disciplines, such as neuroaesthetics and mathematics. Furthermore, we argue that the concept of local (partial) symmetry, as opposed to global (total) symmetry, is more natural, more general, and better describes natural phenomena and symmetries in abstract structures.
+<br>@article{pastorekGlobalLocalSymmetries2023,
+  title = {Global Versus Local Symmetries},
+  booktitle = {Proceedings of the MEi: CogSci Conference},
+  author = {Pastorek, Jan},
+  year = {2023},
+  volume = {17},
+  publisher = {Comenius University in Bratislava},
+  isbn = {978-80-223-5633-6},
+  langid = {english},
+  url = {https://journals.phl.univie.ac.at/meicogsci/article/view/571}
+}
+<br><br>
+<br><a data-href="semPrimitives.pdf" href="files\publications\semprimitives.pdf" class="internal-link" target="_self" rel="noopener nofollow">semPrimitives.pdf</a>
+<br><a data-href="2022 Semester Project - Poster.png" href="files\publications\2022-semester-project-poster.png" class="internal-link" target="_self" rel="noopener nofollow">2022 Semester Project - Poster.png</a>
+<br>
+Semantic primitives are the core concepts that possibly all humans share. They cannot be defined by any other concepts, for the chain of definitions ends in them. Finding such a set would provide us with a common communication “mother language”. We could use such a set to communicate ethical norms to less developed communities [1]. The list of such primes is already stable, numbering 65 in total including words such as TRUE, GOOD, NOT, YOU, etc. Modern NLP models can capture the semantic similarity of words based on statistical co-occurrences of words. Such models create global embeddings, vectors for each word that occurs in the training where words that co-occur in similar contexts should occupy a similar place in the vector space [2]. The vector spaces produced by these models are based on co-occurrence statistics, and the models do not explicitly encode the fundamental semantic properties associated with semantic primitives. Do the vectors corresponding to semantic primitives emerge near mathematically special regions in the vector spaces of NLP models, despite their lack of explicit encoding in those places? In other words, are the primes close to SVD singular vectors, PCA components, or K-Means cluster centers?
+<br>@article{pastorekSemanticPrimitivesWord2023,
+  title = {Semantic Primitives in Word Embeddings},
+  booktitle = {Proceedings of the MEi: CogSci Conference},
+  author = {Pastorek, Jan},
+  year = {2023},
+  number = {1},
+  publisher = {Comenius University in Bratislava},
+  address = {Budapest},
+  isbn = {978-80-223-5633-6},
+  langid = {english},
+  url = {https://journals.phl.univie.ac.at/meicogsci/article/view/567},
+}
+<br><br>
+<br><a data-href="mach.pdf" href="files\publications\mach.pdf" class="internal-link" target="_self" rel="noopener nofollow">mach.pdf</a>
+<br><a data-href="projects/Jan Pastorek/files/publications/2023 KUZ - Mach.png" href="projects\Jan Pastorek\files\publications\2023 KUZ - Mach.png" class="internal-link" target="_self" rel="noopener nofollow">projects/Jan Pastorek/files/publications/2023 KUZ - Mach.png</a>
+<br>
+Existing narratives often overlook the significant impact of Ernst Mach and the Vienna Circle on the foundations of cognitive science. In this study, we delve into the underexplored influence of Mach’s theories on the emergence of cognitive science, employing a unique interdisciplinary approach that blends rigorous argumentation with cutting-edge computational methods in network science and natural language processing. Our findings reveal multiple, previously unrecognized pathways of influence from Mach to pivotal figures in cognitive science, thereby showcasing the efficacy of our combined approach in illuminating the intricate web of intellectual connections. This innovative method offers valuable insights into tracing the potential influences of key thinkers, addressing a longstanding challenge in the history of science arising from the ever-growing corpus of academic literature. To our knowledge, this is one of the first papers to use both citation networks and natural language processing for the investigations of the history of cognitive science.<br>
+
+<br>@article{pastorekUnravelingHiddenInfluence2023,
+  title = {Unraveling the Hidden Influence of Ernst Mach on the Foundations of Cognitive Science - Interdisciplinary Approach},
+  booktitle = {Kognicia a Umely Zivot 2023},
+  author = {Pastorek, Jan and Sarto-Jackson, Isabella},
+  year = {2023},
+  publisher = {Comenius University in Bratislava},
+  isbn = {978-80-223-5610-7},
+  langid = {english},
+  url = {https://cogsci.fmph.uniba.sk/kuz2023/prispevky},
+}
+]]></description><link>files\publications\bibtex-publications.html</link><guid isPermaLink="false">files/publications/bibtex-publications.md</guid><pubDate>Wed, 21 Feb 2024 18:19:56 GMT</pubDate></item><item><title><![CDATA[publications]]></title><description><![CDATA[ 
+ <br>]]></description><link>files\publications\publications.html</link><guid isPermaLink="false">files/publications/publications.md</guid><pubDate>Tue, 13 Feb 2024 19:04:59 GMT</pubDate></item><item><title><![CDATA[files]]></title><description><![CDATA[ 
+ <br>]]></description><link>files\files.html</link><guid isPermaLink="false">files/files.md</guid><pubDate>Tue, 13 Feb 2024 19:04:45 GMT</pubDate></item><item><title><![CDATA[About]]></title><description><![CDATA[ 
+ <br>Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna and I'm interested in how the reality works at the deepest levels. <br><img alt="Pasted image 20240214084130.png" src="files\images\pasted-image-20240214084130.png" style="width: 300px; max-width: 100%;"><br>Department of Applied Informatics<br>
+Comenius University in Bratislava<br>
+Slovakia<br><br>
+<br>2023-NOW : PhD student - Informatics
+
+<br>Faculty of Math, Physics and Informatics, Department of Applied informatics, Comenius University, Bratislava, Slovakia
+<br>Investigating (extensions of) partial automorphisms of graphs and their partial automorphism inverse monoids
+<br>Asymmetric Graphs
+<br>Relation between -Weisfeiler-Leman algorithm and extensions of partial automorphisms of graphs
+
+
+<br><br><br><br><br><br><a data-tooltip-position="top" aria-label="mailto:%6A%61%6E.%70%61%73%74%6F%72%65%6B@%66%6D%70%68.%75%6E%69%62%61.%73%6B" rel="noopener nofollow" class="external-link" href="mailto:jan.pastorek@fmph.uniba.sk" target="_blank">MAIL</a>&nbsp;<a data-tooltip-position="top" aria-label="https://orcid.org/0000-0001-8237-1275" rel="noopener nofollow" class="external-link" href="https://orcid.org/0000-0001-8237-1275" target="_blank">ORCID</a>&nbsp;<a data-tooltip-position="top" aria-label="https://scholar.google.com/citations?user=szwPIKgAAAAJ" rel="noopener nofollow" class="external-link" href="https://scholar.google.com/citations?user=szwPIKgAAAAJ" target="_blank">Google Scholar</a>&nbsp;<a data-tooltip-position="top" aria-label="https://www.researchgate.net/profile/Jan-Pastorek-2/" rel="noopener nofollow" class="external-link" href="https://www.researchgate.net/profile/Jan-Pastorek-2/" target="_blank">Research Gate</a>&nbsp;<a data-tooltip-position="top" aria-label="https://github.com/JanPastorek" rel="noopener nofollow" class="external-link" href="https://github.com/JanPastorek" target="_blank">GIT</a>&nbsp;&nbsp;<a data-tooltip-position="top" aria-label="https://stackoverflow.com/users/12492630" rel="noopener nofollow" class="external-link" href="https://stackoverflow.com/users/12492630" target="_blank">STACK OVERFLOW</a>&nbsp;]]></description><link>about.html</link><guid isPermaLink="false">About.md</guid><pubDate>Thu, 03 Apr 2025 14:32:12 GMT</pubDate><enclosure url="files\images\pasted-image-20240214084130.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;files\images\pasted-image-20240214084130.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Output]]></title><description><![CDATA[ 
+ <br>2024<br>
+<br>Pastorek, J., Jajcayová, T. (2024). "Asymmetric Graphs and Partial Automorphisms." In Abstracts, CSGT 2024, Ostrava: VŠB–TU Ostrava, pp. 28-29.
+<br>Jajcayová, T., Pastorek, J. (2024). "Partial automorphism monoid of graphs and k-Weisfeiler-Lehman." In CSD 10, Leuven: KU Leuven, p. 26.
+<br>Pastorek, J., Jajcayová, T. (2024). "Partial automorphism monoid of graphs and Weisfeiler-Leman." In Študentská vedecká konferencia FMFI UK, Bratislava, p. 366.
+<br>Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170.
+<br>Pastorek, J. (2024). "Search for correspondences between operations on partial automorphisms and k-dimensional Weisfeiler-Leman algorithm." In Constructions of Expanders and Extremal Graphs.
+<br>2023<br>
+<br>Global Versus Local Symmetries, MEi: CogSci Conference | <a data-tooltip-position="top" aria-label="bibtex-publications > ^GlobalVsLocalSymmetries2023Abstract" data-href="bibtex-publications#^GlobalVsLocalSymmetries2023Abstract" href="files\publications\bibtex-publications.html#^GlobalVsLocalSymmetries2023Abstract" class="internal-link" target="_self" rel="noopener nofollow">ABS</a> | <a data-tooltip-position="top" aria-label="symmetries_extended_abstract_2023.pdf" data-href="symmetries_extended_abstract_2023.pdf" href="files\publications\symmetries_extended_abstract_2023.pdf" class="internal-link" target="_self" rel="noopener nofollow">PDF</a> | <a data-tooltip-position="top" aria-label="bibtex-publications > ^GlobalVsLocalSymmetries2023Bib" data-href="bibtex-publications#^GlobalVsLocalSymmetries2023Bib" href="files\publications\bibtex-publications.html#^GlobalVsLocalSymmetries2023Bib" class="internal-link" target="_self" rel="noopener nofollow">BIB</a> | 
+<br>Semantic Primitives in Word Embeddings, MEi: CogSci Conference  | <a data-tooltip-position="top" aria-label="bibtex-publications > ^SemanticPrimitivesinWordEmbeddings2023Abstract" data-href="bibtex-publications#^SemanticPrimitivesinWordEmbeddings2023Abstract" href="files\publications\bibtex-publications.html#^SemanticPrimitivesinWordEmbeddings2023Abstract" class="internal-link" target="_self" rel="noopener nofollow">ABS</a> | <a data-tooltip-position="top" aria-label="semPrimitives.pdf" data-href="semPrimitives.pdf" href="files\publications\semprimitives.pdf" class="internal-link" target="_self" rel="noopener nofollow">PDF</a>, <a data-tooltip-position="top" aria-label="2022 Semester Project - Poster.png" data-href="2022 Semester Project - Poster.png" href="files\publications\2022-semester-project-poster.png" class="internal-link" target="_self" rel="noopener nofollow">POSTER</a> | <a data-tooltip-position="top" aria-label="bibtex-publications > ^SemanticPrimitivesinWordEmbeddings2023Bib" data-href="bibtex-publications#^SemanticPrimitivesinWordEmbeddings2023Bib" href="files\publications\bibtex-publications.html#^SemanticPrimitivesinWordEmbeddings2023Bib" class="internal-link" target="_self" rel="noopener nofollow">BIB</a> | 
+<br>Unraveling the Hidden Influence of Ernst Mach on the Foundations of Cognitive Science - Interdisciplinary Approach, Kognicia a umely zivot 2023 Conference | <a data-tooltip-position="top" aria-label="bibtex-publications > ^FoundationsCogSci2023Abstract" data-href="bibtex-publications#^FoundationsCogSci2023Abstract" href="files\publications\bibtex-publications.html#^FoundationsCogSci2023Abstract" class="internal-link" target="_self" rel="noopener nofollow">ABS</a> | <a data-tooltip-position="top" aria-label="mach.pdf" data-href="mach.pdf" href="files\publications\mach.pdf" class="internal-link" target="_self" rel="noopener nofollow">PDF</a> | <a data-tooltip-position="top" aria-label="projects/Jan Pastorek/files/publications/2023 KUZ - Mach.png" data-href="projects/Jan Pastorek/files/publications/2023 KUZ - Mach.png" href="projects\Jan Pastorek\files\publications\2023 KUZ - Mach.png" class="internal-link" target="_self" rel="noopener nofollow">POSTER</a> | <a data-tooltip-position="top" aria-label="bibtex-publications > ^FoundationsCogSci2023Bib" data-href="bibtex-publications#^FoundationsCogSci2023Bib" href="files\publications\bibtex-publications.html#^FoundationsCogSci2023Bib" class="internal-link" target="_self" rel="noopener nofollow">BIB</a> | 
+]]></description><link>output.html</link><guid isPermaLink="false">Output.md</guid><pubDate>Thu, 03 Apr 2025 14:34:10 GMT</pubDate></item><item><title><![CDATA[Teaching]]></title><description><![CDATA[ 
+ <br><br>
+<br>Winter semester: 
+
+<br>1-AIN-121&nbsp;<a data-tooltip-position="top" aria-label="https://dai.fmph.uniba.sk/courses/dmat/2324zs/" rel="noopener nofollow" class="external-link" href="https://dai.fmph.uniba.sk/courses/dmat/2324zs/" target="_blank">Discrete Mathematics (1)</a>
+<br>1-AIN-413&nbsp;<a data-tooltip-position="top" aria-label="https://moodle.uniba.sk/enrol/index.php?id=2833" rel="noopener nofollow" class="external-link" href="https://moodle.uniba.sk/enrol/index.php?id=2833" target="_blank">Graphs, Graph Algorithms and Optimization</a>  | <a data-tooltip-position="top" aria-label="https://github.com/JanPastorek/1-AIN-413-22-Graphs" rel="noopener nofollow" class="external-link" href="https://github.com/JanPastorek/1-AIN-413-22-Graphs" target="_blank">GIT</a>
+
+
+<br>Summer semester: 
+
+<br>1-AIN-160&nbsp;<a data-tooltip-position="top" aria-label="https://dai.fmph.uniba.sk/w?title=Discrete_Mathematics_2/en&amp;setlang=en" rel="noopener nofollow" class="external-link" href="https://dai.fmph.uniba.sk/w?title=Discrete_Mathematics_2/en&amp;setlang=en" target="_blank">Discrete Mathematics (2)</a>
+<br>1-AIN-412/22 <a data-tooltip-position="top" aria-label="https://dai.fmph.uniba.sk/w?title=Course:Logic_for_CS/en&amp;setlang=en" rel="noopener nofollow" class="external-link" href="https://dai.fmph.uniba.sk/w?title=Course:Logic_for_CS/en&amp;setlang=en" target="_blank">Logic for computer science</a>
+
+
+<br><br>
+<br>Winter semester: 
+
+<br>1-AIN-121&nbsp;<a data-tooltip-position="top" aria-label="https://dai.fmph.uniba.sk/courses/dmat/2324zs/" rel="noopener nofollow" class="external-link" href="https://dai.fmph.uniba.sk/courses/dmat/2324zs/" target="_blank">Discrete Mathematics (1)</a>
+<br>1-AIN-413&nbsp;<a data-tooltip-position="top" aria-label="https://moodle.uniba.sk/enrol/index.php?id=2833" rel="noopener nofollow" class="external-link" href="https://moodle.uniba.sk/enrol/index.php?id=2833" target="_blank">Graphs, Graph Algorithms and Optimization</a>  | <a data-tooltip-position="top" aria-label="https://github.com/JanPastorek/1-AIN-413-22-Graphs" rel="noopener nofollow" class="external-link" href="https://github.com/JanPastorek/1-AIN-413-22-Graphs" target="_blank">GIT</a>
+
+
+<br>Summer semester: 
+
+<br>1-AIN-160&nbsp;<a data-tooltip-position="top" aria-label="https://dai.fmph.uniba.sk/w?title=Discrete_Mathematics_2/en&amp;setlang=en" rel="noopener nofollow" class="external-link" href="https://dai.fmph.uniba.sk/w?title=Discrete_Mathematics_2/en&amp;setlang=en" target="_blank">Discrete Mathematics (2)</a>
+<br>2-AIN-205: <a data-tooltip-position="top" aria-label="http://compbio.fmph.uniba.sk/vyuka/artp" rel="noopener nofollow" class="external-link" href="http://compbio.fmph.uniba.sk/vyuka/artp" target="_blank">Algorithmic Solution of Hard Problems</a>
+
+
+<br><br><br>
+<br>Vladyslav Peresada, Asymmetric Graphs
+<br>Samuel Varchol, Graph neural networks for Algebraic Graph Theory
+<br>Vladimír Jančár, Graph neural networks for Algebraic Graph Theory
+<br><br>
+<br>Timotea Chalupová, Token graphs, 2024
+]]></description><link>teaching.html</link><guid isPermaLink="false">Teaching.md</guid><pubDate>Thu, 03 Apr 2025 14:18:16 GMT</pubDate></item></channel></rss>
