@@ -1,3 +1,47 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.1rem;
+  margin: 1.25rem 0 1.5rem 0;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--darkgray);
+    text-decoration: none;
+    border-bottom: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    svg {
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    span {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: var(--secondary);
+
+      svg {
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+// Home page profile image: keep it friendly and contained instead of
+// letting a large embed dominate the top of the page.
+article[data-slug="index"] img {
+  border-radius: 8px;
+  max-width: 300px;
+}
