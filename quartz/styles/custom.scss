@@ -6,13 +6,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1.1rem;
+  gap: 1rem;
   margin: 1.25rem 0 1.5rem 0;
 
   a {
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
     color: var(--darkgray);
     text-decoration: none;
     border-bottom: none;
@@ -23,17 +22,12 @@
       transition: transform 0.2s ease;
     }
 
-    span {
-      font-size: 0.9rem;
-      font-weight: 500;
-    }
-
     &:hover,
     &:focus-visible {
       color: var(--secondary);
 
       svg {
-        transform: translateY(-1px);
+        transform: translateY(-2px);
       }
     }
   }
@@ -44,6 +38,53 @@
 article[data-slug="index"] img {
   border-radius: 8px;
   max-width: 300px;
+}
+
+// Curriculum Vitae page: compact date-left / detail-right rows under
+// bold, uppercase, underlined section headers, echoing a classic
+// academic CV layout.
+.cv {
+  h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 0.25rem;
+    margin: 2rem 0 0.75rem 0;
+  }
+
+  .cv-entry {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.6rem;
+    align-items: baseline;
+
+    .cv-date {
+      flex: 0 0 7rem;
+      font-weight: 600;
+      color: var(--darkgray);
+    }
+
+    .cv-detail {
+      flex: 1 1 auto;
+
+      strong {
+        color: var(--dark);
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cv-entry {
+      flex-direction: column;
+      gap: 0.15rem;
+
+      .cv-date {
+        flex-basis: auto;
+      }
+    }
+  }
 }
 
 // Collapsible sections (used for older/less essential content so pages
