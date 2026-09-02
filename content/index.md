@@ -29,9 +29,6 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 **Comenius University in Bratislava**
 **Slovakia**
 
-- **2023-NOW** : PhD student - Informatics
-    - Faculty of Math, Physics and Informatics, Department of Applied informatics, Comenius University, Bratislava, Slovakia
-
 ---
 # research interests
 
@@ -45,6 +42,35 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 - quantum nonlocal games
 
 ---
+# education
+
+- **2023–2027**: PhD, Mathematics and Computer Science — Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava
+- **2021–2023**: Master's degree, Cognitive Science — Comenius University in Bratislava & Universität Wien (joint MEi:CogSci programme with Eötvös Loránd University Budapest and University of Ljubljana)
+- **2018–2021**: Bachelor's degree, Computer Science — Comenius University in Bratislava
+
+<details>
+<summary>Earlier education</summary>
+
+- **2018–2020**: Certificate, Liberal Arts and Sciences — Collegium of Anton Neuwirth / St. John's College (Oxbridge-style tutorials; science, philosophy, theology)
+- **2013–2018**: Bilingual Gymnasium of St. Edith Stein (60% of subjects taught in English)
+
+</details>
+
+# experience
+
+- **2023–present**: Doctoral Student — Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava
+
+<details>
+<summary>Earlier roles</summary>
+
+- **2022–2023**: Research Intern, CulturePulse — agent-based modeling and data analysis
+- **2020–2023**: Data Analyst, DEKK Institute (part-time) — R&D of data science tools for analyzing social cohesion
+- **2020–2021**: High School Computer Science Teacher, United School of St. Ursula (part-time)
+- **2020**: Scientific Researcher, RCQI – Research Center for Quantum Information, Slovak Academy of Sciences — reinforcement learning applied to violating CHSH/Bell inequalities in non-local games
+
+</details>
+
+---
 # [[teaching|Teach & Supervise]]
 ---
 # [[output|Output]]
@@ -52,7 +78,3 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 ---
 # [[projects-grants-awards|Projects, Grants & Awards]]
 ---
-
-[MAIL](mailto:%6A%61%6E.%70%61%73%74%6F%72%65%6B@%66%6D%70%68.%75%6E%69%62%61.%73%6B) [ORCID](https://orcid.org/0000-0001-8237-1275) [Google Scholar](https://scholar.google.com/citations?user=szwPIKgAAAAJ) [Research Gate](https://www.researchgate.net/profile/Jan-Pastorek-2/) [GIT](https://github.com/JanPastorek)  [STACK OVERFLOW](https://stackoverflow.com/users/12492630)  
-
-

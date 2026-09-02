@@ -12,6 +12,10 @@ tags:
 - Winter semester: 
 	- 1-AIN-152-22 [Linear Algebra](https://github.com/JanPastorek/1-AIN-152-22-LinearAlgebra)
 	- 1-AIN-413 [Graphs, Graph Algorithms and Optimization](https://moodle.uniba.sk/enrol/index.php?id=2833)  | [GIT](https://github.com/JanPastorek/1-AIN-413-22-Graphs)
+
+<details>
+<summary>Earlier semesters (2023–2026)</summary>
+
 #### 2025/2026
 - Winter semester: 
 	- 1-AIN-152-22 [Linear Algebra](https://github.com/JanPastorek/1-AIN-152-22-LinearAlgebra)
@@ -33,6 +37,9 @@ tags:
 - Summer semester: 
 	- 1-AIN-160 [Discrete Mathematics (2)](https://dai.fmph.uniba.sk/w?title=Discrete_Mathematics_2/en&setlang=en)
 	- 1-AIN-412/22 [Logic for computer science](https://dai.fmph.uniba.sk/w?title=Course:Logic_for_CS/en&setlang=en)
+
+</details>
+
 
 ### Theses
 

@@ -45,3 +45,26 @@ article[data-slug="index"] img {
   border-radius: 8px;
   max-width: 300px;
 }
+
+// Collapsible sections (used for older/less essential content so pages
+// stay scannable, e.g. talk abstracts and past teaching semesters).
+article details {
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+
+  &[open] summary {
+    margin-bottom: 0.5rem;
+  }
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--darkgray);
+
+    &:hover {
+      color: var(--secondary);
+    }
+  }
+}
