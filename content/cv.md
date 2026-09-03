@@ -48,7 +48,7 @@ tags:
 
 ## Teaching & Supervision
 
-<div class="cv-entry"><div class="cv-date">2023–present</div><div class="cv-detail">Linear Algebra; Graphs, Graph Algorithms and Optimization; Discrete Mathematics (1 & 2); Algorithmic Solution of Hard Problems; Logic for Computer Science — Comenius University in Bratislava<br></div></div>
+<div class="cv-entry"><div class="cv-date">2023–present</div><div class="cv-detail">Linear Algebra; Graphs, Graph Algorithms and Optimization; Discrete Mathematics (1 & 2); Algorithmic Solution of Hard Problems; Logic for Computer Science; Introduction to Cognitive Science — Comenius University in Bratislava<br></div></div>
 
 **Supervisor** — Bachelor: Vladyslav Peresada (2025), Samuel Varchol (2026), Vladimír Jančár (2026, dean's award) · Master: Marek Danihel (2027)
 
