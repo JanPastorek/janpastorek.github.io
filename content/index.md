@@ -1,5 +1,5 @@
 ---
-title: Haven
+title: Jan Pastorek
 aliases:
   - about
 description: Academic homepage of Jan Pastorek, PhD student in Informatics at Comenius University in Bratislava.
@@ -13,7 +13,7 @@ tags:
 
 Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna and I'm interested in how the reality works at the deepest levels.
 
-![[Pasted image 20260903092435.png|300]]
+![[Pasted image 20240214084130.png|300]]
 
 <div class="social-links">
   <a href="mailto:%6A%61%6E.%70%61%73%74%6F%72%65%6B@%66%6D%70%68.%75%6E%69%62%61.%73%6B" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
