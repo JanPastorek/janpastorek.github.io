@@ -9,9 +9,6 @@ tags:
   - sparse-graph
 ---
 
----
-
----
 ### preprint
 Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs"
 

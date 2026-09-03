@@ -2,12 +2,16 @@
 title: Teach & Supervise
 description: Courses taught and theses supervised by Jan Pastorek at Comenius University.
 tags:
-  - mathematics/discrete-mathematic
-  - algorithms/graph-algorithm
-  - linear-algebra
-  - algorithmic-problem-solving
-  - graph-neural-network
+  - teaching
+ - supervising
 ---
+
+#### Online passive
+[Introduction to Agent-Based Modeling](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
+
+#### Ocassionaly
+Leading tutorials in at [Studentska Agora](https://studentskaagora.sk/)
+
 #### 2026/2027
 - Winter semester: 
 	- 1-AIN-152-22 [Linear Algebra](https://github.com/JanPastorek/1-AIN-152-22-LinearAlgebra)
@@ -39,8 +43,6 @@ tags:
 	- 1-AIN-412/22 [Logic for computer science](https://dai.fmph.uniba.sk/w?title=Course:Logic_for_CS/en&setlang=en)
 
 </details>
-
-
 ### Theses
 
 #### Supervisor
