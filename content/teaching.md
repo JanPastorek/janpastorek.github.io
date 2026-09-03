@@ -3,7 +3,7 @@ title: Teach & Supervise
 description: Courses taught and theses supervised by Jan Pastorek at Comenius University.
 tags:
   - teaching
- - supervising
+  - supervising
 ---
 
 #### Online passive
