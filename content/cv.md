@@ -9,8 +9,8 @@ tags:
 
 ## Personal Information
 
-<div class="cv-entry"><div class="cv-date">ORCID</div><div class="cv-detail">[0000-0001-8237-1275](https://orcid.org/0000-0001-8237-1275)</div></div>
-<div class="cv-entry"><div class="cv-date">Web</div><div class="cv-detail">[janpastorek.com](https://janpastorek.com/)</div></div>
+<div class="cv-entry"><div class="cv-date">ORCID</div><div class="cv-detail"><a href="https://orcid.org/0000-0001-8237-1275">0000-0001-8237-1275</a></div></div>
+<div class="cv-entry"><div class="cv-date">Web</div><div class="cv-detail"><a href="https://janpastorek.com/">janpastorek.com</a></div></div>
 
 ## Education
 

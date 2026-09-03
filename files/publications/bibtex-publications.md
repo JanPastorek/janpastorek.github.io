@@ -63,7 +63,7 @@ tags:
 #    Unraveling the Hidden Influence of Ernst Mach on the Foundations of Cognitive Science - Interdisciplinary Approach, 2023
 
 - [[mach.pdf]]
-- [[2023 KUZ - Mach.png]]
+- [[Projects/Jan Pastorek/files/publications/2023 KUZ - Mach.png]]
 
 > Existing narratives often overlook the significant impact of Ernst Mach and the Vienna Circle on the foundations of cognitive science. In this study, we delve into the underexplored influence of Mach’s theories on the emergence of cognitive science, employing a unique interdisciplinary approach that blends rigorous argumentation with cutting-edge computational methods in network science and natural language processing. Our findings reveal multiple, previously unrecognized pathways of influence from Mach to pivotal figures in cognitive science, thereby showcasing the efficacy of our combined approach in illuminating the intricate web of intellectual connections. This innovative method offers valuable insights into tracing the potential influences of key thinkers, addressing a longstanding challenge in the history of science arising from the ever-growing corpus of academic literature. To our knowledge, this is one of the first papers to use both citation networks and natural language processing for the investigations of the history of cognitive science.
 > ^FoundationsCogSci2023Abstract
