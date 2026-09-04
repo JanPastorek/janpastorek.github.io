@@ -33,18 +33,11 @@ tags:
 
 ## Grants, Stipends & Internships
 
-<div class="cv-entry"><div class="cv-date">2026</div><div class="cv-detail">Comenius University grant, <em>Asymmetric depth of graphs of given genus</em> (GUK2026), No. UK/1020/2026</div></div>
-<div class="cv-entry"><div class="cv-date">2025</div><div class="cv-detail">Comenius University grant, <em>Constructions for conjectures regarding asymmetric depth of graphs</em> (GUK2025)</div></div>
-<div class="cv-entry"><div class="cv-date">2024</div><div class="cv-detail">Erasmus+ research visit, TU Darmstadt — Prof. P. Schweitzer's group (<em>Weisfeiler-Leman & partial automorphisms</em>)</div></div>
-<div class="cv-entry"><div class="cv-date">2024</div><div class="cv-detail">Erasmus+ research visit, DTU Copenhagen — Peter Zeman, PhD (<em>Weisfeiler-Leman & partial automorphisms</em>)</div></div>
-<div class="cv-entry"><div class="cv-date">2022–2024</div><div class="cv-detail">Comenius Student Stipend program</div></div>
-<div class="cv-entry"><div class="cv-date">2020</div><div class="cv-detail">Research intern, Slovak Academy of Sciences at QUTE — <em>Reinforcement learning in Quantum Nonlocal games</em></div></div>
-<div class="cv-entry"><div class="cv-date">2019–2022</div><div class="cv-detail">USSteel Košice University Stipend program</div></div>
+![[projects-grants-awards#Grants, Stipends & Internships]]
 
 ## Awards
 
-<div class="cv-entry"><div class="cv-date">2024</div><div class="cv-detail">Laureate, Faculty Student Science Conference — <em>Partial automorphism monoid of graphs and Weisfeiler-Leman</em></div></div>
-<div class="cv-entry"><div class="cv-date">2021</div><div class="cv-detail">Dean's award for the best bachelor thesis — <em>Reinforcement learning in Quantum Nonlocal games</em></div></div>
+![[projects-grants-awards#Awards]]
 
 ## Teaching & Supervision
 
@@ -57,14 +50,12 @@ tags:
 ## Publications
 
 **Preprints**
-- Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs"
-- Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes"
+
+![[output#preprint]]
 
 **Conference proceedings**
-- Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." ITAT 2026.
-- Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." ITAT 2024, Aachen: CEUR-WS, pp. 162–170.
 
-Full publication list → [[output|Output]]
+![[output#papers in conference proceedings]]
 
 ## Talks
 
@@ -74,8 +65,6 @@ Full list with abstracts → [[output|Output]]
 
 ## Projects
 
-<div class="cv-entry"><div class="cv-date">2026</div><div class="cv-detail">ITAT CADM — Computational Aspects of Large-Scale Problems in Discrete Mathematics — organizing committee</div></div>
-<div class="cv-entry"><div class="cv-date">2025</div><div class="cv-detail">GEMS — Graph Embeddings and Maps on Surfaces — assisting</div></div>
-<div class="cv-entry"><div class="cv-date">2024</div><div class="cv-detail">ENLIGHT — AI for everyone — co-organizer</div></div>
+![[projects-grants-awards#Projects]]
 
 </div>

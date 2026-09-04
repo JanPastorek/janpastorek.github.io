@@ -14,10 +14,7 @@ Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs"
 
 Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes"
 
-Pastorek Svecova Sotak ??
-
-### journal papers
-
+%% TODO: Pastorek, Švecová, Šotak — paper in progress, add full citation once title/venue are finalized %%
 
 ### papers in conference proceedings
 Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" In ITAT 2026

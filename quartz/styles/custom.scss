@@ -40,9 +40,44 @@ article[data-slug="index"] img {
   max-width: 300px;
 }
 
-// Curriculum Vitae page: compact date-left / detail-right rows under
-// bold, uppercase, underlined section headers, echoing a classic
-// academic CV layout.
+// Compact date-left / detail-right entry rows, echoing a classic
+// academic CV layout. Defined globally (not scoped to .cv) so the
+// same rows can be used on any page — e.g. content/projects-grants-awards.md
+// — and look identical whether viewed standalone or transcluded into
+// the CV with ![[page#Header]].
+.cv-entry {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+  align-items: baseline;
+
+  .cv-date {
+    flex: 0 0 7rem;
+    font-weight: 600;
+    color: var(--darkgray);
+  }
+
+  .cv-detail {
+    flex: 1 1 auto;
+
+    strong {
+      color: var(--dark);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .cv-entry {
+    flex-direction: column;
+    gap: 0.15rem;
+
+    .cv-date {
+      flex-basis: auto;
+    }
+  }
+}
+
+// Curriculum Vitae page: bold, uppercase, underlined section headers.
 .cv {
   h2 {
     font-size: 1rem;
@@ -54,35 +89,58 @@ article[data-slug="index"] img {
     margin: 2rem 0 0.75rem 0;
   }
 
-  .cv-entry {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.6rem;
-    align-items: baseline;
+  // Transcluded content (![[page]] / ![[page#Header]]) pulls in another
+  // page's actual HTML verbatim, so without help it renders as a quoted
+  // blockquote with the source page's own heading levels — jarring next
+  // to the compact .cv-entry rows above. Strip the quote-box chrome and
+  // tone down the nested headings/footer link so embedded sections read
+  // as native parts of the CV instead of a pasted-in aside.
+  blockquote.transclude {
+    margin: 0;
+    border-left: none;
+    padding-left: 0;
 
-    .cv-date {
-      flex: 0 0 7rem;
+    // The source page's own heading is redundant under the CV's own ##
+    // heading — this fires for a full-page transclude (e.g. ![[teaching]],
+    // which prepends a synthetic <h1> with the page title) AND for a
+    // header transclude (e.g. ![[page#Header]], which includes the matched
+    // header element itself as the first spliced node) — so hide whichever
+    // heading level happens to land first.
+    > h1:first-child,
+    > h2:first-child,
+    > h3:first-child,
+    > h4:first-child,
+    > h5:first-child,
+    > h6:first-child {
+      display: none;
+    }
+
+    h3,
+    h4,
+    h5 {
+      font-size: 0.95rem;
       font-weight: 600;
+      text-transform: none;
+      letter-spacing: normal;
       color: var(--darkgray);
+      border-bottom: none;
+      margin: 1.1rem 0 0.35rem 0;
+      padding-bottom: 0;
     }
 
-    .cv-detail {
-      flex: 1 1 auto;
-
-      strong {
-        color: var(--dark);
-      }
+    ul {
+      margin: 0.25rem 0;
     }
-  }
 
-  @media (max-width: 600px) {
-    .cv-entry {
-      flex-direction: column;
-      gap: 0.15rem;
+    details {
+      margin: 0.35rem 0 0.75rem 0;
+    }
 
-      .cv-date {
-        flex-basis: auto;
-      }
+    .transclude-src {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--gray);
     }
   }
 }
