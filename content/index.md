@@ -25,6 +25,7 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
   <a href="https://stackoverflow.com/users/12492630" title="Stack Overflow" aria-label="Stack Overflow" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M15.725 0l-1.72 1.277 6.39 8.588 1.716-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.904-1.94-9.701-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.092-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.133v2.13h10.66v-2.13H6.154Z"/></svg></a>
 </div>
 
+**PhD student** 
 **Department of Applied Informatics**
 **Comenius University in Bratislava**
 **Slovakia**
@@ -33,37 +34,8 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 # research interests
 - algebraic graph theory, particularly graph isomorphism problem, asymmetric graphs and partial automorphism inverse monoids of graphs
 - complex adaptive systems, particularly *"how can emergent states appear in complex systems?"* 
-## hobby research interests
+
+### hobby research interests
 - History and philosophy of science and mathematics 
 - cognitive science
 - quantum stuff
-
----
-# education
-
-- **2023–2027**: PhD, Mathematics and Computer Science — Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava
-- **2021–2023**: Master's degree, Cognitive Science — Comenius University in Bratislava & Universität Wien (joint MEi:CogSci programme with Eötvös Loránd University Budapest and University of Ljubljana)
-- **2018–2021**: Bachelor's degree, Computer Science — Comenius University in Bratislava
-
-<details>
-<summary>Earlier education</summary>
-
-- **2018–2020**: Certificate, Liberal Arts and Sciences — Collegium of Anton Neuwirth / St. John's College (Oxbridge-style tutorials; science, philosophy, theology)
-- **2013–2018**: Bilingual Gymnasium of St. Edith Stein (60% of subjects taught in English)
-
-</details>
-
-# experience
-
-- **2023–present**: Doctoral Student — Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava
-
-<details>
-<summary>Earlier roles</summary>
-
-- **2022–2023**: Research Intern, CulturePulse — agent-based modeling and data analysis
-- **2020–2023**: Data Analyst, DEKK Institute (part-time) — R&D of data science tools for analyzing social cohesion
-- **2020–2021**: High School Computer Science Teacher, United School of St. Ursula (part-time)
-- **2020**: Scientific Researcher, RCQI – Research Center for Quantum Information, Slovak Academy of Sciences — reinforcement learning applied to violating CHSH/Bell inequalities in non-local games
-
-</details>
-

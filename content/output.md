@@ -12,12 +12,12 @@ tags:
 ### preprint
 Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs"
 
-Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes"
+Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes" https://arxiv.org/abs/2609.02585
 
 %% TODO: Pastorek, Švecová, Šotak — paper in progress, add full citation once title/venue are finalized %%
 
 ### papers in conference proceedings
-Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" In ITAT 2026
+Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" accepted and to appear soon in ITAT 2026, Aachen: CEUR-WS, for now: https://arxiv.org/abs/2609.03478 
 
 Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170.
 

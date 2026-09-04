@@ -10,6 +10,9 @@ tags:
 ## Personal Information
 
 <div class="cv-entry"><div class="cv-date">ORCID</div><div class="cv-detail"><a href="https://orcid.org/0000-0001-8237-1275">0000-0001-8237-1275</a></div></div>
+<div class="cv-entry"><div class="cv-date">Date of Birth</div><div class="cv-detail">22 October 1998</div></div>
+
+<div class="cv-entry"><div class="cv-date">Nationality</div><div class="cv-detail">Slovak</div></div>
 <div class="cv-entry"><div class="cv-date">Web</div><div class="cv-detail"><a href="https://janpastorek.com/">janpastorek.com</a></div></div>
 
 ## Education
@@ -45,7 +48,9 @@ tags:
 
 ## Refereeing
 
-**Referee** — ITAT CADM Proceedings; Journal of Graph Theory
+**Referee**
+ITAT CADM Proceedings
+Journal of Graph Theory
 
 ## Publications
 
@@ -59,9 +64,11 @@ tags:
 
 ## Talks
 
-6 contributed talks (2024–2026) at CSGT, ITAT, CICM, and Doctoral Colloquia/regional seminars in Bratislava and Košice; 1 invited talk (2026, Mirka Miller's Combinatorics Webinar Series).
+**Invited**
+![[output#invited talks]]
 
-Full list with abstracts → [[output|Output]]
+**Contributed**
+![[output#contributed talks]]
 
 ## Projects
 

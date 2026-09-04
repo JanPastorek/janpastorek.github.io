@@ -1,5 +1,5 @@
 ---
-title: Projects & Grants & Awards
+title:
 description: Projects, awards, grants, stipends, and internships of Jan Pastorek.
 tags:
   - artificial-intelligence

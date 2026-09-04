@@ -61,5 +61,6 @@ Leading tutorials in at [Studentska Agora](https://studentskaagora.sk/)
 - Erik Kolesár, *Adaptive Temporal Summarization Benchmark for Robust Evaluation of Pre-trained Large Language Models*, 2026
 - Timotea Chalupová, *Token graphs*, 2024
 
-### Led student projects
+### Led student's projects
 - https://github.com/TIS2024-FMFI/kolmogorov  (Metamath graph exploration tool)
+- https://app.dekk.sk/ (Analytical tool for)
