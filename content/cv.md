@@ -17,7 +17,7 @@ tags:
 
 ## Education
 
-<div class="cv-entry"><div class="cv-date">2023–2027</div><div class="cv-detail"><strong>PhD, Mathematics and Computer Science</strong><br>Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava</div></div>
+<div class="cv-entry"><div class="cv-date">2023–2027</div><div class="cv-detail"><strong>PhD, Computer Science</strong><br>Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava</div></div>
 <div class="cv-entry"><div class="cv-date">2021–2023</div><div class="cv-detail"><strong>Master's degree, Cognitive Science</strong><br>Comenius University in Bratislava & Universität Wien (joint MEi:CogSci programme with Eötvös Loránd University Budapest and University of Ljubljana)</div></div>
 <div class="cv-entry"><div class="cv-date">2018–2021</div><div class="cv-detail"><strong>Bachelor's degree, Computer Science</strong><br>Comenius University in Bratislava</div></div>
 <div class="cv-entry"><div class="cv-date">2018–2020</div><div class="cv-detail"><strong>Certificate, Liberal Arts and Sciences</strong><br>Collegium of Anton Neuwirth / St. John's College</div></div>
@@ -27,16 +27,21 @@ tags:
 
 <div class="cv-entry"><div class="cv-date">2023–present</div><div class="cv-detail"><strong>Doctoral Student</strong><br>Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava</div></div>
 
-## Previous Positions
+## Previous Experience
 
 <div class="cv-entry"><div class="cv-date">2022–2023</div><div class="cv-detail"><strong>Researcher</strong>, CulturePulse<br>Agent-based modeling and data analysis</div></div>
-<div class="cv-entry"><div class="cv-date">2020–2023</div><div class="cv-detail"><strong>Data Analyst & Co-founder</strong> (part-time), DEKK Institute<br>R&D of data science tools for analyzing social cohesion</div></div>
+<div class="cv-entry"><div class="cv-date">2020–2023</div><div class="cv-detail"><strong>Data Analyst & Co-founder</strong> (part-time), DEKK Institute<br>R&D of data science tools</div></div>
 <div class="cv-entry"><div class="cv-date">2020–2021</div><div class="cv-detail"><strong>High School Computer Science Teacher</strong> (part-time), United School of St. Ursula</div></div>
-<div class="cv-entry"><div class="cv-date">2020</div><div class="cv-detail"><strong>Scientific Researcher</strong>, RCQI – Research Center for Quantum Information, Slovak Academy of Sciences<br>Reinforcement learning applied to violating CHSH/Bell inequalities in non-local games</div></div>
+<div class="cv-entry"><div class="cv-date">2020</div><div class="cv-detail"><strong>Researcher intern</strong>, RCQI – Research Center for Quantum Information, Slovak Academy of Sciences<br>Reinforcement learning applied to violating CHSH/Bell inequalities in non-local games</div></div>
 
-## Grants, Stipends & Internships
+## Research visits
 
-![[projects-grants-awards#Grants, Stipends & Internships]]
+<div class="cv-detail">Erasmus+ research visit, TU Darmstadt — Prof. P. Schweitzer's group (<em>Weisfeiler-Leman & partial automorphisms</em>)</div></div>
+<div class="cv-entry"><div class="cv-date">2024</div><div class="cv-detail">Erasmus+ research visit, DTU Copenhagen — Peter Zeman, PhD (<em>Weisfeiler-Leman & partial automorphisms</em>)</div></div>
+
+## Grants & Stipends
+
+![[projects-grants-awards#Grants & Stipends]]
 
 ## Awards
 
@@ -48,7 +53,6 @@ tags:
 
 ## Refereeing
 
-**Referee**
 ITAT CADM Proceedings
 Journal of Graph Theory
 
