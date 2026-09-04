@@ -17,9 +17,9 @@ tags:
 
 ## Education
 
-<div class="cv-entry"><div class="cv-date">2023–2027</div><div class="cv-detail"><strong>PhD, Computer Science</strong><br>Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava</div></div>
-<div class="cv-entry"><div class="cv-date">2021–2023</div><div class="cv-detail"><strong>Master's degree, Cognitive Science</strong><br>Comenius University in Bratislava & Universität Wien (joint MEi:CogSci programme with Eötvös Loránd University Budapest and University of Ljubljana)</div></div>
-<div class="cv-entry"><div class="cv-date">2018–2021</div><div class="cv-detail"><strong>Bachelor's degree, Computer Science</strong><br>Comenius University in Bratislava</div></div>
+<div class="cv-entry"><div class="cv-date">2023–2027</div><div class="cv-detail"><strong>PhD, Computer Science</strong><br>Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava<br>Thesis: <em>On the interplay between global and local symmetries</em></div></div>
+<div class="cv-entry"><div class="cv-date">2021–2023</div><div class="cv-detail"><strong>Master's degree, Cognitive Science</strong><br>Comenius University in Bratislava & Universität Wien (joint MEi:CogSci programme with Eötvös Loránd University Budapest and University of Ljubljana)<br>Thesis: <em><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=szwPIKgAAAAJ&amp;citation_for_view=szwPIKgAAAAJ:IjCSPb-OGe4C">Global Versus Local Symmetries</a></em></div></div>
+<div class="cv-entry"><div class="cv-date">2018–2021</div><div class="cv-detail"><strong>Bachelor's degree, Computer Science</strong><br>Comenius University in Bratislava<br>Thesis: <em><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=szwPIKgAAAAJ&amp;citation_for_view=szwPIKgAAAAJ:zYLM7Y9cAGgC">Machine learning for nonlocal games</a></em></div></div>
 <div class="cv-entry"><div class="cv-date">2018–2020</div><div class="cv-detail"><strong>Certificate, Liberal Arts and Sciences</strong><br>Collegium of Anton Neuwirth / St. John's College</div></div>
 <div class="cv-entry"><div class="cv-date">2013–2018</div><div class="cv-detail">Bilingual Gymnasium of St. Edith Stein</div></div>
 
@@ -36,7 +36,7 @@ tags:
 
 ## Research visits
 
-<div class="cv-detail">Erasmus+ research visit, TU Darmstadt — Prof. P. Schweitzer's group (<em>Weisfeiler-Leman & partial automorphisms</em>)</div></div>
+<div class="cv-entry"><div class="cv-date">2024</div><div class="cv-detail">Erasmus+ research visit, TU Darmstadt — Prof. P. Schweitzer's group (<em>Weisfeiler-Leman & partial automorphisms</em>)</div></div>
 <div class="cv-entry"><div class="cv-date">2024</div><div class="cv-detail">Erasmus+ research visit, DTU Copenhagen — Peter Zeman, PhD (<em>Weisfeiler-Leman & partial automorphisms</em>)</div></div>
 
 ## Grants & Stipends

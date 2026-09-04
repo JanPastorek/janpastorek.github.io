@@ -1,5 +1,5 @@
 ---
-title:
+title: Projects, Grants & Awards
 description: Projects, awards, grants, stipends, and internships of Jan Pastorek.
 tags:
   - artificial-intelligence
@@ -24,7 +24,5 @@ tags:
 
 <div class="cv-entry"><div class="cv-date">2026</div><div class="cv-detail">Comenius University grant, <em>Asymmetric depth of graphs of given genus</em> (GUK2026), No. UK/1020/2026</div></div>
 <div class="cv-entry"><div class="cv-date">2025</div><div class="cv-detail">Comenius University grant, <em>Constructions for conjectures regarding asymmetric depth of graphs</em> (GUK2025)</div></div>
-<div class="cv-entry"><div class="cv-date">2024</div>
 <div class="cv-entry"><div class="cv-date">2022–2024</div><div class="cv-detail">Comenius Student Stipend program for excellent students</div></div>
-<div class="cv-entry"><div class="cv-date">2020</div>
 <div class="cv-entry"><div class="cv-date">2019–2022</div><div class="cv-detail">USSteel Košice University Stipend program</div></div>

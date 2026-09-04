@@ -31,9 +31,17 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 **Slovakia**
 
 ---
+# research
+
+Most of my work comes back to one question: how much of a structure's global behaviour is already settled by its local parts? In graph theory this becomes very concrete. A graph can be completely rigid — *asymmetric*, with no nontrivial automorphism — and yet still be full of *partial* symmetries: small pieces that could be swapped if you only ever looked at them locally. I study those partial automorphisms, the inverse monoids they form, and how far you have to look before a local symmetry either extends to a global one or breaks. That "how far" is what I call **asymmetric depth**, and it runs straight into the Weisfeiler-Leman algorithm and the graph isomorphism problem, where the same tension between local refinement and global structure decides what is computationally visible at all.
+
+What keeps me interested is that this question is not really about graphs. When local rules do and do not determine global states is the emergence question, and I have come at it from a few directions — agent-based models of social cohesion, cognitive science, and quantum nonlocal games, where local measurements constrain global correlations in ways classical intuition gets wrong. More recently I have been asking what automated reasoning and machine learning can contribute: not as a substitute for proof, but as a way to search structure spaces far too large to explore by hand, and then to formalize what survives.
+
+---
 # research interests
 - algebraic graph theory, particularly graph isomorphism problem, asymmetric graphs and partial automorphism inverse monoids of graphs
 - complex adaptive systems, particularly *"how can emergent states appear in complex systems?"* 
+- AI for mathematics, particularly automated conjecturing, refutation and formalization
 
 ### hobby research interests
 - History and philosophy of science and mathematics 

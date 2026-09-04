@@ -132,7 +132,7 @@ article[data-slug="index"] img {
       margin: 0.25rem 0;
     }
 
-    details {
+    details:not(.abstract-inline) {
       margin: 0.35rem 0 0.75rem 0;
     }
 
@@ -166,4 +166,75 @@ article details {
       color: var(--secondary);
     }
   }
+}
+
+// Abstracts on talk/paper entries: a small "Abstract" toggle that sits inline
+// next to the citation rather than a full-width bordered box underneath it,
+// so a long talk list stays scannable (and so does the CV, which transcludes
+// these lists). Opening one promotes it to a block so the text gets its own
+// line.
+article details.abstract-inline {
+  display: inline;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+
+  > summary {
+    display: inline;
+    list-style: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    border: 1px solid var(--lightgray);
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    margin-left: 0.4rem;
+    white-space: nowrap;
+
+    &::marker {
+      content: "";
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &:hover {
+      background: var(--lightgray);
+    }
+  }
+
+  &[open] {
+    display: block;
+    margin: 0.45rem 0 0.9rem 0;
+
+    > summary {
+      margin-left: 0;
+    }
+  }
+
+  > p {
+    margin: 0.45rem 0 0 0;
+    padding-left: 0.8rem;
+    border-left: 2px solid var(--lightgray);
+    font-size: 0.92rem;
+    color: var(--darkgray);
+  }
+}
+
+// The citation itself is a block <p>; without this the inline toggle would
+// still be pushed onto its own line.
+article li:has(> details.abstract-inline) > p {
+  display: inline;
+}
+
+// "Projects, Grants & Awards" keeps a real title for the browser tab, sidebar
+// and breadcrumbs, but shows no heading on the page itself (its sections are
+// the content, and they are also transcluded into the CV).
+body[data-slug="projects-grants-awards"] .page-header .article-title {
+  display: none;
 }
