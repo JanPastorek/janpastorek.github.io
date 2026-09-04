@@ -14,7 +14,12 @@ Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs"
 
 Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes." Preprint: [arXiv:2609.02585](https://arxiv.org/abs/2609.02585)
 
-%% TODO: Pastorek, Švecová, Šotak — paper in progress, add full citation once title/venue are finalized %%
+### in preparation
+Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective colorings of toroidal graphs."
+
+Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdisciplinary Analysis of Ernst Mach's Contributions."
+
+Jedlička, P., Pastorek, J., Varchola, J. "Causal emergence."
 
 ### papers in conference proceedings
 Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. Preprint: [arXiv:2609.03478](https://arxiv.org/abs/2609.03478)
