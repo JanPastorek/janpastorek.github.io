@@ -22,19 +22,19 @@ Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery."
 Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170.
 
 ### invited talks
-- 18.11.2026, title to be announced at http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series
+- Pastorek, J. (2026). Title to be announced, [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), 18.11.2026
 
 ### contributed talks
-- Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" at ITAT 2026, https://itat.ics.upjs.sk/index.php?id=program#cadm2
-- Pastorek, J. (2026). "AutoGraphForge: Conjecturing, Refutation and Lean Formalization in One Loop" at CICM 2026,  https://cicm-conference.org/2026/cicm.php?event=ai4math&menu=program
-- Pastorek, J. (2026). "Extremal asymmetric depth of planar and higher-genus graphs" at CSGT 2026, [https://csgt2026.tuke.sk/](https://csgt2026.tuke.sk/)
+- Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" at [ITAT 2026](https://itat.ics.upjs.sk/index.php?id=program#cadm2)
+- Pastorek, J. (2026). "AutoGraphForge: Conjecturing, Refutation and Lean Formalization in One Loop" at [CICM 2026, AI4Math](https://cicm-conference.org/2026/cicm.php?event=ai4math&menu=program)
+- Pastorek, J. (2026). "Extremal asymmetric depth of planar and higher-genus graphs" at [CSGT 2026](https://csgt2026.tuke.sk/)
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 	
 	Although almost all graphs are known to be asymmetric — having no nontrivial global automorphisms — they may still possess local symmetries in the form of isomorphisms between induced subgraphs, i.e., partial automorphisms. We study such local symmetries via *asymmetric depth*, defined as $d(\Gamma) = n - k_{\max}(\Gamma)$, where $k_{\max}(\Gamma)$ is the maximum rank of a nontrivial partial automorphism of an $n$-vertex graph $\Gamma$. Continuing this line of work on specific graph classes, we prove a tight upper bound $d(\Gamma) \leq 5$ in the class of planar graphs and show that duals of IPR fullerenes can attain this extremal value: any fullerene whose dual achieves $d=5$ must satisfy the *isolated pentagon rule*, the smallest examples occurring on $90$ and $92$ vertices. Exhaustive computations up to $n = 120$ indicate that almost all IPR fullerenes are asymmetric with depth $4$, and those that fail to attain the maximum exhibit hidden, almost-global symmetries broken only locally. We extend the bound to surfaces of higher genus, obtaining $d(\Gamma) \leq 5 + \sqrt{1+48g}$. Paralleling Frucht's gadget technique, we construct an explicit family $\{A_h\}_{h \geq 2}$ by attaching columns of varying lengths of $h$-dimensional hypercubes to a central copy of $Q_h$, and prove $d(A_h) = 2(h-2)$ for $h \geq 3$. Combined with a depth-monotonicity result for induced subgraphs, this realizes every positive integer as an asymmetric depth with increasingly high genus.
 	
 	</details>
-- Pastorek, J. (2025). "Deeply Asymmetric Structures." Doctoral Colloquia at Comenius University, 8.12.2025 (https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en)
+- Pastorek, J. (2025). "Deeply Asymmetric Structures." [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University, 8.12.2025
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 	
@@ -62,9 +62,9 @@ Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and leve
 	While it is well-established that almost all graphs are asymmetric, possessing no nontrivial global automorphisms, all graphs contain non-trivial local symmetries which we study using isomorphisms between induced subgraphs, known as partial automorphisms. The set of all partial automorphisms, along with the operations of partial composition and partial inverse of partial maps, forms an inverse monoid, which is a rich and complex algebraic structure. However, it is hard to compute. In this talk, we are motivated by the study of partial automorphism inverse monoids of graphs initiated by [1]. We investigate the extent of these local symmetries through the measure of asymmetric depth of graphs defined through the rank of the largest non-trivial partial automorphism. In [2], we established a new, tight lower bound for the asymmetric depth of any simple graph Γ on nvertices. Any graph achieving this bound must be a strongly regular graph with parameters (n , (n−1)/2 , (n−5)/4,(n −1) /4 ) also known as conference graph. We implemented a parallel algorithm for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that meets this bound, thereby proving its tightness. We also showed that it is one of the smallest possible graphs to meet this bound by checking all asymmetric conference graphs up to 37 vertices.
 	
 	</details>
-- Pastorek, J. (2025). "Graph isomorphism, asymmetric graphs and partial symmetries", Doctoral Colloquia at Comenius University in Bratislava (https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en)
+- Pastorek, J. (2025). "Graph isomorphism, asymmetric graphs and partial symmetries", [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University in Bratislava
 - Pastorek, J., Jajcayová, T. (2024). "Asymmetric Graphs and Partial Automorphisms." In Abstracts, CSGT 2024, Ostrava: VŠB–TU Ostrava, pp. 28-29.
-- Jajcayová, T., Pastorek, J. (2024). "Partial automorphism monoid of graphs and k-Weisfeiler-Lehman." In CSD 10, Leuven: KU Leuven, p. 26. (https://csd10.be/)
+- Jajcayová, T., Pastorek, J. (2024). "Partial automorphism monoid of graphs and k-Weisfeiler-Lehman." In [CSD 10](https://csd10.be/), Leuven: KU Leuven, p. 26.
 - Pastorek, J., Jajcayová, T. (2024). "Partial automorphism monoid of graphs and Weisfeiler-Leman." In Študentská vedecká konferencia FMFI UK, Bratislava, p. 366. (https://zona.fmph.uniba.sk/fileadmin/fmfi/studentska_vedecka_konferencia/zbierka2024/svk2024_zbornik.pdf#page=376)
 - Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT CADM 2024
 - Pastorek, J. (2024). "Search for correspondences between operations on partial automorphisms and k-dimensional Weisfeiler-Leman algorithm." During workshop named: Constructions of Expanders and Extremal Graphs. (http://euler.doa.fmph.uniba.sk/Austria-Slovakia.html)
@@ -91,6 +91,7 @@ Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and leve
 	</details>
 
 
-### Git
-- See https://github.com/JanPastorek?tab=repositories
-- Application for a measurement device for plasma physics https://github.com/TIS2020-FMFI/hp
+### Software
+- **AutoGraphForge** — automated conjecturing, refutation and Lean formalization for graph theory (see the ITAT 2026 paper above)
+- **Parallel asymmetric-depth checker** — computes asymmetric depth on the Clara high-performance cluster; used to identify the extremal conference graph on 37 vertices
+- Further repositories: [github.com/JanPastorek](https://github.com/JanPastorek?tab=repositories)

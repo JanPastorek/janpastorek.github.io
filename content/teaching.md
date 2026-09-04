@@ -6,11 +6,11 @@ tags:
   - supervising
 ---
 
-#### Online passive
-[Introduction to Agent-Based Modeling](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
+#### Online course
+[Introduction to Agent-Based Modeling and Simulation](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
 
-#### Ocassionaly
-Leading tutorials in at [Studentska Agora](https://studentskaagora.sk/)
+#### Occasional
+Tutorials at [Študentská Agora](https://studentskaagora.sk/)
 
 #### 2026/2027
 - Winter semester: 
@@ -62,5 +62,5 @@ Leading tutorials in at [Studentska Agora](https://studentskaagora.sk/)
 - Timotea Chalupová, *Token graphs*, 2024
 
 ### Led projects
-- https://github.com/TIS2024-FMFI/kolmogorov  (Metamath graph exploration tool developed by a group of students)
-- https://app.dekk.sk/ (Analytical tool)
+- [Kolmogorov](https://github.com/TIS2024-FMFI/kolmogorov) — Metamath graph exploration tool, built by a student team
+- [DEKK](https://app.dekk.sk/) — analytical tool for social cohesion data

@@ -9,9 +9,8 @@ tags:
 
 ## Personal Information
 
+<div class="cv-entry"><div class="cv-date">Email</div><div class="cv-detail"><a href="mailto:jan.pastorek@fmph.uniba.sk">jan.pastorek@fmph.uniba.sk</a></div></div>
 <div class="cv-entry"><div class="cv-date">ORCID</div><div class="cv-detail"><a href="https://orcid.org/0000-0001-8237-1275">0000-0001-8237-1275</a></div></div>
-<div class="cv-entry"><div class="cv-date">Date of Birth</div><div class="cv-detail">22 October 1998</div></div>
-
 <div class="cv-entry"><div class="cv-date">Nationality</div><div class="cv-detail">Slovak</div></div>
 <div class="cv-entry"><div class="cv-date">Web</div><div class="cv-detail"><a href="https://janpastorek.com/">janpastorek.com</a></div></div>
 
@@ -22,7 +21,6 @@ tags:
 <div class="cv-entry"><div class="cv-date">2021–2022</div><div class="cv-detail"><strong>Certificate, Liberal Arts</strong><br>St. John's College, Annapolis &amp; Santa Fe<br>Great Books programme; classics of natural science, mathematics and philosophy</div></div>
 <div class="cv-entry"><div class="cv-date">2018–2021</div><div class="cv-detail"><strong>Bachelor's degree, Computer Science</strong> (with honors)<br>Comenius University in Bratislava<br>Thesis: <em>Machine learning for nonlocal games</em></div></div>
 <div class="cv-entry"><div class="cv-date">2018–2020</div><div class="cv-detail"><strong>Certificate, Liberal Arts and Sciences</strong><br>Collegium of Anton Neuwirth</div></div>
-<div class="cv-entry"><div class="cv-date">2013–2018</div><div class="cv-detail">Bilingual Gymnasium of St. Edith Stein</div></div>
 
 ## Current Position
 
@@ -54,8 +52,8 @@ tags:
 
 ## Refereeing
 
-ITAT CADM Proceedings
-Journal of Graph Theory
+<div class="cv-entry"><div class="cv-date">Journal</div><div class="cv-detail">Journal of Graph Theory</div></div>
+<div class="cv-entry"><div class="cv-date">Proceedings</div><div class="cv-detail">ITAT CADM</div></div>
 
 ## Publications
 
