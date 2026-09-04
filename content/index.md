@@ -31,15 +31,12 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 
 ---
 # research interests
-
-- Partial automorphism inverse monoids of graphs
-- asymmetric Graphs
-- Weisfeiler-Leman algorithm
-
-## (hobby)
-- foundations and principles of science and mathematics
+- algebraic graph theory, particularly graph isomorphism problem, asymmetric graphs and partial automorphism inverse monoids of graphs
+- complex adaptive systems, particularly *"how can emergent states appear in complex systems?"* 
+## hobby research interests
+- History and philosophy of science and mathematics 
 - cognitive science
-- quantum nonlocal games
+- quantum stuff
 
 ---
 # education

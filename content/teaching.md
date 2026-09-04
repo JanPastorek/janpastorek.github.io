@@ -43,6 +43,7 @@ Leading tutorials in at [Studentska Agora](https://studentskaagora.sk/)
 	- 1-AIN-412/22 [Logic for computer science](https://dai.fmph.uniba.sk/w?title=Course:Logic_for_CS/en&setlang=en)
 
 </details>
+
 ### Theses
 
 #### Supervisor
