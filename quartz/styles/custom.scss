@@ -283,3 +283,42 @@ body[data-slug="projects-grants-awards"] .page-header .article-title {
     content: " \2192";
   }
 }
+
+// Inline theme tags on Output entries. They double as filter controls: the
+// page script intercepts clicks and filters in place instead of navigating
+// to Quartz's tag page (which lists pages, not entries).
+article a.tag-link {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--gray);
+  background: transparent;
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  padding: 0.02rem 0.32rem;
+  margin-left: 0.25rem;
+  white-space: nowrap;
+
+  &::before {
+    content: "#";
+    opacity: 0.55;
+  }
+
+  &:hover {
+    color: var(--secondary);
+    background: var(--lightgray);
+  }
+
+  &.is-active {
+    color: var(--light);
+    background: var(--secondary);
+    border-color: var(--secondary);
+  }
+}
+
+// The CV transcludes these same entries; hashtag chips would be noise on a
+// formal document, so they are hidden there.
+.cv a.tag-link {
+  display: none;
+}
