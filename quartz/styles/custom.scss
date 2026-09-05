@@ -40,25 +40,37 @@ article[data-slug="index"] img {
   max-width: 300px;
 }
 
-// Compact date-left / detail-right entry rows, echoing a classic
-// academic CV layout. Defined globally (not scoped to .cv) so the
-// same rows can be used on any page — e.g. content/projects-grants-awards.md
-// — and look identical whether viewed standalone or transcluded into
-// the CV with ![[page#Header]].
-.cv-entry {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 0.6rem;
-  align-items: baseline;
+// CV-style entry rows, written as plain markdown lists inside a
+// <div class="cv-list"> wrapper: each item is "- **date** detail", and the
+// leading bold is lifted into a left-hand gutter to give the classic
+// date-left / detail-right academic CV layout. Markdown (rather than a
+// <div class="cv-entry"> per row) keeps the source editable in Obsidian and
+// lets Obsidian block references (^id) attach to individual entries.
+// Defined globally so the same rows look identical on their own page and
+// when transcluded into the CV with ![[page#Header]].
+.cv-list {
+  margin: 0 0 1rem 0;
 
-  .cv-date {
-    flex: 0 0 7rem;
-    font-weight: 600;
-    color: var(--darkgray);
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
   }
 
-  .cv-detail {
-    flex: 1 1 auto;
+  li {
+    position: relative;
+    padding-left: 8rem;
+    margin: 0 0 0.55rem 0;
+    line-height: 1.3;
+
+    > strong:first-of-type {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 7rem;
+      font-weight: 600;
+      color: var(--darkgray);
+    }
 
     strong {
       color: var(--dark);
@@ -67,12 +79,13 @@ article[data-slug="index"] img {
 }
 
 @media (max-width: 600px) {
-  .cv-entry {
-    flex-direction: column;
-    gap: 0.15rem;
+  .cv-list li {
+    padding-left: 0;
 
-    .cv-date {
-      flex-basis: auto;
+    > strong:first-of-type {
+      position: static;
+      display: block;
+      width: auto;
     }
   }
 }
