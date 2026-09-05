@@ -18,7 +18,7 @@ tags:
 ## Awards
 
 <div class="cv-entry"><div class="cv-date">2024</div><div class="cv-detail">Laureate, Faculty Student Science Conference — <em>Partial automorphism monoid of graphs and Weisfeiler-Leman</em></div></div>
-<div class="cv-entry"><div class="cv-date">2021</div><div class="cv-detail">Dean's award for the best bachelor thesis — <em>Reinforcement learning in Quantum Nonlocal games</em></div></div>
+<div class="cv-entry"><div class="cv-date">2021</div><div class="cv-detail">Dean's award for the best bachelor thesis — <em>Machine learning for nonlocal games</em></div></div>
 
 ## Grants & Stipends
 

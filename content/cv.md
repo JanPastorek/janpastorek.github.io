@@ -17,9 +17,9 @@ tags:
 ## Education
 
 <div class="cv-entry"><div class="cv-date">2023–2027</div><div class="cv-detail"><strong>PhD, Computer Science</strong><br>Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava<br>Thesis: <em>On the interplay between global and local symmetries</em></div></div>
-<div class="cv-entry"><div class="cv-date">2021–2023</div><div class="cv-detail"><strong>Master's degree, Cognitive Science</strong><br>Comenius University in Bratislava & Universität Wien (joint MEi:CogSci programme with Eötvös Loránd University Budapest and University of Ljubljana)<br>Thesis: <em>Global Versus Local Symmetries</em></div></div>
+<div class="cv-entry"><div class="cv-date">2021–2023</div><div class="cv-detail"><strong>Master's degree, Cognitive Science</strong> (with honors)<br>Comenius University in Bratislava & Universität Wien (joint MEi:CogSci programme with Eötvös Loránd University Budapest and University of Ljubljana)<br>Thesis: <em>Global Versus Local Symmetries</em></div></div>
 <div class="cv-entry"><div class="cv-date">2021–2022</div><div class="cv-detail"><strong>Certificate, Liberal Arts</strong><br>St. John's College, Annapolis &amp; Santa Fe<br>Great Books programme; classics of natural science, mathematics and philosophy</div></div>
-<div class="cv-entry"><div class="cv-date">2018–2021</div><div class="cv-detail"><strong>Bachelor's degree, Computer Science</strong> (with honors)<br>Comenius University in Bratislava<br>Thesis: <em>Machine learning for nonlocal games</em></div></div>
+<div class="cv-entry"><div class="cv-date">2018–2021</div><div class="cv-detail"><strong>Bachelor's degree, Computer Science</strong> (with honors)<br>Comenius University in Bratislava<br>Thesis: <em>Machine learning for nonlocal games</em> — <strong>Dean's award for the best bachelor thesis</strong></div></div>
 <div class="cv-entry"><div class="cv-date">2018–2020</div><div class="cv-detail"><strong>Certificate, Liberal Arts and Sciences</strong><br>Collegium of Anton Neuwirth</div></div>
 
 ## Current Position
@@ -28,8 +28,8 @@ tags:
 
 ## Previous Experience
 
-<div class="cv-entry"><div class="cv-date">2022–2023</div><div class="cv-detail"><strong>Researcher</strong>, CulturePulse<br>Agent-based modeling and data analysis of the disintegration of social cohesion, using World Values Survey data</div></div>
-<div class="cv-entry"><div class="cv-date">2020–2023</div><div class="cv-detail"><strong>Data Analyst &amp; Co-founder</strong> (part-time), DEKK Institute<br>R&amp;D of data science tools for analyzing social cohesion; agent-based model of how anxiety propagates through groups in conflict zones, with the Woolf Institute (Cambridge)</div></div>
+<div class="cv-entry"><div class="cv-date">2022–2023</div><div class="cv-detail"><strong>Researcher</strong>, CulturePulse<br>Agent-based modeling (NetLogo, Simudyne) and data analysis of the disintegration of social cohesion, using World Values Survey data</div></div>
+<div class="cv-entry"><div class="cv-date">2020–2023</div><div class="cv-detail"><strong>Data Analyst &amp; Co-founder</strong> (part-time), DEKK Institute<br>R&amp;D of data science tools for analyzing social cohesion; agent-based model (NetLogo, Simudyne) of how anxiety propagates through groups in conflict zones, with the Woolf Institute (Cambridge)</div></div>
 <div class="cv-entry"><div class="cv-date">2020–2021</div><div class="cv-detail"><strong>High School Computer Science Teacher</strong> (part-time), United School of St. Ursula</div></div>
 <div class="cv-entry"><div class="cv-date">2020</div><div class="cv-detail"><strong>Researcher intern</strong>, RCQI – Research Center for Quantum Information, Slovak Academy of Sciences<br>Reinforcement learning applied to violating CHSH/Bell inequalities in non-local games</div></div>
 
@@ -80,6 +80,12 @@ tags:
 ## Projects
 
 ![[projects-grants-awards#Projects]]
+
+## Skills
+
+<div class="cv-entry"><div class="cv-date">Programming</div><div class="cv-detail">Julia, Python, Java, C++</div></div>
+<div class="cv-entry"><div class="cv-date">Modeling</div><div class="cv-detail">Agent-based modeling (NetLogo, Simudyne)</div></div>
+<div class="cv-entry"><div class="cv-date">Computing</div><div class="cv-detail">Parallel algorithms on HPC clusters (Clara); Lean formalization</div></div>
 
 ## Languages
 

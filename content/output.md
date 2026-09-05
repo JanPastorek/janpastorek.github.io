@@ -9,6 +9,71 @@ tags:
   - sparse-graph
 ---
 
+<div class="topic-filter" role="group" aria-label="Filter by research theme">
+<button type="button" class="topic-chip is-active" data-topic="all">All</button>
+<button type="button" class="topic-chip" data-topic="graphs">Algebraic graph theory</button>
+<button type="button" class="topic-chip" data-topic="aimath">AI for mathematics</button>
+<button type="button" class="topic-chip" data-topic="complex">Complex systems</button>
+<button type="button" class="topic-chip" data-topic="cogsci">Cognitive science</button>
+</div>
+<script>
+(function () {
+  var MAP = {
+    graphs: ["asymmetric", "automorphism", "weisfeiler", "toroidal", "fullerene", "conference graph", "graph isomorphism", "defective coloring", "token graph", "partial symmetr", "girth", "cubic graph", "graph embedding"],
+    aimath: ["autographforge", "lean formalization", "automated graph theory", "conjectur"],
+    complex: ["causal emergence", "social cohesion", "brain network", "emergent"],
+    cogsci: ["cogsci", "cognitive science", "semantic primitive", "ernst mach", "word embedding"],
+    quantum: ["nonlocal", "non-local", "bell inequalit", "chsh", "quantum"]
+  };
+  function topicsOf(text) {
+    var t = (text || "").toLowerCase(), out = {};
+    Object.keys(MAP).forEach(function (k) {
+      if (MAP[k].some(function (w) { return t.indexOf(w) !== -1; })) { out[k] = true; }
+    });
+    return out;
+  }
+  function setup() {
+    var bar = document.querySelector(".topic-filter");
+    if (!bar) { return; }
+    var root = bar.closest("article") || document;
+    var groups = [], current = null;
+    Array.prototype.forEach.call(root.querySelectorAll("h3, p, li"), function (el) {
+      if (el.closest(".topic-filter")) { return; }
+      if (el.tagName === "H3") { current = { head: el, items: [] }; groups.push(current); return; }
+      if (!current) { return; }
+      if (el.closest("details")) { return; }
+      if (el.tagName === "P" && el.closest("li")) { return; }
+      current.items.push({ el: el, topics: topicsOf(el.textContent) });
+    });
+    function apply(topic) {
+      groups.forEach(function (g) {
+        var shown = 0;
+        g.items.forEach(function (it) {
+          var vis = topic === "all" || !!it.topics[topic];
+          it.el.style.display = vis ? "" : "none";
+          if (vis) { shown++; }
+        });
+        g.head.style.display = (!g.items.length || shown) ? "" : "none";
+      });
+      Array.prototype.forEach.call(bar.querySelectorAll(".topic-chip"), function (c) {
+        c.classList.toggle("is-active", c.dataset.topic === topic);
+      });
+    }
+    bar.onclick = function (e) {
+      var c = e.target.closest(".topic-chip");
+      if (!c) { return; }
+      var t = c.dataset.topic;
+      history.replaceState(null, "", t === "all" ? location.pathname : location.pathname + "#topic-" + t);
+      apply(t);
+    };
+    var m = /#topic-([a-z]+)/.exec(location.hash);
+    apply(m && MAP[m[1]] ? m[1] : "all");
+  }
+  if (document.readyState !== "loading") { setup(); } else { document.addEventListener("DOMContentLoaded", setup); }
+  if (!window.__topicFilterNav) { window.__topicFilterNav = 1; document.addEventListener("nav", setup); }
+})();
+</script>
+
 ### preprint
 Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs"
 

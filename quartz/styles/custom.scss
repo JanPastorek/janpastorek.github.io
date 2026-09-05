@@ -238,3 +238,48 @@ article li:has(> details.abstract-inline) > p {
 body[data-slug="projects-grants-awards"] .page-header .article-title {
   display: none;
 }
+
+// Research-theme filter on the Output page, and the links from the home
+// page's research interests that deep-link into it (output#topic=...).
+.topic-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.25rem 0 1.5rem 0;
+}
+
+.topic-chip {
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--darkgray);
+  background: transparent;
+  border: 1px solid var(--lightgray);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: var(--lightgray);
+  }
+
+  &.is-active {
+    color: var(--light);
+    background: var(--secondary);
+    border-color: var(--secondary);
+  }
+}
+
+.evidence-link {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border-bottom: none;
+
+  &::after {
+    content: " \2192";
+  }
+}
