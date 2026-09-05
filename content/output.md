@@ -184,6 +184,6 @@ Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and leve
 
 
 ### Software
-- **AutoGraphForge** — automated conjecturing, refutation and Lean formalization for graph theory (see the ITAT 2026 paper above) #aimath #graphs
+- **AutoGraphForge** — automated conjecturing, refutation and Lean formalization for graph theory ([ITAT 2026 paper](#papers-in-conference-proceedings)) #aimath #graphs
 - **Parallel asymmetric-depth checker** — computes asymmetric depth on the Clara high-performance cluster; used to identify the extremal conference graph on 37 vertices #graphs
 - Further repositories: [github.com/JanPastorek](https://github.com/JanPastorek?tab=repositories)

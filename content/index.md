@@ -46,7 +46,7 @@ What keeps me interested is that this question is not really about graphs. When 
 - complex adaptive systems, particularly *"how can emergent states appear in complex systems?"* <a class="evidence-link" href="./output#topic-complex">see the work</a>
 - AI for mathematics, particularly automated conjecturing, refutation and formalization <a class="evidence-link" href="./output#topic-aimath">see the work</a>
 - cognitive science, particularly semantic structure in embedding spaces and the history of the field <a class="evidence-link" href="./output#topic-cogsci">see the work</a>
-- quantum nonlocal games, particularly reinforcement learning for violating Bell inequalities <a class="evidence-link" href="./cv#previous-experience">see the work</a>
+- quantum nonlocal games, particularly reinforcement learning for violating Bell inequalities <span class="evidence-note">see the <a href="./cv#bsc-thesis">bachelor thesis</a> and <a href="./cv#rcqi">research post</a></span>
 
 ### further interests
 - history and philosophy of science and mathematics

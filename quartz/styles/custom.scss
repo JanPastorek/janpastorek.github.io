@@ -322,3 +322,17 @@ article a.tag-link {
 .cv a.tag-link {
   display: none;
 }
+
+// Where one research interest needs to point at more than one place, a small
+// note carries the links instead of a single "see the work" arrow.
+.evidence-note {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+  white-space: nowrap;
+
+  a {
+    border-bottom: none;
+  }
+}
