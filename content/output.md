@@ -106,7 +106,7 @@ Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective col
 
 Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdisciplinary Analysis of Ernst Mach's Contributions." #cogsci #complex
 
-Jedlička, P., Pastorek, J., Varchola, J. "Causal emergence." #complex
+Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscience from a dynamical complex systems perspective." #complex
 
 ### papers in conference proceedings
 Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. Preprint: [arXiv:2609.03478](https://arxiv.org/abs/2609.03478) #aimath #graphs
