@@ -22,7 +22,7 @@ tags:
 
 <div class="cv-list">
 
-- **2023–2027** **PhD, Computer Science**
+- **2023– Before August 2027** **PhD, Computer Science**
 	Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava
 	Thesis: *On the interplay between global and local symmetries*
 - **2021–2023** **Master's degree, Cognitive Science** (with honors)
@@ -34,7 +34,7 @@ tags:
 - <span id="bsc-thesis"></span>**2018–2021** **Bachelor's degree, Computer Science** (with honors)
 	Comenius University in Bratislava
 	Thesis: *Machine learning for nonlocal games* — **Dean's award for the best bachelor thesis**
-- **2018–2020** **Certificate, Liberal Arts and Sciences**
+- **2018–2020** **Certificate, Liberal Arts programme**
 	Collegium of Anton Neuwirth
 
 </div>
@@ -53,9 +53,9 @@ tags:
 <div class="cv-list">
 
 - **2022–2023** **Researcher**, CulturePulse
-	Agent-based modeling (NetLogo, Simudyne) and data analysis of the disintegration of social cohesion, using World Values Survey data
+	agent-based model (NetLogo, Simudyne) of how anxiety propagates through groups in conflict zones, with the Woolf Institute (Cambridge)
 - **2020–2023** **Data Analyst & Co-founder** (part-time), DEKK Institute
-	R&D of data science tools for analyzing social cohesion; agent-based model (NetLogo, Simudyne) of how anxiety propagates through groups in conflict zones, with the Woolf Institute (Cambridge)
+	data analysis of the disintegration of social cohesion in Slovakia, using World Values Survey data
 - **2020–2021** **High School Computer Science Teacher** (part-time), United School of St. Ursula
 - <span id="rcqi"></span>**2020** **Researcher intern**, RCQI – Research Center for Quantum Information, Slovak Academy of Sciences
 	Reinforcement learning applied to violating CHSH/Bell inequalities in non-local games
@@ -134,8 +134,7 @@ tags:
 
 - **Native** Slovak, Czech
 - **C1** English (Cambridge CAE)
-- **B1** Latin
-- **Basics** German, Russian
+- **B1** German, Latin
 
 </div>
 
