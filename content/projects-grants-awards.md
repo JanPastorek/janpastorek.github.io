@@ -50,12 +50,12 @@ tags:
 
 ## Research project participation
 
-Funded projects on whose research teams I have worked (grants held by my supervisor).
+Funded research projects I have worked on as a team member; principal investigators named.
 
 <div class="cv-list">
 
-- **SK-AT-23-0019** APVV bilateral Slovak–Austrian project — team member
-- **APVV-23-0076** APVV project — team member
-- **VEGA 1/0437/23** VEGA project — team member
+- **2024–2028** *Exceptional Structures in Discrete Mathematics: Properties, Constructions and Classifications* — APVV-23-0076; PI prof. R. Jajcay
+- **2024–2026** *Constructions of Expanders and Extremal Graphs* — Austria–Slovakia bilateral collaboration, APVV SK-AT-23-0019 and OeAD WTZ SK 14/2024; PI doc. T. Jajcayová
+- **2023–2026** *Algebraic Methods in Extremal Graph Theory* — VEGA 1/0437/23; PI prof. R. Jajcay
 
 </div>
