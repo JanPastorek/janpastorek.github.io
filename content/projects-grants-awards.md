@@ -13,9 +13,9 @@ tags:
 
 <div class="cv-list">
 
-- **2026** [ITAT CADM](http://itat.ics.upjs.sk/2026/) — Computational Aspects of Large-Scale Problems in Discrete Mathematics — organizing committee
-- **2025** [GEMS](https://gems2025.savbb.sk/) — Graph Embeddings and Maps on Surfaces — assisting
-- **2024** ENLIGHT — AI for everyone — co-organizer
+- **2026** [ITAT CADM](http://itat.ics.upjs.sk/2026/) — Computational Aspects of Large-Scale Problems in Discrete Mathematics workshop as part of ITAT conference — organizing committee of the workshop
+- **2025** [GEMS](https://gems2025.savbb.sk/) — Graph Embeddings and Maps on Surfaces conference — assisting in organizing the conference
+- **2024** ENLIGHT — AI for everyone course — assisting with organization
 
 </div>
 
