@@ -6,12 +6,17 @@ tags:
   - supervising
 ---
 
+## Extracurricular
+
 #### Online course
-[Introduction to Agent-Based Modeling and Simulation](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
+When I finished my masters, I released a course [Introduction to Agent-Based Modeling and Simulation](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
+#### Occasional teaching
+Oxbridge style tutorials at [Študentská Agora](https://studentskaagora.sk/)
 
-#### Occasional
-Tutorials at [Študentská Agora](https://studentskaagora.sk/)
+## University
 
+### Tutorials / exercises 
+From time to time I also gave a lecture in some of these courses. 
 #### 2026/2027
 - Winter semester: 
 	- 1-AIN-152-22 [Linear Algebra](https://github.com/JanPastorek/1-AIN-152-22-LinearAlgebra)
@@ -62,5 +67,5 @@ Tutorials at [Študentská Agora](https://studentskaagora.sk/)
 - Timotea Chalupová, *Token graphs*, 2024
 
 ### Led projects
-- [Kolmogorov](https://github.com/TIS2024-FMFI/kolmogorov) — Metamath graph exploration tool, built by a student team
-- [DEKK](https://app.dekk.sk/) — analytical tool for social cohesion data
+- [Kolmogorov](https://github.com/TIS2024-FMFI/kolmogorov) — Metamath graph exploration tool, built by a student team (4 students) 
+- [DEKK](https://app.dekk.sk/) — Slovakia in Data - analytical tool for social science data - the purpose of the project was to map and understand social cohesion, core values, institutional trust, and polarization across Slovakia.
