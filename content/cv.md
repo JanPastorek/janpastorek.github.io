@@ -75,6 +75,10 @@ tags:
 
 ![[projects-grants-awards#Grants & Stipends]]
 
+## Research project participation
+
+![[projects-grants-awards#Research project participation]]
+
 ## Computing allocations
 
 ![[projects-grants-awards#Computing allocations]]

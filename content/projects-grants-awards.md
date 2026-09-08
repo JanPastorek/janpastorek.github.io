@@ -42,8 +42,20 @@ tags:
 <div class="cv-list">
 
 - **2026** Comenius University grant, *Asymmetric depth of graphs of given genus* (GUK2026), No. UK/1020/2026
-- **2025** Comenius University grant, *Constructions for conjectures regarding asymmetric depth of graphs* (GUK2025)
+- **2025** Comenius University grant, *Constructions for conjectures regarding asymmetric depth of graphs* (GUK2025), No. UK/1078/2025
 - **2022–2024** Comenius Student Stipend program for excellent students
 - **2019–2022** USSteel Košice University Stipend program
+
+</div>
+
+## Research project participation
+
+Funded projects on whose research teams I have worked (grants held by my supervisor).
+
+<div class="cv-list">
+
+- **SK-AT-23-0019** APVV bilateral Slovak–Austrian project — team member
+- **APVV-23-0076** APVV project — team member
+- **VEGA 1/0437/23** VEGA project — team member
 
 </div>
