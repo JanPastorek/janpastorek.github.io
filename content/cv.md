@@ -75,6 +75,10 @@ tags:
 
 ![[projects-grants-awards#Grants & Stipends]]
 
+## Computing allocations
+
+![[projects-grants-awards#Computing allocations]]
+
 ## Awards
 
 ![[projects-grants-awards#Awards]]
@@ -124,7 +128,7 @@ tags:
 
 - **Programming** Julia, Python, Java, C++
 - **Modeling** Agent-based modeling (NetLogo, Simudyne)
-- **Computing** Parallel algorithms on HPC clusters (Clara); Lean formalization
+- **Computing** Parallel algorithms on HPC clusters (Clara, Perun); Lean formalization
 
 </div>
 
