@@ -32,8 +32,8 @@ tags:
 
 <div class="cv-list">
 
-- **Perun** *High-performance Computer-assisted Graph Theory* — awarded compute time on the Perun national supercomputer (Slovakia)
-- **Perun** *High-performance Computer-assisted Algebraic Graph Theory*
+- **2026** *High-performance Computer-assisted Graph Theory* — awarded compute time on the Perun national supercomputer (Slovakia)
+- **2026** *High-performance Computer-assisted Algebraic Graph Theory* — awarded compute time on the Perun national supercomputer (Slovakia)
 
 </div>
 

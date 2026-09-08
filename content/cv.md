@@ -22,7 +22,7 @@ tags:
 
 <div class="cv-list">
 
-- **2023– Before August 2027** **PhD, Computer Science**
+- **2023–  expected before August 2027** **PhD, Computer Science**
 	Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava
 	Thesis: *On the interplay between global and local symmetries*
 - **2021–2023** **Master's degree, Cognitive Science** (with honors)
