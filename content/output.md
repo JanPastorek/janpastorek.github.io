@@ -115,6 +115,29 @@ Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and leve
 
 ### invited talks
 - Pastorek, J. (2026). Title to be announced, [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), 18.11.2026 #graphs
+- Pastorek, J. (2025). "Forth from Extensions of Partial Automorphisms to the Weisfeiler–Leman Algorithm & Counting Logic & Bijective Pebble Games—and Back Again", [Algebraic Graph Theory Seminar](http://euler.doa.fmph.uniba.sk/Austria-Slovakia.html), 12.12.2025 #graphs
+	<details class="abstract-inline">
+	<summary>Abstract</summary>
+	
+	The graph isomorphism (GI) problem sits in an unresolved position between P and NP-complete and is polynomially equivalent to computing an orbit partition of a graph's automorphism group. The Weisfeiler–Leman (WL) algorithm is a central combinatorial method for isomorphism testing that iteratively aggregates local neighbourhood information to approximate this orbit structure. A partial automorphism of a graph is an isomorphism between induced subgraphs of a graph. The set of all partial automorphisms under composition and inverses forms a partial automorphism inverse monoid which encodes complete algebraic information.
+	
+	In this talk, we discuss how these viewpoints of WL and partial automorphisms can be related. In particular, we review four different but equivalent perspectives on WL and show how they interact. After reviewing the necessary background, we revisit the k-dimensional WL algorithm and its logical characterization via bijective pebble games. From duplicator strategies in the bijective k-pebble game played on two copies of the same graph, one can collect all pebbled positions into a set of partial automorphisms of rank at most k. Among others, this set inherits back-and-forth extension properties from the underlying game.
+	
+	</details>
+- Pastorek, J. (2025). "Partial automorphisms and Asymmetric depth of not only sparse graphs." Košický kombinatorický seminár, 28.10.2025 #graphs #complex
+	<details class="abstract-inline">
+	<summary>Abstract</summary>
+	
+	While it is well-established that almost all graphs are asymmetric, possessing no nontrivial global automorphisms, all graphs contain non-trivial local symmetries which we study using isomorphisms between induced subgraphs, known as partial automorphisms. The set of all partial automorphisms, along with the operations of partial composition and partial inverse of partial maps, forms an inverse monoid, which is a rich and complex algebraic structure. However, it is hard to compute. In this talk, we are motivated by the study of partial automorphism inverse monoids of graphs initiated by [1]. We investigate the extent of these local symmetries through the measure of asymmetric depth of graphs defined through the rank of the largest non-trivial partial automorphism. We established a new, tight lower bound for the asymmetric depth of any simple graph Γ on n vertices. Any graph achieving this bound must be a strongly regular graph with parameters (n, (n−1)/2, (n−5)/4, (n−1)/4), also known as a conference graph. We implemented a parallel algorithm for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that attains this bound, thereby proving its tightness. We also showed that it is one of the smallest possible graphs to attain this bound by checking all asymmetric conference graphs up to 37 vertices. We showed how the bound applies to sparse graphs such as planar graphs.
+	
+	</details>
+- Pastorek, J. (2025). "Maximal Asymmetric Depth and Conference Graphs." Bratislavský seminár z teórie grafov, 23.10.2025 #graphs
+	<details class="abstract-inline">
+	<summary>Abstract</summary>
+	
+	Almost all graphs are asymmetric, possessing no nontrivial global automorphisms. Despite this fact, all graphs contain non-trivial local symmetries which we study using isomorphisms between induced subgraphs, known as partial automorphisms. We investigate the extent of asymmetry of graphs through the measure of asymmetric depth defined through the rank of the largest non-trivial partial automorphism. We will show a lower bound for the asymmetric depth of any simple graph Γ on n vertices. Any graph achieving this bound must be a strongly regular graph with parameters (n, (n−1)/2, (n−5)/4, (n−1)/4), also known as a conference graph. We implemented a parallel algorithm for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that attains this bound, thereby proving its tightness. We showed that it is of the smallest possible order to attain this bound by checking all asymmetric conference graphs up to 37 vertices. The talk is based on joint work with Tatiana Jajcayová
+	
+	</details>
 
 ### contributed talks
 - Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" at [ITAT 2026](https://itat.ics.upjs.sk/index.php?id=program#cadm2) #aimath #graphs
@@ -131,20 +154,6 @@ Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and leve
 	<summary>Abstract</summary>
 	
 	What are symmetries? Symmetries are typically understood globally: an object is symmetric if it has nontrivial automorphisms—transformations preserving the whole structure. It is well-established that almost all graphs are asymmetric, possessing no “global” symmetries. However, global asymmetry does not imply a lack of structure. Every graph exhibits rich “local” symmetries, which we study using isomorphisms between induced subgraphs, known as partial automorphisms. How far can graphs be from having global symmetries? We investigate this question through the measure of asymmetric depth of graphs defined through the order of the domain of the largest non-trivial partial automorphism. We will report on our progress from previous years. Earlier, we established a new, tight upper bound for the asymmetric depth of any graph. We proved that any graph achieving this bound must be a strongly regular graph. We implemented a parallel algorithm on high-performing cluster Clara for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that attains this bound, thereby proving its tightness. Given that most real-world networks such as brain networks are sparse due to connection costs, we have begun extending this investigation to sparse graphs where we can improve the general upper bound. For planar graphs, we established a tight upper bound by finding duals of asymmetric fullerenes.
-	
-	</details>
-- Pastorek, J. (2025). "Partial automorphisms and Asymmetric depth of not only sparse graphs." Košický kombinatorický seminár, 28.10.2025 #graphs #complex
-	<details class="abstract-inline">
-	<summary>Abstract</summary>
-	
-	While it is well-established that almost all graphs are asymmetric, possessing no nontrivial global automorphisms, all graphs contain non-trivial local symmetries which we study using isomorphisms between induced subgraphs, known as partial automorphisms. The set of all partial automorphisms, along with the operations of partial composition and partial inverse of partial maps, forms an inverse monoid, which is a rich and complex algebraic structure. However, it is hard to compute. In this talk, we are motivated by the study of partial automorphism inverse monoids of graphs initiated by [1]. We investigate the extent of these local symmetries through the measure of asymmetric depth of graphs defined through the rank of the largest non-trivial partial automorphism. We established a new, tight lower bound for the asymmetric depth of any simple graph Γ on n vertices. Any graph achieving this bound must be a strongly regular graph with parameters (n, (n−1)/2, (n−5)/4, (n−1)/4), also known as a conference graph. We implemented a parallel algorithm for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that attains this bound, thereby proving its tightness. We also showed that it is one of the smallest possible graphs to attain this bound by checking all asymmetric conference graphs up to 37 vertices. We showed how the bound applies to sparse graphs such as planar graphs.
-	
-	</details>
-- Pastorek, J. (2025). "Maximal Asymmetric Depth and Conference Graphs." Bratislavský seminár z teórie grafov, 23.10.2025 #graphs
-	<details class="abstract-inline">
-	<summary>Abstract</summary>
-	
-	Almost all graphs are asymmetric, possessing no nontrivial global automorphisms. Despite this fact, all graphs contain non-trivial local symmetries which we study using isomorphisms between induced subgraphs, known as partial automorphisms. We investigate the extent of asymmetry of graphs through the measure of asymmetric depth defined through the rank of the largest non-trivial partial automorphism. We will show a lower bound for the asymmetric depth of any simple graph Γ on n vertices. Any graph achieving this bound must be a strongly regular graph with parameters (n, (n−1)/2, (n−5)/4, (n−1)/4), also known as a conference graph. We implemented a parallel algorithm for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that attains this bound, thereby proving its tightness. We showed that it is of the smallest possible order to attain this bound by checking all asymmetric conference graphs up to 37 vertices. The talk is based on joint work with Tatiana Jajcayová
 	
 	</details>
 - Pastorek, J. (2025). "Partial automorphisms and Asymmetric depth of graphs." 12th PhD Summer School in Discrete Mathematics, Koper, Slovenia #graphs
