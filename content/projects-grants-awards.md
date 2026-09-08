@@ -54,8 +54,8 @@ Funded research projects I have worked on as a team member; principal investigat
 
 <div class="cv-list">
 
-- **2024–2028** *Exceptional Structures in Discrete Mathematics: Properties, Constructions and Classifications* — APVV-23-0076; PI prof. R. Jajcay
-- **2024–2026** *Constructions of Expanders and Extremal Graphs* — Austria–Slovakia bilateral collaboration, APVV SK-AT-23-0019 and OeAD WTZ SK 14/2024; PI doc. T. Jajcayová
-- **2023–2026** *Algebraic Methods in Extremal Graph Theory* — VEGA 1/0437/23; PI prof. R. Jajcay
+- **2024–2028** *Exceptional Structures in Discrete Mathematics: Properties, Constructions and Classifications* — APVV-23-0076; PI prof. RNDr. Róbert Jajcay, DrSc.
+- **2024–2026** *Constructions of Expanders and Extremal Graphs* — Austria–Slovakia bilateral collaboration, APVV SK-AT-23-0019 and OeAD WTZ SK 14/2024; PI doc. RNDr. Tatiana Jajcayová, prof. RNDr. Róbert Jajcay, DrSc., PhD, Prof. Goulnara Arzhantseva, PhD  
+- **2023–2026** *Algebraic Methods in Extremal Graph Theory* — VEGA 1/0437/23; PI prof. R. Jajcay, PhD.
 
 </div>
