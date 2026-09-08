@@ -28,6 +28,15 @@ tags:
 
 </div>
 
+## Computing allocations
+
+<div class="cv-list">
+
+- **Perun** *High-performance Computer-assisted Graph Theory* — awarded compute time on the Perun national supercomputer (Slovakia)
+- **Perun** *High-performance Computer-assisted Algebraic Graph Theory*
+
+</div>
+
 ## Grants & Stipends
 
 <div class="cv-list">
