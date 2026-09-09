@@ -21,6 +21,7 @@ tags:
   var MAP = {
     graphs: ["asymmetric", "automorphism", "weisfeiler", "toroidal", "fullerene", "conference graph", "graph isomorphism", "defective coloring", "token graph", "partial symmetr", "girth", "cubic graph", "graph embedding"],
     aimath: ["autographforge", "lean formalization", "automated graph theory", "conjectur"],
+    ai: ["autographforge", "natural language processing", "artificial intelligence", "machine learning", "reinforcement learning"],
     complex: ["causal emergence", "social cohesion", "brain network", "emergent"],
     cogsci: ["cogsci", "cognitive science", "semantic primitive", "ernst mach", "word embedding"]
   };
@@ -97,7 +98,7 @@ tags:
 </script>
 
 ### peer-reviewed publications
-Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. Preprint: [arXiv:2609.03478](https://arxiv.org/abs/2609.03478) #aimath #graphs
+Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. Preprint: [arXiv:2609.03478](https://arxiv.org/abs/2609.03478)  #ai #aimath #graphs 
 
 Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. [PDF](https://ceur-ws.org/Vol-3792/paper20.pdf) #graphs
 
@@ -106,14 +107,14 @@ Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs" #graphs
 
 Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes." Preprint: [arXiv:2609.02585](https://arxiv.org/abs/2609.02585) #graphs
 
-Lane, J., Puga-Gonzalez, I., Normann, R., Shults, L. R., Pastorek, J. (2024). "Emotional Contagion in Scandinavia during the COVID-19 Public Health Crisis." Preprint: [PsyArXiv, 10.31234/osf.io/9e5f7](https://osf.io/preprints/psyarxiv/9e5f7) #complex #cogsci
+Lane, J., Puga-Gonzalez, I., Normann, R., Shults, L. R., Pastorek, J. (2024). "Emotional Contagion in Scandinavia during the COVID-19 Public Health Crisis." Preprint: [PsyArXiv, 10.31234/osf.io/9e5f7](https://osf.io/preprints/psyarxiv/9e5f7) #complex #cogsci #ai
 
-Petruskova, J., Pastorek, J., Mucskova, L., Harazim, H., Stourac, P. "Facial Recognition–Based Artificial Intelligence Models for Difficult Airway Prediction: A Systematic Review." — under review
+Petruskova, J., Pastorek, J., Mucskova, L., Harazim, H., Stourac, P. "Facial Recognition–Based Artificial Intelligence Models for Difficult Airway Prediction: A Systematic Review." #ai 
 
 ### in preparation
 Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective colorings of toroidal graphs." #graphs
 
-Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdisciplinary Analysis of Ernst Mach's Contributions." #cogsci #complex
+Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdisciplinary Analysis of Ernst Mach's Contributions." #cogsci #complex #ai
 
 Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscience from a dynamical complex systems perspective." #complex
 
@@ -144,8 +145,8 @@ Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscien
 	</details>
 
 ### contributed talks
-- Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" at [ITAT 2026](https://itat.ics.upjs.sk/index.php?id=program#cadm2) #aimath #graphs
-- Pastorek, J. (2026). "AutoGraphForge: Conjecturing, Refutation and Lean Formalization in One Loop" at [CICM 2026, AI4Math](https://cicm-conference.org/2026/cicm.php?event=ai4math&menu=program) #aimath #graphs
+- Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" at [ITAT 2026](https://itat.ics.upjs.sk/index.php?id=program#cadm2)  #ai #aimath #graphs
+- Pastorek, J. (2026). "AutoGraphForge: Conjecturing, Refutation and Lean Formalization in One Loop" at [CICM 2026, AI4Math](https://cicm-conference.org/2026/cicm.php?event=ai4math&menu=program) #ai #aimath #graphs
 - Pastorek, J. (2026). "Extremal asymmetric depth of planar and higher-genus graphs" at [CSGT 2026](https://csgt2026.tuke.sk/) #graphs
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
@@ -180,14 +181,14 @@ Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscien
 	Symmetry has been a cornerstone of human thought and aesthetics since ancient times in various civilizations. While the ancient interpretation of symmetry encompassed the idea of equal arrangement and proportion, the modern understanding is limited to the set of transformations that leave the object invariant. We investigate the concept of partial (local) symmetry, which may be viewed as a sort of return to the original meaning of the term symmetry, stressing the importance of proportionality but capturing the current meaning of symmetry as well. Moreover, we investigate its significance in various disciplines, such as neuroaesthetics and mathematics. Furthermore, we argue that the concept of local (partial) symmetry, as opposed to global (total) symmetry, is more natural, more general, and better describes natural phenomena and symmetries in abstract structures.
 
 	</details>
-- Pastorek, J. (2023). "Semantic Primitives in Word Embeddings." MEi: CogSci Conference. [[semPrimitives.pdf|PDF]] · [[2022 Semester Project - Poster.png|Poster]] #cogsci
+- Pastorek, J. (2023). "Semantic Primitives in Word Embeddings." MEi: CogSci Conference. [[semPrimitives.pdf|PDF]] · [[2022 Semester Project - Poster.png|Poster]] #cogsci #ai
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 
 	Semantic primitives are the core concepts that possibly all humans share. They cannot be defined by any other concepts, for the chain of definitions ends in them. Finding such a set would provide us with a common communication "mother language". We could use such a set to communicate ethical norms to less developed communities. The list of such primes is already stable, numbering 65 in total including words such as TRUE, GOOD, NOT, YOU, etc. Modern NLP models can capture the semantic similarity of words based on statistical co-occurrences of words. Such models create global embeddings, vectors for each word that occurs in the training where words that co-occur in similar contexts should occupy a similar place in the vector space. The vector spaces produced by these models are based on co-occurrence statistics, and the models do not explicitly encode the fundamental semantic properties associated with semantic primitives. Do the vectors corresponding to semantic primitives emerge near mathematically special regions in the vector spaces of NLP models, despite their lack of explicit encoding in those places? In other words, are the primes close to SVD singular vectors, PCA components, or K-Means cluster centers?
 
 	</details>
-- Pastorek, J., Sarto-Jackson, I. (2023). "Unraveling the Hidden Influence of Ernst Mach on the Foundations of Cognitive Science - Interdisciplinary Approach." Kognícia a umelý život 2023 Conference. [[mach.pdf|PDF]] · [[2023 KUZ - Mach.png|Poster]] #cogsci #complex
+- Pastorek, J., Sarto-Jackson, I. (2023). "Unraveling the Hidden Influence of Ernst Mach on the Foundations of Cognitive Science - Interdisciplinary Approach." Kognícia a umelý život 2023 Conference. [[mach.pdf|PDF]] · [[2023 KUZ - Mach.png|Poster]] #cogsci #complex #ai
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 
