@@ -13,6 +13,7 @@ tags:
 <button type="button" class="topic-chip is-active" data-topic="all">All</button>
 <button type="button" class="topic-chip" data-topic="graphs">Algebraic graph theory</button>
 <button type="button" class="topic-chip" data-topic="aimath">AI for mathematics</button>
+<button type="button" class="topic-chip" data-topic="ai">AI &amp; machine learning</button>
 <button type="button" class="topic-chip" data-topic="complex">Complex systems</button>
 <button type="button" class="topic-chip" data-topic="cogsci">Cognitive science</button>
 </div>
