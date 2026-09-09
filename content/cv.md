@@ -103,17 +103,13 @@ tags:
 
 ## Publications
 
-**Preprints**
+**Peer-reviewed**
 
-![[output#preprint]]
+![[output#peer-reviewed publications]]
 
-**Conference proceedings**
+**Preprints and manuscripts under review**
 
-![[output#papers in conference proceedings]]
-
-**Under review**
-
-![[output#under review]]
+![[output#preprints and manuscripts under review]]
 
 **In preparation**
 

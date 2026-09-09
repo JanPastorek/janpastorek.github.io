@@ -96,15 +96,19 @@ tags:
 })();
 </script>
 
-### preprint
+### peer-reviewed publications
+Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. Preprint: [arXiv:2609.03478](https://arxiv.org/abs/2609.03478) #aimath #graphs
+
+Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. [PDF](https://ceur-ws.org/Vol-3792/paper20.pdf) #graphs
+
+### preprints and manuscripts under review
 Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs" #graphs
 
 Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes." Preprint: [arXiv:2609.02585](https://arxiv.org/abs/2609.02585) #graphs
 
 Lane, J., Puga-Gonzalez, I., Normann, R., Shults, L. R., Pastorek, J. (2024). "Emotional Contagion in Scandinavia during the COVID-19 Public Health Crisis." Preprint: [PsyArXiv, 10.31234/osf.io/9e5f7](https://osf.io/preprints/psyarxiv/9e5f7) #complex #cogsci
 
-### under review
-Petruskova, J., Pastorek, J., Mucskova, L., Harazim, H., Stourac, P. "Facial Recognition–Based Artificial Intelligence Models for Difficult Airway Prediction: A Systematic Review."
+Petruskova, J., Pastorek, J., Mucskova, L., Harazim, H., Stourac, P. "Facial Recognition–Based Artificial Intelligence Models for Difficult Airway Prediction: A Systematic Review." — under review
 
 ### in preparation
 Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective colorings of toroidal graphs." #graphs
@@ -112,11 +116,6 @@ Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective col
 Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdisciplinary Analysis of Ernst Mach's Contributions." #cogsci #complex
 
 Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscience from a dynamical complex systems perspective." #complex
-
-### papers in conference proceedings
-Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. Preprint: [arXiv:2609.03478](https://arxiv.org/abs/2609.03478) #aimath #graphs
-
-Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. [PDF](https://ceur-ws.org/Vol-3792/paper20.pdf) #graphs
 
 ### invited talks
 - Pastorek, J. (2026). Title to be announced, [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), 18.11.2026 #graphs
