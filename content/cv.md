@@ -8,6 +8,8 @@ tags:
 
 <div class="cv">
 
+<div class="cv-actions no-print"><button type="button" class="pdf-button" onclick="var d=[].slice.call(document.querySelectorAll('details:not(.abstract-inline)')),w=d.map(function(x){return x.open});d.forEach(function(x){x.open=true});window.print();setTimeout(function(){d.forEach(function(x,i){x.open=w[i]})},0)">Download PDF</button></div>
+
 ## Personal Information
 
 <div class="cv-list">

@@ -171,9 +171,9 @@ Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscien
 - Pastorek, J. (2025). "Graph isomorphism, asymmetric graphs and partial symmetries", [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University in Bratislava #graphs
 - Pastorek, J., Jajcayová, T. (2024). "Asymmetric Graphs and Partial Automorphisms." In Abstracts, CSGT 2024, Ostrava: VŠB–TU Ostrava, pp. 28-29. #graphs
 - Jajcayová, T., Pastorek, J. (2024). "Partial automorphism monoid of graphs and k-Weisfeiler-Lehman." In [CSD 10](https://csd10.be/), Leuven: KU Leuven, p. 26. #graphs
-- Pastorek, J., Jajcayová, T. (2024). "Partial automorphism monoid of graphs and Weisfeiler-Leman." In Študentská vedecká konferencia FMFI UK, Bratislava, p. 366. (https://zona.fmph.uniba.sk/fileadmin/fmfi/studentska_vedecka_konferencia/zbierka2024/svk2024_zbornik.pdf#page=376) #graphs
+- Pastorek, J., Jajcayová, T. (2024). "Partial automorphism monoid of graphs and Weisfeiler-Leman." In [Študentská vedecká konferencia FMFI UK](https://zona.fmph.uniba.sk/fileadmin/fmfi/studentska_vedecka_konferencia/zbierka2024/svk2024_zbornik.pdf#page=376), Bratislava, p. 366. #graphs
 - Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT CADM 2024 #graphs
-- Pastorek, J. (2024). "Search for correspondences between operations on partial automorphisms and k-dimensional Weisfeiler-Leman algorithm." During workshop named: Constructions of Expanders and Extremal Graphs. (http://euler.doa.fmph.uniba.sk/Austria-Slovakia.html) #graphs
+- Pastorek, J. (2024). "Search for correspondences between operations on partial automorphisms and k-dimensional Weisfeiler-Leman algorithm." At the [Constructions of Expanders and Extremal Graphs](http://euler.doa.fmph.uniba.sk/Austria-Slovakia.html) workshop. #graphs
 - Pastorek, J. (2023). "Global Versus Local Symmetries." MEi: CogSci Conference. [[symmetries_extended_abstract_2023.pdf|PDF]] #cogsci #graphs
 	<details class="abstract-inline">
 	<summary>Abstract</summary>

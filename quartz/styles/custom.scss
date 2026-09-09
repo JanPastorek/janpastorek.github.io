@@ -349,3 +349,127 @@ article a.tag-link {
     border-bottom: none;
   }
 }
+
+// "Download PDF" control on the CV page. Deliberately an inline onclick
+// rather than a bound listener: Quartz's SPA router swaps the article
+// without re-running page scripts, so a listener would silently stop
+// working after an in-site navigation.
+.cv-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 0.5rem 0;
+}
+
+.pdf-button {
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--darkgray);
+  background: transparent;
+  border: 1px solid var(--lightgray);
+  border-radius: 999px;
+  padding: 0.25rem 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    color: var(--light);
+    background: var(--secondary);
+    border-color: var(--secondary);
+  }
+}
+
+// Print / "Save as PDF": strip the site down to the document itself.
+@media print {
+  @page {
+    margin: 16mm 15mm;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  // Site chrome: sidebars, search, dark-mode and reader-mode toggles,
+  // explorer, breadcrumbs, graph view, backlinks, the Quartz credit line,
+  // and the PDF button itself.
+  .sidebar,
+  .page-header .breadcrumb-container,
+  .page-footer,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  // Content takes the full page width once the sidebars are gone.
+  #quartz-body {
+    display: block !important;
+  }
+
+  .center {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  // Affordances that mean nothing on paper.
+  .transclude-src,
+  a.tag-link,
+  a[role="anchor"],
+  .external-icon,
+  .topic-filter,
+  .evidence-link,
+  .evidence-note,
+  details.abstract-inline,
+  a[href$=".pdf"],
+  a[href$=".png"] {
+    display: none !important;
+  }
+
+  // Links keep their text but lose every visual cue that they are links,
+  // and never expand to show the URL.
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    background: none !important;
+  }
+
+  a::after {
+    content: "" !important;
+  }
+
+  // Collapsed sections hold real CV content (earlier semesters, earlier
+  // roles), so open them on paper. Abstracts are hidden above instead.
+  details:not(.abstract-inline) {
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  details:not(.abstract-inline) > *:not(summary) {
+    display: block !important;
+  }
+
+  details:not(.abstract-inline) > summary {
+    list-style: none !important;
+    font-weight: 600;
+  }
+
+  details:not(.abstract-inline) > summary::marker,
+  details:not(.abstract-inline) > summary::-webkit-details-marker {
+    display: none !important;
+    content: "" !important;
+  }
+
+  // Keep entries and their headings together across page breaks.
+  .cv-list li,
+  .cv-entry {
+    break-inside: avoid;
+  }
+
+  .cv h2 {
+    break-after: avoid;
+  }
+}
