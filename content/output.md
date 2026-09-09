@@ -103,6 +103,9 @@ Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror 
 
 Lane, J., Puga-Gonzalez, I., Normann, R., Shults, L. R., Pastorek, J. (2024). "Emotional Contagion in Scandinavia during the COVID-19 Public Health Crisis." Preprint: [PsyArXiv, 10.31234/osf.io/9e5f7](https://osf.io/preprints/psyarxiv/9e5f7) #complex #cogsci
 
+### under review
+Petruskova, J., Pastorek, J., Mucskova, L., Harazim, H., Stourac, P. "Facial Recognition–Based Artificial Intelligence Models for Difficult Airway Prediction: A Systematic Review."
+
 ### in preparation
 Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective colorings of toroidal graphs." #graphs
 
