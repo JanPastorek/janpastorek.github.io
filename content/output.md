@@ -113,7 +113,7 @@ Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscien
 ### papers in conference proceedings
 Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. Preprint: [arXiv:2609.03478](https://arxiv.org/abs/2609.03478) #aimath #graphs
 
-Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. #graphs
+Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. [PDF](https://ceur-ws.org/Vol-3792/paper20.pdf) #graphs
 
 ### invited talks
 - Pastorek, J. (2026). Title to be announced, [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), 18.11.2026 #graphs
