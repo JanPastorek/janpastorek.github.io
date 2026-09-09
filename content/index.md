@@ -32,13 +32,17 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 [[cv|Curriculum Vitae]] · [[output|Publications & Talks]] · [[teaching|Teaching & Supervision]] · [[projects-grants-awards|Projects, Grants & Awards]] · [[outreach|Outreach]]
 
 ---
-# my research without formalisms
+# research
 
-Most of my work comes back to one question: how much of a structure's global behaviour is already settled by its local parts? In graph theory this becomes very concrete. A graph can be completely rigid — *asymmetric*, with no nontrivial automorphism — and yet still be full of *partial* symmetries (partial automorphisms): small pieces that could be swapped if you only ever looked at them locally. I study those partial automorphisms, and the inverse monoids they form, and how far you have to look before a local symmetry either extends to a global one or breaks. That "how far" is what I call **asymmetric depth**, and it runs straight into the Weisfeiler-Leman algorithm and the graph isomorphism problem and graph reconstruction, with the same tension between local information and global structure decides what is computationally efficient at all.
+My work comes back to one question: **how much of a structure's global behaviour is already settled by its local parts**? In graph theory this becomes very concrete. A graph can be completely rigid — *asymmetric*, with no nontrivial automorphism — and yet still be full of *partial* symmetries (partial automorphisms): small pieces that could be swapped if you only ever looked at them locally. I study those partial automorphisms, and the inverse monoids they form, and how far you have to look before a local symmetry either extends to a global one or breaks. That "how far" is what I call asymmetric depth (if the structure under consideration is asymmetric). 
 
-Sparsity is where this stops being abstract. Real networks — brains among them — are sparse, because connections cost something, and sparse classes are exactly where the bounds for asymmetric depth get sharper. What keeps me interested is that this question is not just about graphs. The threshold where local rules fail to dictate global states is the core mystery of **emergence** and also graph reconstruction and graph isomorphism problem.
+The same tension drives some of the oldest problems in the field. The graph reconstruction conjectures ask it directly — whether a graph is determined by / uniquely reconstructible from the collection of its subgraphs.  The graph isomorphism problem — given two finite graphs, can a computer quickly decide if they are isomorphic? Usually, to find an isomorphism, you try to pass local information across the graph to build a global picture (like the Weisfeiler-Lehman algorithm, which iteratively colors nodes based on their neighbors' colors). Ultimately, graph isomorphism is hard because local uniformity might hide global uniqueness. You cannot easily "stitch together" local invariants into a definitive global mapping without hitting a wall of symmetry that requires exponential guessing to resolve.
 
-More recently, with the advent of LLMs and groundbreaking results, I have been also interested in **automated reasoning** in AI. 
+Sparsity is where this stops being abstract. Real networks — brains among them — are sparse, because connections cost something, and sparse classes are exactly where the bounds for asymmetric depth get sharper.   
+
+What keeps me interested is that this tension between local and global, partial and total is not just about graphs. The threshold where local rules fail to dictate global states is the core mystery of **emergence**.
+
+More recently, with the advent of LLMs and groundbreaking results, I have been interested in AI and **automated reasoning**, especially in math. Can we teach AI to prove conjectures? Can it itself generate interesting conjecture ... to carve at the joints? What are interesting conjectures?  
 
 ---
 # research interests
@@ -48,6 +52,6 @@ More recently, with the advent of LLMs and groundbreaking results, I have been a
 
 ### further interests
 - history and philosophy of science and mathematics
-- cognitive science, particularly semantic structure in embedding spaces and the history of the field <a class="evidence-link" href="./output#topic-cogsci">see the work</a>
+- cognitive science, particularly semantic structure in embedding spaces of machine learning models and the history of the field <a class="evidence-link" href="./output#topic-cogsci">see the work</a>
 - quantum nonlocal games, particularly application AI (reinforcement learning) for violating Bell inequalities <span class="evidence-note">see my <a href="./cv#bsc-thesis">bachelor thesis</a> and my <a href="./cv#rcqi">research internship</a></span>
 
