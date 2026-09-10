@@ -136,6 +136,7 @@ tags:
 
 - **Programming** Julia, Python, Java, C++
 - **Modeling** Agent-based modeling (NetLogo, Simudyne)
+- **Machine learning** Reinforcement learning; NLP and word embeddings; network analysis
 - **Computing** Parallel algorithms on HPC clusters (Clara, Perun); Lean formalization
 
 </div>
