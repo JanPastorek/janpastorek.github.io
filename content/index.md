@@ -11,9 +11,11 @@ tags:
   - slovakia
 ---
 
-Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna and I'm interested in the structure of reality and its deepest principles.
+<div class="intro">
 
-![[jan-pastorek-headshot.png|300]]
+<div class="intro-text">
+
+Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna and I'm interested in the structure of reality and its deepest principles.
 
 <div class="social-links">
   <a href="mailto:%6A%61%6E.%70%61%73%74%6F%72%65%6B@%66%6D%70%68.%75%6E%69%62%61.%73%6B" title="Email" aria-label="Email"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
@@ -29,7 +31,18 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 **Comenius University in Bratislava**
 **Slovakia**
 
-[[cv|Curriculum Vitae]] · [[output|Publications & Talks]] · [[teaching|Teaching & Supervision]] · [[projects-grants-awards|Projects, Grants & Awards]] · [[outreach|Outreach]]
+</div>
+
+<div class="intro-photo">
+
+![[jan-pastorek-headshot.png|300]]
+
+</div>
+
+</div>
+
+
+[[cv|Curriculum Vitae]] · [[output|Publications & Talks]] · [[teaching|Teaching & Supervision]] · [[projects-grants-awards|Projects, Grants & Awards]] · [[outreach|Outreach]] · [[posts|Posts]]
 
 ---
 # research

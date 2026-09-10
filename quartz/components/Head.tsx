@@ -90,6 +90,13 @@ export default (() => {
         )}
 
         <link rel="icon" href={iconPath} />
+        {/* Feed autodiscovery, so browsers and readers find the RSS feed. */}
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={cfg.pageTitle}
+          href={joinSegments(baseDir, "index.xml")}
+        />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
