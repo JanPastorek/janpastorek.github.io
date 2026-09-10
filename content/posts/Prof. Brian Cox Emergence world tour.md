@@ -1,14 +1,15 @@
 ---
 title: Prof. Brian Cox Emergence world tour
-date: 9.9.2026
-description:
+date: 2026-09-09
+description: Notes from Brian Cox's Emergence tour in Bratislava — symmetry, complex systems and the theories we use to explain them.
 tags:
   - emergence
   - art
   - science
   - physics
 ---
-I recently had a chance to attend Prof. Brian Cox new world tour *Emergence* in Bratislava with my brother. It was an amazing experience to *feel* the emergence of complex systems and the role of symmetries in the structure and evolution of our universe. We have heard about the beginning of scientific thinking and some of our best theories such as quantum field theory and inflation trying to explain some of the biggest mysteries of existence. 
+I recently had a chance to attend Prof. Brian Cox new world tour *Emergence* in Bratislava with my brother. It was an amazing experience to *feel* the emergence of complex systems and the role of symmetries in the structure and evolution of our universe. We have heard about the beginning of scientific thinking and some of our best theories such as quantum field theory and inflation trying to explain some of the biggest mysteries of existence.
+
 ![[20260909_214345.jpg|300]]![[20260909_194322.jpg|400]] ![[20260909_212952.jpg|400]]
 
 

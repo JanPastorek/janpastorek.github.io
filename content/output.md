@@ -40,7 +40,7 @@ tags:
   }
   function setup() {
     var bar = document.querySelector(".topic-filter");
-    if (!bar) { return; }
+    if (!bar) { window.__topicGo = null; return; }
     var root = bar.closest("article") || document;
     var groups = [], current = null;
     Array.prototype.forEach.call(root.querySelectorAll("h3, p, li"), function (el) {

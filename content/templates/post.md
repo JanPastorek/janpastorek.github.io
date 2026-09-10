@@ -1,6 +1,6 @@
 ---
 title:
-date:
+date: 2026-01-31 # YYYY-MM-DD, any other format is ignored
 description:
 tags:
   -

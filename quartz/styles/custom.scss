@@ -347,10 +347,16 @@ body[data-slug="projects-grants-awards"] .page-header .article-title {
   }
 }
 
-// Inline theme tags on Output entries. They double as filter controls: the
-// page script intercepts clicks and filters in place instead of navigating
-// to Quartz's tag page (which lists pages, not entries).
-article a.tag-link {
+// Theme tags, styled the same wherever they appear: inline in Output
+// entries, under a post's title (rendered by the tag-list plugin from the
+// post's frontmatter), and in the folder / tag listings. On the Output page
+// they double as filter controls — its script intercepts clicks and filters
+// in place instead of navigating to Quartz's tag page (which lists pages,
+// not entries); everywhere else they navigate to /tags/<tag>, which is what
+// you want when the thing being tagged is a whole page.
+article a.tag-link,
+.page-header .tags a.tag-link,
+.page-listing .tags a.tag-link {
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -586,5 +592,47 @@ body[data-slug="posts/index"] .content-meta {
 
   li {
     margin: 0;
+  }
+}
+
+// The tag-list plugin renders frontmatter tags under the page title. Every
+// page here carries frontmatter tags, but they are only meaningful as
+// navigation on an individual post — a CV stamped with "#academic-profile"
+// is noise — so they are shown there and hidden everywhere else, including
+// on the /posts listing itself.
+body:not([data-slug^="posts/"]) .page-header .tags,
+body[data-slug="posts/index"] .page-header .tags {
+  display: none;
+}
+
+.page-header .tags {
+  margin: 0.5rem 0 0 0;
+}
+
+// A paragraph holding two or more images side by side in the source (a photo
+// row in a post) should render as a row, not as a stack — Quartz makes every
+// image a block by default. Wraps and scales down on narrow screens.
+article p:has(img + img) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.2rem 0;
+
+  br {
+    display: none;
+  }
+
+  // Share the row evenly, keeping each photo's own aspect ratio — no
+  // cropping, so nobody loses their head to an object-fit. The per-image
+  // width hint from the wikilink embed (![[photo.jpg|400]]) is overridden
+  // here; in a row it is the row that decides the widths.
+  img {
+    margin: 0;
+    flex: 1 1 0;
+    min-width: 150px;
+    width: auto;
+    max-width: none;
+    height: auto;
+    border-radius: 6px;
   }
 }
