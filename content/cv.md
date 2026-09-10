@@ -135,9 +135,11 @@ tags:
 <div class="cv-list">
 
 - **Programming** Julia, Python, Java, C++
-- **Modeling** Agent-based modeling (NetLogo, Simudyne)
-- **Machine learning** Reinforcement learning; NLP and word embeddings; network analysis
-- **Computing** Parallel algorithms on HPC clusters (Clara, Perun); Lean formalization
+- **Graph software** nauty / geng, SageMath, GAP; Graphs.jl <a class="evidence-link" href="./output#software">see the work</a>
+- **Machine learning** Reinforcement learning; NLP and word embeddings; network analysis <a class="evidence-link" href="./output#topic-ai">see the work</a>
+- **LLMs** Automated reasoning pipelines: conjecturing, refutation and formalization <a class="evidence-link" href="./output#topic-aimath">see the work</a>
+- **Modeling** Agent-based modeling (NetLogo, Simudyne) <a class="evidence-link" href="#previous-experience">see the work</a>
+- **Computing** Parallel algorithms on HPC clusters (Clara, Perun); Lean formalization <a class="evidence-link" href="#computing-allocations">see the work</a>
 
 </div>
 
