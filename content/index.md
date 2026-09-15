@@ -42,7 +42,7 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 </div>
 
 
-[[cv|Curriculum Vitae]] · [[output|Publications & Talks]] · [[teaching|Teaching & Supervision]] · [[projects-grants-awards|Projects, Grants & Awards]] · [[outreach|Outreach]] · [[posts|Posts]]
+[[Projects/Website/content/cv|Curriculum Vitae]] · [[Projects/Website/content/output|Publications & Talks]] · [[Projects/Website/content/teaching|Teaching & Supervision]] · [[projects-grants-awards|Projects, Grants & Awards]] · [[outreach|Outreach]] · [[posts|Posts]]
 
 ---
 # research

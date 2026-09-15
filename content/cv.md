@@ -93,7 +93,7 @@ tags:
 
 ## Teaching & Supervision
 
-![[teaching]]
+![[Projects/Website/content/teaching]]
 
 ## Refereeing
 
@@ -108,23 +108,23 @@ tags:
 
 **Peer-reviewed**
 
-![[output#peer-reviewed publications]]
+![[Projects/Website/content/output#peer-reviewed publications]]
 
 **Preprints and manuscripts under review**
 
-![[output#preprints and manuscripts under review]]
+![[Projects/Website/content/output#preprints and manuscripts under review]]
 
 **In preparation**
 
-![[output#in preparation]]
+![[Projects/Website/content/output#in preparation]]
 
 ## Talks
 
 **Invited**
-![[output#invited talks]]
+![[Projects/Website/content/output#invited talks]]
 
 **Contributed**
-![[output#contributed talks]]
+![[Projects/Website/content/output#contributed talks]]
 
 ## Projects
 
