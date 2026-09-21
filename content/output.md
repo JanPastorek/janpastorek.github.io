@@ -147,7 +147,11 @@ Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscien
 
 ### contributed talks
 - Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" at [ITAT 2026](https://itat.ics.upjs.sk/index.php?id=program#cadm2)  #ai #aimath #graphs
-- Pastorek, J. (2026). "AutoGraphForge: Conjecturing, Refutation and Lean Formalization in One Loop" at [CICM 2026, AI4Math](https://cicm-conference.org/2026/cicm.php?event=ai4math&menu=program) #ai #aimath #graphs
+- Pastorek, J. (2026). "AutoGraphForge: Conjecturing, Refutation and Lean Formalization in One Loop" at [CICM 2026, AI4Math](https://cicm-conference.org/2026/cicm.php?event=ai4math&menu=program) #ai #aimath #graphs 
+	<details class="abstract-inline">
+	<summary>Peer reviewed abstract</summary>
+	 [Abstract AI4MATH @ CICM 2026](https://cicm-conference.org/2026/ai4math/05-pastorek.pdf)
+	</details>
 - Pastorek, J. (2026). "Extremal asymmetric depth of planar and higher-genus graphs" at [CSGT 2026](https://csgt2026.tuke.sk/) #graphs
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
