@@ -42,7 +42,7 @@ Welcome to my academic haven! I am Jan and I live in Slovakia with my wife Anna 
 </div>
 
 
-[[Projects/Website/content/cv|Curriculum Vitae]] · [[Projects/Website/content/output|Publications & Talks]] · [[Projects/Website/content/teaching|Teaching & Supervision]] · [[projects-grants-awards|Projects, Grants & Awards]] · [[outreach|Outreach]] · [[posts|Posts]]
+[[cv|Curriculum Vitae]] · [[output|Publications & Talks]] · [[teaching|Teaching & Supervision]] · [[projects-grants-awards|Projects, Grants & Awards]] · [[outreach|Outreach]] · [[posts|Posts]]
 
 ---
 # research
@@ -53,7 +53,7 @@ The same tension drives some of the oldest problems in the field. The graph reco
 
 Sparsity is where this stops being abstract. Real networks — brains among them — are sparse, because connections cost something, and sparse classes are exactly where the bounds for asymmetric depth get sharper.   
 
-What keeps me interested is that this tension between local and global, partial and total is not just about graphs. The threshold where local rules fail to dictate global states is the core mystery of **emergence**.
+What keeps me interested is that this tension between local and global, partial and total is not just about graphs. The threshold where local rules fail to dictate global states is the core mystery of **emergence**. See my little project I made with Claude https://janpastorek.com/scientific_theories_reality_ladder
 
 More recently, with the advent of LLMs and groundbreaking results, I have been interested in AI and **automated reasoning**, especially in math. Can we teach AI to prove conjectures? Can it itself generate interesting conjecture ... to carve at the joints? What are interesting conjectures?  
 
