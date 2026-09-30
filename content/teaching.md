@@ -17,7 +17,7 @@ Oxbridge style tutorials at [Študentská Agora](https://studentskaagora.sk/)
 
 ### summary
 
-Leading seminar, occasionally lectures at Comenius University
+Leading seminars, occasionally lectures at Comenius University
 - Introduction to Cognitive Science (WS 2023)
 - Logic for Computer Science (SS 2024)
 - Linear Algebra (WS 2025, WS 2026)

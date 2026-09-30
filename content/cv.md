@@ -1,5 +1,5 @@
 ---
-title: Curriculum Vitae
+title: Ján Pastorek
 description: Curriculum vitae of Jan Pastorek — education, positions, grants, teaching, and publications.
 tags:
   - academic-profile
@@ -14,7 +14,6 @@ tags:
 
 <div class="cv-list">
 
-- **Name** Ján Pastorek
 - **Email** [jan.pastorek@fmph.uniba.sk](mailto:jan.pastorek@fmph.uniba.sk)
 - **ORCID** [0000-0001-8237-1275](https://orcid.org/0000-0001-8237-1275)
 - **Nationality** Slovak
