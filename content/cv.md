@@ -77,7 +77,7 @@ tags:
 
 - **2024** Erasmus+ research visit, TU Darmstadt — Prof. P. Schweitzer, PhD 's group (*Weisfeiler-Leman & partial automorphisms*)
 - **2024** Erasmus+ research visit, DTU Copenhagen — Mgr. Peter Zeman, PhD (*Weisfeiler-Leman & partial automorphisms*)
-- **2025** research visit, UPJŠ Košice — Assoc. Prof., Dr. Roman Soták, PhD. (*Weisfeiler-Leman & partial automorphisms*)
+- **2025** research visit, UPJŠ Košice — Assoc. Prof., Dr. Roman Soták, PhD. (partial automorphisms & sparse graphs & colorings of toroidal graphs)
 
 </div>
 
