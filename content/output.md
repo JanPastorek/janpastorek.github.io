@@ -120,7 +120,7 @@ Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective col
 
 Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdisciplinary Analysis of Ernst Mach's Contributions." #cogsci #complex #ai
 
-### invited talks
+### talks on seminars by invitation
 - Pastorek, J. (2026). "Partial automorphisms and symmetry breaking", [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), planned for 18.11.2026 #graphs
 - Pastorek, J. (2025). "Forth from Extensions of Partial Automorphisms to the Weisfeiler–Leman Algorithm & Counting Logic & Bijective Pebble Games—and Back Again", [Algebraic Graph Theory Seminar](http://euler.doa.fmph.uniba.sk/Austria-Slovakia.html), 12.12.2025 #graphs
 	<details class="abstract-inline">
