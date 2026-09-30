@@ -161,6 +161,20 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      # The explorer is a file tree, and index.md is the tree's root rather
+      # than a file in it, so the home page gets no row of its own. These two
+      # hooks add one. Both are passed to the browser as source strings and
+      # compiled there, so they must stay plain ES5-compatible expressions.
+      #
+      # sortFn: the stock ordering (folders first, then alphabetical) with the
+      # home entry pinned to the top.
+      sortFn: '(a, b) => { var ah = !!(a.data && a.data.slug === ""); var bh = !!(b.data && b.data.slug === ""); if (ah !== bh) { return ah ? -1 : 1 } if (a.isFolder === b.isFolder) { return a.displayName.localeCompare(b.displayName, undefined, { numeric: true, sensitivity: "base" }) } return a.isFolder ? -1 : 1 }'
+      # mapFn: runs over every node; on the root — the only node whose data
+      # came from index.md — it prepends a synthetic file entry pointing at
+      # "/". The entry needs its own no-op map/filter/sort because the trie
+      # calls those on each child and a plain object has none.
+      mapFn: '(node) => { if (!node.data || node.data.slug !== "index" || node.__home) { return } node.__home = 1; var noop = function () {}; node.children.unshift({ slugSegment: "", displayName: "Haven", isFolder: false, data: { slug: "" }, children: [], map: noop, filter: noop, sort: noop }) }'
     layout:
       position: left
       priority: 50
