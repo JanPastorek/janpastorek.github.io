@@ -43,14 +43,20 @@ tags:
 
 </div>
 
-## Current Position
 
-<div class="cv-list">
+## Publications
 
-- **2023–present** **Doctoral Student**
-	Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava
+**In preparation**
 
-</div>
+![[output#in preparation]]
+
+**Preprints and manuscripts under review**
+
+![[output#preprints and manuscripts under review]]
+
+**Peer-reviewed**
+
+![[output#peer-reviewed publications]]
 
 ## Previous Experience
 
@@ -91,32 +97,33 @@ tags:
 
 ![[projects-grants-awards#Awards]]
 
-## Teaching & Supervision
+## Teaching
 
-![[teaching]]
+**Extracurricular**
+![[teaching#^5037ac]]
+
+**University**
+![[teaching#^ffb273]]
+
+## Supervision
+
+**Bachelor students**
+![[teaching#^c011a3]]
+
+**Master students**
+![[teaching#^6d8c06]]
+
+## Thesis examinator
+![[teaching#^beabe9]]
 
 ## Refereeing
 
 <div class="cv-list">
 
 - **Journal** Journal of Graph Theory
-- **Proceedings** ITAT CADM
+- **Proceedings** ITAT Computational Aspects of Large-Scale Problems in Discrete Mathematics (CADM) Workshop
 
 </div>
-
-## Publications
-
-**Peer-reviewed**
-
-![[output#peer-reviewed publications]]
-
-**Preprints and manuscripts under review**
-
-![[output#preprints and manuscripts under review]]
-
-**In preparation**
-
-![[output#in preparation]]
 
 ## Talks
 
@@ -135,9 +142,9 @@ tags:
 <div class="cv-list">
 
 - **Programming** Julia, Python, Java, C++
-- **Graph software** nauty / geng, SageMath, GAP; Graphs.jl <a class="evidence-link" href="./output#software">see the work</a>
+- **Graph software** nauty, PyTorch, Tensorflow, SageMath, GAP; Graphs.jl <a class="evidence-link" href="./output#software">see the work</a>
 - **Machine learning** Reinforcement learning; NLP and word embeddings; network analysis <a class="evidence-link" href="./output#topic-ai">see the work</a>
-- **LLMs** Automated reasoning pipelines: conjecturing, refutation and formalization <a class="evidence-link" href="./output#topic-aimath">see the work</a>
+- **LLMs** Agentic AI in Automated reasoning pipelines, n8n, mcp <a class="evidence-link" href="./output#topic-aimath">see the work</a>
 - **Modeling** Agent-based modeling (NetLogo, Simudyne) <a class="evidence-link" href="#previous-experience">see the work</a>
 - **Computing** Parallel algorithms on HPC clusters (Clara, Perun); Lean formalization <a class="evidence-link" href="#computing-allocations">see the work</a>
 

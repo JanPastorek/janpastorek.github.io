@@ -8,12 +8,27 @@ tags:
 
 ## Extracurricular
 
+^5037ac
+
 #### Online course
-When I finished my masters, I released a course [Introduction to Agent-Based Modeling and Simulation](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
+When I finished my masters, I released a Udemy course [Introduction to Agent-Based Modeling and Simulation](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
 #### Occasional teaching
 Oxbridge style tutorials at [Študentská Agora](https://studentskaagora.sk/)
 
 ## University
+
+### summary
+
+^ffb273
+
+Leading seminar, occasionally lectures at Comenius University
+- Introduction to Cognitive Science (WS 2023)
+- Logic for Computer Science (SS 2024)
+- Linear Algebra (WS 2025, WS 2026)
+- Discrete Mathematics 1 (WS 2024)
+- Discrete Mathematics 2 (SS 2024, SS 2025, SS 2026)
+- Graphs, Graph Algorithms & Optimization (WS 2023, WS 2024, WS 2025, WS 2026)
+- Algorithmic Solution of Hard Problems (SS 2025, SS 2026)
 
 ### Tutorials / exercises 
 From time to time I also gave a lecture in some of these courses. 
@@ -54,18 +69,27 @@ From time to time I also gave a lecture in some of these courses.
 #### Supervisor
 
 ##### Bachelor students
+
+^c011a3
+
 - Vladyslav Peresada, *Asymmetric Graphs*, 2025
 - Samuel Varchol, *Graph neural networks and extensibility of partial graph automorphisms*, 2026
 - Vladimír Jančár, *Machine learning for generation of graphs of given degree and girth*, 2026, **won dean's award for the best bachelor thesis in informatics** 
 
 ##### Master students
+
+^6d8c06
+
 - Marek Danihel, *Graphs identified by Weisfeiler-Leman* algorithm, 2027
 
 #### Opponent
+
+^beabe9
+
 - Matúš Nemčík, *Path covering number of cubic graphs*, 2026
 - Erik Kolesár, *Adaptive Temporal Summarization Benchmark for Robust Evaluation of Pre-trained Large Language Models*, 2026
 - Timotea Chalupová, *Token graphs*, 2024
 
-### Led projects
+### Led student projects
 - [Kolmogorov](https://github.com/TIS2024-FMFI/kolmogorov) — Metamath graph exploration tool, built by a student team (4 students) 
 - [DEKK](https://app.dekk.sk/) — Slovakia in Data - analytical tool for social science data - the purpose of the project was to map and understand social cohesion, core values, institutional trust, and polarization across Slovakia.

@@ -113,14 +113,15 @@ Lane, J., Puga-Gonzalez, I., Normann, R., Shults, L. R., Pastorek, J. (2024). "E
 Petruskova, J., Pastorek, J., Mucskova, L., Harazim, H., Stourac, P. "Facial Recognition–Based Artificial Intelligence Models for Difficult Airway Prediction: A Systematic Review." #ai 
 
 ### in preparation
+
+Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscience from a dynamical complex systems perspective." #complex
+
 Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective colorings of toroidal graphs." #graphs
 
 Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdisciplinary Analysis of Ernst Mach's Contributions." #cogsci #complex #ai
 
-Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscience from a dynamical complex systems perspective." #complex
-
 ### invited talks
-- Pastorek, J. (2026). Title to be announced, [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), 18.11.2026 #graphs
+- Pastorek, J. (2026). "Partial automorphisms and symmetry breaking", [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), planned for 18.11.2026 #graphs
 - Pastorek, J. (2025). "Forth from Extensions of Partial Automorphisms to the Weisfeiler–Leman Algorithm & Counting Logic & Bijective Pebble Games—and Back Again", [Algebraic Graph Theory Seminar](http://euler.doa.fmph.uniba.sk/Austria-Slovakia.html), 12.12.2025 #graphs
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
@@ -175,7 +176,7 @@ Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscien
 	</details>
 - Pastorek, J. (2025). "Graph isomorphism, asymmetric graphs and partial symmetries", [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University in Bratislava #graphs
 - Pastorek, J., Jajcayová, T. (2024). "Asymmetric Graphs and Partial Automorphisms." In Abstracts, CSGT 2024, Ostrava: VŠB–TU Ostrava, pp. 28-29. #graphs
-- Jajcayová, T., Pastorek, J. (2024). "Partial automorphism monoid of graphs and k-Weisfeiler-Lehman." In [CSD 10](https://csd10.be/), Leuven: KU Leuven, p. 26. #graphs
+- Jajcayová, T., Pastorek, J. (2024). "Partial automorphism monoid of graphs and k-Weisfeiler-Leman." In [CSD 10](https://csd10.be/), Leuven: KU Leuven, p. 26. #graphs
 - Pastorek, J., Jajcayová, T. (2024). "Partial automorphism monoid of graphs and Weisfeiler-Leman." In [Študentská vedecká konferencia FMFI UK](https://zona.fmph.uniba.sk/fileadmin/fmfi/studentska_vedecka_konferencia/zbierka2024/svk2024_zbornik.pdf#page=376), Bratislava, p. 366. #graphs
 - Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT CADM 2024 #graphs
 - Pastorek, J. (2024). "Search for correspondences between operations on partial automorphisms and k-dimensional Weisfeiler-Leman algorithm." At the [Constructions of Expanders and Extremal Graphs](http://euler.doa.fmph.uniba.sk/Austria-Slovakia.html) workshop. #graphs
