@@ -8,8 +8,6 @@ tags:
 
 ## Extracurricular
 
-^5037ac
-
 #### Online course
 When I finished my masters, I released a Udemy course [Introduction to Agent-Based Modeling and Simulation](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
 #### Occasional teaching
@@ -18,8 +16,6 @@ Oxbridge style tutorials at [Študentská Agora](https://studentskaagora.sk/)
 ## University
 
 ### summary
-
-^ffb273
 
 Leading seminar, occasionally lectures at Comenius University
 - Introduction to Cognitive Science (WS 2023)
@@ -70,21 +66,15 @@ From time to time I also gave a lecture in some of these courses.
 
 ##### Bachelor students
 
-^c011a3
-
 - Vladyslav Peresada, *Asymmetric Graphs*, 2025
 - Samuel Varchol, *Graph neural networks and extensibility of partial graph automorphisms*, 2026
 - Vladimír Jančár, *Machine learning for generation of graphs of given degree and girth*, 2026, **won dean's award for the best bachelor thesis in informatics** 
 
 ##### Master students
 
-^6d8c06
-
 - Marek Danihel, *Graphs identified by Weisfeiler-Leman* algorithm, 2027
 
 #### Opponent
-
-^beabe9
 
 - Matúš Nemčík, *Path covering number of cubic graphs*, 2026
 - Erik Kolesár, *Adaptive Temporal Summarization Benchmark for Robust Evaluation of Pre-trained Large Language Models*, 2026
