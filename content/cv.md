@@ -100,21 +100,21 @@ tags:
 ## Teaching
 
 **Extracurricular**
-![[teaching#^5037ac]]
+![[teaching#Extracurricular]]
 
 **University**
-![[teaching#^ffb273]]
+![[teaching#summary]]
 
 ## Supervision
 
 **Bachelor students**
-![[teaching#^c011a3]]
+![[teaching#Bachelor students]]
 
 **Master students**
-![[teaching#^6d8c06]]
+![[teaching#Master students]]
 
-## Thesis examinator
-![[teaching#^beabe9]]
+## Thesis examiner
+![[teaching#Opponent]]
 
 ## Refereeing
 
