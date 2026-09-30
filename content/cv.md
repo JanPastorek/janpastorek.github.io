@@ -25,7 +25,7 @@ tags:
 
 <div class="cv-list">
 
-- **2023–  expected before August 2027** **PhD, Computer Science**
+- **2023–  June 2027 (Expected)** **PhD, Computer Science**
 	Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava
 	Thesis: *On the interplay between global and local symmetries*
 - **2021–2023** **Master's degree, Cognitive Science** (with honors)
@@ -75,8 +75,9 @@ tags:
 
 <div class="cv-list">
 
-- **2024** Erasmus+ research visit, TU Darmstadt — Prof. P. Schweitzer's group (*Weisfeiler-Leman & partial automorphisms*)
-- **2024** Erasmus+ research visit, DTU Copenhagen — Peter Zeman, PhD (*Weisfeiler-Leman & partial automorphisms*)
+- **2024** Erasmus+ research visit, TU Darmstadt — Prof. P. Schweitzer, PhD 's group (*Weisfeiler-Leman & partial automorphisms*)
+- **2024** Erasmus+ research visit, DTU Copenhagen — Mgr. Peter Zeman, PhD (*Weisfeiler-Leman & partial automorphisms*)
+- **2025** research visit, UPJŠ Košice — Assoc. Prof., Dr. Roman Soták, PhD. (*Weisfeiler-Leman & partial automorphisms*)
 
 </div>
 
