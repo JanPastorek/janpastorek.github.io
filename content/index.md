@@ -53,7 +53,7 @@ The same tension drives some of the oldest problems in the field. The graph reco
 
 Sparsity is where this stops being abstract. Real networks — brains among them — are sparse, because connections cost something, and sparse classes are exactly where the bounds for asymmetric depth get sharper.   
 
-What keeps me interested is that this tension between local and global, partial and total is not just about graphs. The threshold where local rules fail to dictate global states is the core mystery of **emergence**. See my little project I made with Claude https://janpastorek.com/scientific_theories_reality_ladder
+What keeps me interested is that this tension between local and global, partial and total is not just about graphs. The threshold where local rules fail to dictate global states is the core mystery of **emergence**. See my little project I made with Claude [janpastorek.com/scientific_theories_reality_ladder](https://janpastorek.com/scientific_theories_reality_ladder/#complexity)
 
 More recently, with the advent of LLMs and groundbreaking results, I have been interested in AI and **automated reasoning**, especially in math. Can we teach AI to prove conjectures? Can it itself generate interesting conjecture ... to carve at the joints? What are interesting conjectures?  
 
