@@ -57,6 +57,26 @@ tags:
 
 ![[output#peer-reviewed publications]]
 
+## Talks
+
+**on seminars by invitation**
+![[output#talks on seminars by invitation]]
+
+**Contributed**
+![[output#contributed talks]]
+
+## Refereeing
+
+<div class="cv-list">
+
+- **Journal** Journal of Graph Theory
+- **Proceedings** ITAT Computational Aspects of Large-Scale Problems in Discrete Mathematics (CADM) Workshop
+
+</div>
+
+## Outreach
+![[outreach#Podcast]]
+
 ## Previous Experience
 
 <div class="cv-list">
@@ -66,7 +86,7 @@ tags:
 - **2020–2023** **Data Analyst & Co-founder** (part-time), DEKK Institute
 	data analysis of the disintegration of social cohesion in Slovakia, using World Values Survey data
 - **2020–2021** **High School Computer Science Teacher** (part-time), United School of St. Ursula
-- <span id="rcqi"></span>**2020** **Researcher intern**, RCQI – Research Center for Quantum Information, Slovak Academy of Sciences
+- <span id="rcqi"></span>**2020** **Research intern**, RCQI – Research Center for Quantum Information, Slovak Academy of Sciences
 	Reinforcement learning applied to violating CHSH/Bell inequalities in non-local games
 
 </div>
@@ -75,7 +95,7 @@ tags:
 
 <div class="cv-list">
 
-- **2024** Erasmus+ research visit, TU Darmstadt — Prof. P. Schweitzer, PhD 's group (*Weisfeiler-Leman & partial automorphisms*)
+- **2024** Erasmus+ research visit, TU Darmstadt — Prof. Pascal Schweitzer, PhD 's group (*Weisfeiler-Leman & partial automorphisms*)
 - **2024** Erasmus+ research visit, DTU Copenhagen — Mgr. Peter Zeman, PhD (*Weisfeiler-Leman & partial automorphisms*)
 - **2025** research visit, UPJŠ Košice — Assoc. Prof., Dr. Roman Soták, PhD. (partial automorphisms & sparse graphs & colorings of toroidal graphs)
 
@@ -117,23 +137,6 @@ tags:
 
 **Bachelor students**
 ![[teaching#Opponent]]
-
-## Refereeing
-
-<div class="cv-list">
-
-- **Journal** Journal of Graph Theory
-- **Proceedings** ITAT Computational Aspects of Large-Scale Problems in Discrete Mathematics (CADM) Workshop
-
-</div>
-
-## Talks
-
-**on seminars by invitation**
-![[output#talks on seminars by invitation]]
-
-**Contributed**
-![[output#contributed talks]]
 
 ## Projects
 

@@ -9,9 +9,9 @@ tags:
 ## Extracurricular
 
 #### Online course
-When I finished my masters, I released a Udemy course [Introduction to Agent-Based Modeling and Simulation](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA)
+When I finished my masters, I released a Udemy course [Introduction to Agent-Based Modeling and Simulation](https://www.udemy.com/course/2020-intro-to-agent-based-modeling-simulation-ai-in-netlogo/?srsltid=AfmBOorILWPceaCZXWz1z6F6D8o08xXylkkzo7B0Jmn9mmrpjPWconKA) (315 students)
 #### Occasional teaching
-Oxbridge style tutorials at [Študentská Agora](https://studentskaagora.sk/)
+Oxbridge style tutorials (3-7 students) at [Študentská Agora](https://studentskaagora.sk/)
 
 ## University
 
