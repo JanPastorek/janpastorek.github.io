@@ -1,5 +1,5 @@
 ---
-title: Ján Pastorek
+title: Ján Pastorek - CV
 description: Curriculum vitae of Jan Pastorek — education, positions, grants, teaching, and publications.
 tags:
   - academic-profile
