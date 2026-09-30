@@ -130,7 +130,7 @@ tags:
 ## Talks
 
 **Invited**
-![[output#invited talks]]
+![[output#talks on seminars by invitation]]
 
 **Contributed**
 ![[output#contributed talks]]
