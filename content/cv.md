@@ -110,10 +110,12 @@ tags:
 **Bachelor students**
 ![[teaching#Bachelor students]]
 
-**Master students**
+**Master students (only consulting)**
 ![[teaching#Master students (only consulting)]]
 
 ## Thesis examiner
+
+**Bachelor students**
 ![[teaching#Opponent]]
 
 ## Refereeing
