@@ -150,7 +150,7 @@ Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdi
 	</details>
 
 ### contributed talks
-- Pastorek, J. (2026). "AI4math. Towards automated graph theory? A quest for interesting mathematical questions and conjectures in the age of AI" [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University, 19.10.2026 #aimath #ai #graphs 
+- Pastorek, J. (2026). "AI4math. Towards automated graph theory? A quest for interesting mathematical questions and conjectures in the age of AI" [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University, 19.10.2026 #aimath #ai #graphs [slides](https://janpastorek.com/static/slides/AutoGraphForge%20%E2%80%94%20KAI%20colloquium/index.html#/)
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 	
