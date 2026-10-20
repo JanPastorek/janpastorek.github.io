@@ -69,7 +69,7 @@ tags:
 
 <div class="cv-list">
 
-- **Journal** Journal of Graph Theory
+- **Journal** Journal of Graph Theory [[certificate.pdf]]
 - **Proceedings** ITAT Computational Aspects of Large-Scale Problems in Discrete Mathematics (CADM) Workshop
 
 </div>

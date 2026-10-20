@@ -1,0 +1,609 @@
+@charset "UTF-8";
+/**
+ * Metropolis Scientific Presentation Theme for Reveal.js
+ * Authentic port of the LaTeX Beamer 'mtheme' (Metropolis)
+ */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+.reveal .has-light-background, .reveal .has-light-background h1, .reveal .has-light-background h2, .reveal .has-light-background h3, .reveal .has-light-background h4, .reveal .has-light-background h5, .reveal .has-light-background h6 {
+  color: #23373b;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+:root {
+  --r-background-color: #fafafa;
+  --r-main-font: Fira Sans, Source Sans 3, Helvetica Neue, Arial, sans-serif;
+  --r-main-font-size: 21px;
+  --r-main-color: #23373b;
+  --r-block-margin: 20px;
+  --r-heading-margin: 0 0 20px 0;
+  --r-heading-font: Fira Sans, Source Sans 3, Helvetica Neue, Arial, sans-serif;
+  --r-heading-color: #23373b;
+  --r-heading-line-height: 1.25em;
+  --r-heading-letter-spacing: 0.04em;
+  --r-heading-text-transform: uppercase;
+  --r-heading-text-shadow: none;
+  --r-heading1-font-weight: 600;
+  --r-heading2-font-weight: 600;
+  --r-heading3-font-weight: 600;
+  --r-heading4-font-weight: 600;
+  --r-heading5-font-weight: 600;
+  --r-heading6-font-weight: 600;
+  --r-heading1-text-shadow: none;
+  --r-heading1-size: 3.77em;
+  --r-heading2-size: 2.11em;
+  --r-heading3-size: 1.55em;
+  --r-heading4-size: 1em;
+  --r-heading5-size: 0.8em;
+  --r-heading6-size: 0.6em;
+  --r-code-font: Fira Code, Consolas, monospace;
+  --r-link-color: #eb811b;
+  --r-link-color-dark: rgb(66.8785578748%, 35.7858950032%, 5.8665401645%);
+  --r-link-color-hover: #c96a0f;
+  --r-selection-background-color: rgba(235, 129, 27, 0.3);
+  --r-selection-color: #fff;
+}
+
+.reveal-viewport {
+  background-color: #fafafa;
+  background-color: var(--r-background-color);
+}
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  font-weight: normal;
+  color: var(--r-main-color);
+}
+
+.reveal ::selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+.reveal ::-moz-selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: var(--r-heading-margin);
+  color: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  line-height: var(--r-heading-line-height);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+  text-shadow: var(--r-heading-text-shadow);
+  word-wrap: break-word;
+}
+
+.reveal h1 {
+  font-size: var(--r-heading1-size);
+}
+
+.reveal h2 {
+  font-size: var(--r-heading2-size);
+}
+
+.reveal h3 {
+  font-size: var(--r-heading3-size);
+}
+
+.reveal h4 {
+  font-size: var(--r-heading4-size);
+}
+
+.reveal h5 {
+  font-size: var(--r-heading5-size);
+}
+
+.reveal h6 {
+  font-size: var(--r-heading6-size);
+}
+
+.reveal h1 {
+  font-weight: var(--r-heading1-font-weight);
+}
+
+.reveal h2 {
+  font-weight: var(--r-heading2-font-weight);
+}
+
+.reveal h3 {
+  font-weight: var(--r-heading3-font-weight);
+}
+
+.reveal h4 {
+  font-weight: var(--r-heading4-font-weight);
+}
+
+.reveal h5 {
+  font-weight: var(--r-heading5-font-weight);
+}
+
+.reveal h6 {
+  font-weight: var(--r-heading6-font-weight);
+}
+
+.reveal h1 {
+  text-shadow: var(--r-heading1-text-shadow);
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal .slides > section.drop {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+.reveal p {
+  margin: var(--r-block-margin) 0;
+  line-height: 1.3;
+}
+
+/* Remove trailing margins after titles */
+.reveal h1:last-child,
+.reveal h2:last-child,
+.reveal h3:last-child,
+.reveal h4:last-child,
+.reveal h5:last-child,
+.reveal h6:last-child {
+  margin-bottom: 0;
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul ul {
+  list-style-type: square;
+}
+
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal dd {
+  margin-left: 40px;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: var(--r-block-margin) auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal q {
+  font-style: italic;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: var(--r-block-margin) auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: var(--r-code-font);
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reveal code {
+  font-family: var(--r-code-font);
+  text-transform: none;
+  tab-size: 2;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}
+
+.reveal .code-wrapper {
+  white-space: normal;
+}
+
+.reveal .code-wrapper code {
+  white-space: pre;
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+.reveal table th[align=center],
+.reveal table td[align=center] {
+  text-align: center;
+}
+
+.reveal table th[align=right],
+.reveal table td[align=right] {
+  text-align: right;
+}
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.reveal sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+.reveal small * {
+  vertical-align: top;
+}
+
+.reveal img {
+  margin: var(--r-block-margin) 0;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+  text-shadow: none;
+  border: none;
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: var(--r-link-color-dark);
+}
+
+/*********************************************
+ * Frame helper
+ *********************************************/
+.reveal .r-frame {
+  border: 4px solid var(--r-main-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal a .r-frame {
+  transition: all 0.15s linear;
+}
+
+.reveal a:hover .r-frame {
+  border-color: var(--r-link-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls {
+  color: var(--r-link-color) !important;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--r-link-color);
+}
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
+@media print {
+  .backgrounds {
+    background-color: var(--r-background-color);
+  }
+}
+/*********************************************
+ * CHART BACKGROUND
+ *********************************************/
+.has-dark-background canvas[data-chart] {
+  background-color: white;
+}
+
+.has-light-background canvas[data-chart] {
+  background-color: unset;
+}
+
+canvas[data-chart] {
+  padding: 0.5em;
+}
+
+/*********************************************
+ * Highlight.js
+ *********************************************/
+.reveal .hljs {
+  min-height: 50%;
+}
+
+/* Metropolis Architectural Layout */
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  padding: 24px 36px;
+}
+
+/* Headings */
+.reveal h1 {
+  font-size: 1.85em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #23373b;
+  margin-bottom: 0.4em;
+}
+
+.reveal h2 {
+  font-size: 1.35em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #23373b;
+  border-bottom: 2.5px solid #eb811b;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.reveal h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #334d52;
+  text-transform: none;
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.reveal h4, .reveal h5 {
+  font-weight: 600;
+  text-transform: none;
+  color: #23373b;
+}
+
+/* Paragraphs & Typography */
+.reveal p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.reveal strong {
+  color: #1a292c;
+  font-weight: 600;
+}
+
+/* Lists */
+.reveal ul, .reveal ol {
+  line-height: 1.65;
+  margin-bottom: 1.2em;
+}
+
+.reveal ul {
+  list-style: none;
+  padding-left: 1.2em;
+}
+
+.reveal ul > li {
+  position: relative;
+  margin-bottom: 0.4em;
+}
+
+.reveal ul > li::before {
+  content: "■";
+  color: #eb811b;
+  font-size: 0.7em;
+  position: absolute;
+  left: -1.2em;
+  top: 0.05em;
+}
+
+/* MathJax & KaTeX Equation Styling */
+.reveal .mjx-chtml, .reveal .katex-display {
+  margin: 1em auto !important;
+  color: #23373b;
+  font-size: 1.05em;
+}
+
+.reveal .mjx-block {
+  display: block !important;
+  margin: 1.2em auto !important;
+  text-align: center !important;
+}
+
+/* Scientific Callout Blocks (Theorems, Lemmas, Proofs) */
+.callout {
+  border-radius: 4px !important;
+  border-left: 4.5px solid rgb(var(--callout-color)) !important;
+  background: #f3f6f7 !important;
+  box-shadow: 0 2px 6px rgba(35, 55, 59, 0.07);
+  margin: 1.2em 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.callout .callout-title {
+  background: rgba(35, 55, 59, 0.06) !important;
+  color: #23373b !important;
+  font-weight: 700;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+  padding: 8px 16px !important;
+  border-bottom: 1px solid rgba(35, 55, 59, 0.08);
+}
+
+.callout .callout-content {
+  padding: 12px 18px !important;
+  color: #23373b !important;
+  font-size: 0.95em;
+  line-height: 1.55;
+}
+
+/* Code Syntax Blocks */
+.reveal pre {
+  width: 100%;
+  margin: 1.2em auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.reveal pre code {
+  background: #23373b;
+  color: #f8fafc;
+  border-left: 4px solid #eb811b;
+  border-radius: 6px;
+  padding: 14px 20px;
+  font-size: 0.85em;
+  line-height: 1.5;
+  font-variant-ligatures: normal;
+}
+
+/* Publication Tables (LaTeX Booktabs) */
+.reveal table {
+  border-collapse: collapse;
+  margin: 1.5em auto;
+  font-size: 0.88em;
+  width: auto;
+}
+
+.reveal table th {
+  border-top: 2.5px solid #23373b;
+  border-bottom: 1.5px solid #23373b;
+  color: #23373b;
+  font-weight: 700;
+  padding: 10px 18px;
+  letter-spacing: 0.02em;
+}
+
+.reveal table td {
+  border-bottom: 1px solid #dcdfe0;
+  padding: 9px 18px;
+  color: #2e3e42;
+}
+
+.reveal table tr:last-child td {
+  border-bottom: 2.5px solid #23373b;
+}
+
+/* Progress bar & Slide Number */
+.reveal .progress {
+  height: 4.5px;
+  color: #eb811b;
+  background: rgba(35, 55, 59, 0.15);
+}
+
+.reveal .progress span {
+  background: #eb811b;
+}
+
+.reveal .slide-number {
+  color: #7b888a;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  right: 22px;
+  bottom: 16px;
+}

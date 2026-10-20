@@ -1,0 +1,378 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Self-Repairing Proof Loop</title>
+<script>
+window.MathJax = {
+  tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+  svg: { fontCache: 'local' },
+  startup: { typeset: false, ready() { MathJax.startup.defaultReady(); MathJax.startup.promise.then(() => { window.__texReady = true; if (window.__renderTex) window.__renderTex(); }); } }
+};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one wide schematic (left→right: conjecture → statement → prover stack), with a stage stepper and a detail panel underneath. */
+:root{
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#16202B; --muted:#465263; --line:#C3CCD6; --hover:#EEF2F7;
+  --accent:#2A57C4; --accent-bg:#E3EAFB;
+  --repair:#AD6200; --repair-bg:#FBEEDB;
+  --ok:#1B7A4E; --ok-bg:#E1F2E9; --fail:#B0362E; --fail-bg:#F8E3E1;
+  --code-bg:#E3E8EE;
+  --f-head:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-ui:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:17px;line-height:1.55}
+.wrap{max-width:1600px;margin:0 auto;padding-inline:20px;padding-block:36px 56px;display:grid;gap:28px}
+header{display:grid;gap:8px;max-width:72ch}
+.eyebrow{font-family:var(--f-head);font-weight:500;font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-head);font-weight:600;font-size:clamp(22px,2.4vw,27px);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
+.lead{margin:0;color:var(--muted)}
+.lead b{color:var(--ink);font-weight:600}
+
+figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;display:grid}
+.scroll{overflow-x:auto;padding:14px 10px 6px}
+.dg{display:block;width:100%;min-width:900px;height:auto}
+figcaption{border-top:1px solid var(--line);padding:12px 18px;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:16.5px;color:var(--muted)}
+.key{display:inline-flex;align-items:center;gap:8px}
+.key svg{flex:none}
+
+/* SVG styling */
+.dg text{font-family:var(--f-ui);fill:var(--ink);font-size:13.5px;white-space:pre}
+.dg .mono{font-family:var(--f-mono);font-size:13.5px}
+.dg .mut{fill:var(--muted);font-size:14px}
+.dg .ttl{font-family:var(--f-head);font-weight:600;font-size:17px}
+.dg .col{font-family:var(--f-head);font-weight:600;font-size:14.5px;letter-spacing:.14em;fill:var(--muted)}
+.dg .box{fill:var(--surface);stroke:var(--line);stroke-width:1.25}
+.dg .box.lib{fill:var(--accent-bg);stroke:var(--accent)}
+.dg .edge{stroke:var(--muted);stroke-width:1.5;fill:none}
+.dg .edge.acc{stroke:var(--accent);stroke-width:1.75}
+.dg .edge.rep{stroke:var(--repair);stroke-dasharray:5 4;stroke-width:1.5}
+.dg .lbl{fill:var(--muted);font-size:14px}
+.dg .lbl.acc{fill:var(--accent);font-weight:500}
+.dg .lbl.rep{fill:var(--repair);font-weight:500}
+.dg .mk{fill:var(--muted)} .dg .mk.acc{fill:var(--accent)} .dg .mk.rep{fill:var(--repair)}
+.dg .chip.ok rect{fill:var(--ok-bg);stroke:var(--ok)} .dg .chip.ok text{fill:var(--ok);font-weight:500}
+.dg .chip.fail rect{fill:var(--fail-bg);stroke:var(--fail)} .dg .chip.fail text{fill:var(--fail);font-weight:500}
+.dg .okt{fill:var(--ok);font-weight:500}
+.dg [data-k]{transition:opacity .25s ease}
+.dg.focus [data-k]:not(.on){opacity:.3}
+.dg .on .box{stroke:var(--accent);stroke-width:2.25}
+.dg .on .box.lib{stroke-width:2.5}
+
+/* Stepper */
+.main{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:16px;align-items:start}
+.side{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);display:grid;gap:4px}
+.side .eyebrow{padding:4px 12px 6px}
+@media (max-width:980px){.main{grid-template-columns:minmax(0,1fr)}.side{position:static}}
+.stages{display:grid;gap:4px;margin:0;padding:0;list-style:none}
+.stages button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:center;padding:9px 12px;border-radius:7px;color:var(--muted);font-size:17px}
+.stages button:hover{background:var(--hover);color:var(--ink)}
+.stages button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.stages button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--accent)}
+.stages .n{font-family:var(--f-mono);font-size:13.5px;text-align:center;color:var(--accent)}
+.controls{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.btn{font:500 15px var(--f-ui);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:7px 14px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+
+.detail{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 22px;display:grid;gap:12px;min-width:0}
+.detail h2{font-family:var(--f-head);font-weight:600;font-size:26px;margin:0;line-height:1.2}
+.detail .tag{font-family:var(--f-head);font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.detail p{margin:0;max-width:75ch}
+.detail .tone-rep{color:var(--repair)}
+pre{margin:0;background:var(--code-bg);border-radius:7px;padding:14px 16px;overflow-x:auto;font:15px/1.6 var(--f-mono);color:var(--ink)}
+pre .k{color:var(--accent);font-weight:500}
+pre .c{color:var(--muted)}
+.dg .lbl.sm{font-size:12.5px}
+pre .ok{color:var(--ok)}
+pre .err{color:var(--fail)}
+.note{font-size:12.5px;color:var(--muted)}
+.detail .math{margin:0;font-size:19px}
+.detail mjx-container{color:var(--ink)}
+.detail mjx-container[display="true"]{text-align:left!important;margin:4px 0!important}
+code{font-family:var(--f-mono);font-size:.92em;background:var(--code-bg);padding:1px 5px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){.dg [data-k]{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Self-Repairing Proof Loop</h1>
+  </header>
+
+  <div class="main">
+  <figure>
+    <div class="scroll">
+    <svg class="dg" id="dg" viewBox="0 0 1240 585" role="img" aria-label="Pipeline diagram. A conjecture is exported and translated into a Lean statement; elaborator errors loop back to the translator. The hammer tries first and fails, escalating to a sandboxed agent team that finds a König–Gallai proof via Hall's theorem. An independent verifier checks the statement is unchanged, no unsafe code, the Lean kernel accepts it, and the axioms are standard; kernel errors loop back to the agent team. The verified proof goes into the library, which the next hammer run uses to prove five related conjectures automatically.">
+      <defs>
+        <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="ah-acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk acc" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="ah-rep" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="mk rep" d="M0,0 L10,5 L0,10 z"/></marker>
+      </defs>
+
+      <text class="col" x="20" y="30">CONJECTURE</text>
+      <text class="col" x="300" y="30">TRANSLATE</text>
+      <text class="col" x="640" y="30">PROVE</text>
+
+      <!-- Conjecture -->
+      <g data-k="n-conj">
+        <rect class="box" x="20" y="50" width="240" height="150" rx="7"/>
+        <text class="mut" x="36" y="74">exported by the loop</text>
+        <g class="tex" data-tex="(\text{nontrivial} \wedge \text{bipartite})" data-x="36" data-y="108" data-size="16" data-color="ink"><text x="36" y="108" font-size="15">(nontrivial ∧ bipartite)</text></g>
+        <g class="tex" data-tex="\Rightarrow\ \rho(G) \le \alpha(G)" data-x="50" data-y="134" data-size="16" data-color="ink"><text x="50" y="134" font-size="15">⇒ ρ(G) ≤ α(G)</text></g>
+        <g class="tex" data-tex="\rho:\ \text{edge cover number}" data-x="36" data-y="166" data-size="14" data-color="muted"><text x="36" y="166" font-size="13" class="mut">ρ: edge cover number</text></g>
+        <g class="tex" data-tex="\alpha:\ \text{independence number}" data-x="36" data-y="187" data-size="14" data-color="muted"><text x="36" y="187" font-size="13" class="mut">α: independence number</text></g>
+      </g>
+
+      <!-- export edge -->
+      <g data-k="e-export">
+        <line class="edge" x1="260" y1="125" x2="298" y2="125" marker-end="url(#ah)"/>
+      </g>
+
+      <!-- Translate -->
+      <g data-k="n-trans">
+        <rect class="box" x="300" y="50" width="270" height="200" rx="7"/>
+        <text class="mut" x="316" y="74">Lean 4 · Candidate : Prop</text>
+        <text class="mono" x="316" y="103">∀ G : SimpleGraph V,</text>
+        <text class="mono" x="316" y="123">  IsBipartiteClass G →</text>
+        <text class="mono" x="316" y="143">  IsNontrivialClass G →</text>
+        <text class="mono" x="316" y="163">  HasEdgeCover G →</text>
+        <text class="mono" x="316" y="183">  edgeCoverNumber G</text>
+        <text class="mono" x="316" y="203">    ≤ indepNum G</text>
+        <text class="okt" x="316" y="235" font-size="12.5">✓ elaborates in Lean</text>
+      </g>
+
+      <!-- translate repair loop -->
+      <g data-k="r-trans">
+        <path class="edge rep" d="M500,250 V286 H400 V253" marker-end="url(#ah-rep)"/>
+        <text class="lbl rep" x="450" y="304" text-anchor="middle">elaborator error → re-translate</text>
+      </g>
+
+      <!-- goal edge -->
+      <g data-k="e-goal">
+        <line class="edge" x1="570" y1="95" x2="638" y2="95" marker-end="url(#ah)"/>
+        <text class="lbl" x="604" y="86" text-anchor="middle">goal</text>
+      </g>
+
+      <!-- ① hammer -->
+      <g data-k="n-hammer">
+        <rect class="box" x="640" y="50" width="440" height="90" rx="7"/>
+        <text class="ttl" x="656" y="77">① hammer</text>
+        <text class="mono" x="656" y="101">grind · omega · aesop + library</text>
+        <text class="mut" x="656" y="123">seconds · no LLM</text>
+        <g class="chip fail"><rect x="972" y="63" width="94" height="24" rx="12"/><text x="1019" y="79" text-anchor="middle" font-size="12.5">✗ no proof</text></g>
+      </g>
+
+      <!-- escalate -->
+      <g data-k="e-esc">
+        <line class="edge" x1="860" y1="140" x2="860" y2="183" marker-end="url(#ah)"/>
+        <text class="lbl" x="870" y="166">no proof → escalate</text>
+      </g>
+
+      <!-- ② agent team -->
+      <g data-k="n-agent">
+        <rect class="box" x="640" y="185" width="440" height="90" rx="7"/>
+        <text class="ttl" x="656" y="212">② agent team</text>
+        <text class="mut" x="784" y="212">sandboxed · 25 min</text>
+        <text class="mono" x="656" y="236">/teamwork-preview</text><text class="mut" x="808" y="236">or</text><text class="mono" x="830" y="236">oprover</text>
+        <text class="okt" x="656" y="259">König–Gallai via Hall's theorem</text>
+        <g class="chip ok"><rect x="986" y="198" width="80" height="24" rx="12"/><text x="1026" y="214" text-anchor="middle" font-size="12.5">✓ proof</text></g>
+      </g>
+
+      <!-- candidate proof -->
+      <g data-k="e-cand">
+        <line class="edge" x1="860" y1="275" x2="860" y2="318" marker-end="url(#ah)"/>
+        <text class="lbl" x="870" y="301">candidate proof</text>
+      </g>
+
+      <!-- ③ verify -->
+      <g data-k="n-verify">
+        <rect class="box" x="640" y="320" width="440" height="120" rx="7"/>
+        <text class="ttl" x="656" y="347">③ verify</text>
+        <text class="mut" x="742" y="347">independent of the prover</text>
+        <g class="chip ok"><rect x="656" y="362" width="200" height="26" rx="5"/><text x="756" y="379" text-anchor="middle" font-size="12.5">✓ statement unchanged</text></g>
+        <g class="chip ok"><rect x="866" y="362" width="200" height="26" rx="5"/><text x="966" y="379" text-anchor="middle" font-size="12.5">✓ no sorry / unsafe code</text></g>
+        <g class="chip ok"><rect x="656" y="396" width="200" height="26" rx="5"/><text x="756" y="413" text-anchor="middle" font-size="12.5">✓ Lean kernel check</text></g>
+        <g class="chip ok"><rect x="866" y="396" width="200" height="26" rx="5"/><text x="966" y="413" text-anchor="middle" font-size="12.5">✓ axiom audit</text></g>
+      </g>
+
+      <!-- kernel repair loop -->
+      <g data-k="r-kernel">
+        <path class="edge rep" d="M1080,390 H1128 V230 H1083" marker-end="url(#ah-rep)"/>
+        <text class="lbl rep" x="1136" y="288">kernel error</text>
+        <text class="lbl rep" x="1136" y="308">+ goal state</text>
+        <text class="lbl rep" x="1136" y="328">→ ② repairs</text>
+      </g>
+
+      <!-- verified proof straight into library -->
+      <g data-k="e-add">
+        <path class="edge acc" d="M860,440 V525 H572" marker-end="url(#ah-acc)"/>
+        <text class="lbl acc" x="872" y="478">all four pass → add to library</text>
+      </g>
+
+      <!-- Library -->
+      <g data-k="n-lib">
+        <rect class="box lib" x="300" y="475" width="270" height="90" rx="7"/>
+        <text class="ttl" x="316" y="501">library</text>
+        <g class="tex" data-tex="+\ \text{bipartite} \Rightarrow \rho \le \alpha" data-x="316" data-y="526" data-size="15.5" data-color="ink"><text x="316" y="526" font-size="14">+ bipartite ⇒ ρ ≤ α</text></g>
+        <text class="mut" x="316" y="547">facts the hammer may cite</text>
+      </g>
+
+      <!-- library premises back to hammer -->
+      <g data-k="e-prem">
+        <path class="edge acc" d="M570,490 H605 V125 H638" marker-end="url(#ah-acc)"/>
+        <text class="lbl acc" x="597" y="330" text-anchor="middle" transform="rotate(-90 597 330)">premises for next hammer run</text>
+      </g>
+
+      <!-- related conjectures -->
+      <g data-k="e-rel">
+        <line class="edge" x1="140" y1="200" x2="140" y2="473" stroke-dasharray="2 4" marker-end="url(#ah)"/>
+        <text class="lbl" x="150" y="330">related</text>
+        <text class="lbl" x="150" y="347">conjectures</text>
+      </g>
+
+      <!-- unlocks -->
+      <g data-k="e-unlock">
+        <line class="edge acc" x1="300" y1="520" x2="262" y2="520" marker-end="url(#ah-acc)"/>
+      </g>
+
+      <!-- next run -->
+      <g data-k="n-next">
+        <rect class="box" x="20" y="475" width="240" height="90" rx="7"/>
+        <text class="ttl" x="36" y="501">next hammer run</text>
+        <text x="36" y="524">5 relatives proved by ① alone</text>
+        <g class="tex" data-tex="(\text{bipartite} \wedge \text{cubic}) \Rightarrow \rho = \alpha" data-x="36" data-y="548" data-size="14.5" data-color="ink"><text x="36" y="548" font-size="13.5">(bipartite ∧ cubic) ⇒ ρ = α</text></g>
+      </g>
+    </svg>
+    </div>
+    <figcaption>
+      <span class="key"><svg width="34" height="10" viewBox="0 0 34 10" aria-hidden="true"><line x1="0" y1="5" x2="34" y2="5" stroke="var(--muted)" stroke-width="1.5"/></svg>main flow</span>
+      <span class="key"><svg width="34" height="10" viewBox="0 0 34 10" aria-hidden="true"><line x1="0" y1="5" x2="34" y2="5" stroke="var(--repair)" stroke-width="1.5" stroke-dasharray="5 4"/></svg>repair from Lean feedback</span>
+      <span class="key"><svg width="34" height="10" viewBox="0 0 34 10" aria-hidden="true"><line x1="0" y1="5" x2="34" y2="5" stroke="var(--accent)" stroke-width="1.75"/></svg>library reuse</span>
+    </figcaption>
+  </figure>
+
+  <nav class="side" aria-label="Loop stages">
+    <div class="eyebrow">Stages</div>
+    <ul class="stages" id="stages"></ul>
+    <div class="controls">
+      <button class="btn" id="prev" type="button">Prev</button>
+      <button class="btn primary" id="play" type="button">Play</button>
+      <button class="btn" id="next" type="button">Next</button>
+    </div>
+  </nav>
+  </div>
+
+  <article class="detail" id="detail" aria-live="polite"></article>
+</div>
+
+<script>
+(function(){
+  const candidate =
+`<span class="k">abbrev</span> Candidate : Prop :=
+  ∀ {V : Type} [Fintype V] [DecidableEq V]
+  (G : SimpleGraph V) [DecidableRel G.Adj],
+    GraphCalc.IsBipartiteClass G → GraphCalc.IsNontrivialClass G →
+    GraphCalc.HasEdgeCover G →
+    GraphCalc.edgeCoverNumber G ≤ GraphCalc.indepNum G`;
+
+  const steps = [
+    {name:"Overview", tag:"The whole loop", on:[],
+      body:`<p>Pick a stage on the right, or press Play, to follow the edge-cover conjecture from export to library fact. The diagram highlights the parts of the loop that stage uses.</p>
+            <p>Two kinds of feedback keep the loop running without a person: <span class="tone-rep">Lean's error messages flow back to whichever step produced the faulty text</span>, and every verified proof flows forward into the library so later conjectures get cheaper.</p>`},
+    {name:"Conjecture", tag:"Exported by the loop", on:["n-conj"],
+      body:`<p>The conjecturer states its finding in its own vocabulary: for graphs that are nontrivial and bipartite, the edge cover number \\(\\rho\\) is at most the independence number \\(\\alpha\\).</p>
+            <p class="math">\\[(\\text{nontrivial} \\wedge \\text{bipartite}) \\Rightarrow \\rho(G) \\le \\alpha(G)\\]</p>`},
+    {name:"Translate", tag:"Stated in Lean", on:["n-conj","e-export","n-trans","r-trans"],
+      body:`<p>The conjecture becomes a Lean <code>Prop</code> quantified over every finite vertex type. The hypothesis <code>HasEdgeCover G</code> appears explicitly, since \\(\\rho\\) is only defined when no vertex is isolated.</p>
+            <pre>${candidate}</pre>
+            <p class="tone-rep">If Lean's elaborator rejects the statement (an unknown name, a type mismatch, a missing instance), that error goes back to the translator, which edits the statement and resubmits.</p>`},
+    {name:"① Hammer", tag:"Seconds, no LLM", on:["e-goal","n-hammer"],
+      body:`<p>The cheap attempt comes first: <code>grind</code>, <code>omega</code> and <code>aesop</code>, armed with every fact already in the library. No language model is involved.</p>
+            <p>For this conjecture nothing closes the goal, so it escalates to the agent team.</p>`},
+    {name:"② Agent team", tag:"Sandboxed, 25 minutes", on:["e-esc","n-agent"],
+      body:`<p>A sandboxed team runs under <code>/teamwork-preview</code>, or the conjecture goes to <code>oprover</code>, with a 25-minute budget. It finds the classical route: the König–Gallai theorem, derived from Hall's marriage theorem.</p>
+            <p>Its output is only a candidate. Nothing the agents say about their own proof is trusted.</p>`},
+    {name:"③ Verify", tag:"Independent of the prover", on:["e-cand","n-verify","r-kernel","n-agent"],
+      body:`<p>A separate checker runs four tests on the candidate:</p>
+            <pre><span class="ok">✓</span> statement unchanged   <span class="c">-- matches the exported Candidate exactly</span>
+<span class="ok">✓</span> no unsafe code        <span class="c">-- no sorry, admit, or unsafe escapes</span>
+<span class="ok">✓</span> Lean kernel check     <span class="c">-- the kernel re-checks the proof term</span>
+<span class="ok">✓</span> axiom audit           <span class="c">-- only propext, Classical.choice, Quot.sound</span></pre>
+            <p class="tone-rep">When a check fails, the kernel's error and the open goal state go back to the agent team, which repairs the proof and resubmits. The statement check stops the agents from "fixing" a proof by weakening the theorem.</p>`},
+    {name:"Next run", tag:"The payoff", on:["e-add","n-lib","e-prem","n-hammer","e-rel","e-unlock","n-next"],
+      body:`<p>Once all four checks pass, the proof goes into the library as a fact: bipartite graphs satisfy \\(\\rho \\le \\alpha\\). On the next hammer pass, 5 related conjectures are proved in seconds by ① alone, with no agent time spent. For example:</p>
+            <p class="math">\\[(\\text{bipartite} \\wedge \\text{cubic}) \\Rightarrow \\rho = \\alpha\\]</p>
+            <p>Each hard proof the agents find lowers the cost of every relative that follows.</p>`}
+  ];
+
+  const dg = document.getElementById('dg');
+  const list = document.getElementById('stages');
+  const detail = document.getElementById('detail');
+  const playBtn = document.getElementById('play');
+  let cur = 0, timer = null;
+
+  steps.forEach((s,i)=>{
+    const li = document.createElement('li');
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.innerHTML = `<span class="n">${i===0?'·':i}</span><span>${s.name}</span>`;
+    b.addEventListener('click',()=>{stop(); show(i);});
+    li.appendChild(b); list.appendChild(li);
+  });
+
+  function show(i){
+    cur = i;
+    const s = steps[i];
+    list.querySelectorAll('button').forEach((b,j)=>b.setAttribute('aria-pressed', j===i?'true':'false'));
+    dg.classList.toggle('focus', s.on.length>0);
+    dg.querySelectorAll('[data-k]').forEach(el=>el.classList.toggle('on', s.on.includes(el.dataset.k)));
+    detail.innerHTML = `<div class="tag">${s.tag}</div><h2>${s.name}</h2>${s.body}`;
+    typesetDetail();
+  }
+  function typesetDetail(){
+    if (window.__texReady && MathJax.typesetPromise) { MathJax.typesetClear && MathJax.typesetClear([detail]); MathJax.typesetPromise([detail]).catch(()=>{}); }
+  }
+  function renderSvgTex(){
+    dg.querySelectorAll('g.tex').forEach(g=>{
+      try{
+        const node = MathJax.tex2svg(g.dataset.tex, {display:false});
+        const svg = node.querySelector('svg');
+        const size = parseFloat(g.dataset.size), ex = size*0.5;
+        const w = parseFloat(svg.getAttribute('width')), h = parseFloat(svg.getAttribute('height'));
+        const va = parseFloat(svg.style.verticalAlign || '0');
+        const base = parseFloat(g.dataset.y);
+        svg.setAttribute('x', g.dataset.x);
+        svg.setAttribute('y', (base - h*ex - va*ex).toFixed(2));
+        svg.setAttribute('width', (w*ex).toFixed(2));
+        svg.setAttribute('height', (h*ex).toFixed(2));
+        svg.style.verticalAlign = '';
+        svg.style.overflow = 'visible';
+        svg.style.color = g.dataset.color === 'muted' ? 'var(--muted)' : 'var(--ink)';
+        svg.removeAttribute('role'); svg.setAttribute('aria-hidden','true');
+        g.replaceChildren(svg);
+      }catch(e){}
+    });
+  }
+  window.__renderTex = ()=>{ renderSvgTex(); typesetDetail(); };
+  function stop(){ if(timer){clearInterval(timer); timer=null;} playBtn.textContent='Play'; }
+  document.getElementById('prev').addEventListener('click',()=>{stop(); show((cur-1+steps.length)%steps.length);});
+  document.getElementById('next').addEventListener('click',()=>{stop(); show((cur+1)%steps.length);});
+  playBtn.addEventListener('click',()=>{
+    if(timer){stop(); return;}
+    playBtn.textContent='Pause';
+    if(cur===steps.length-1) show(0);
+    show(cur===0?1:cur);
+    timer = setInterval(()=>{
+      if(cur>=steps.length-1){stop(); return;}
+      show(cur+1);
+    }, 3800);
+  });
+  show(0);
+  if (window.__texReady) window.__renderTex();
+})();
+</script>
+
+</body></html>

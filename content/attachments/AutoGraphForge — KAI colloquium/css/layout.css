@@ -1,0 +1,1213 @@
+@charset "UTF-8";
+:root {
+  --split-div-size: 0;
+  --split-gap-size: 0;
+}
+
+split {
+  display: flex;
+  gap: unset;
+  flex-flow: row wrap;
+  align-content: center;
+}
+
+split[even] > * {
+  flex: 1;
+}
+
+split[no-margin] > * {
+  --r-block-margin: 0;
+}
+
+split[wrap="1"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (1 - 1) - var(--dbg-size) * 1 * 2) / 1);
+}
+
+split[wrap="2"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (2 - 1) - var(--dbg-size) * 2 * 2) / 2);
+}
+
+split[wrap="3"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (3 - 1) - var(--dbg-size) * 3 * 2) / 3);
+}
+
+split[wrap="4"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (4 - 1) - var(--dbg-size) * 4 * 2) / 4);
+}
+
+split[wrap="5"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (5 - 1) - var(--dbg-size) * 5 * 2) / 5);
+}
+
+split[wrap="6"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (6 - 1) - var(--dbg-size) * 6 * 2) / 6);
+}
+
+split[wrap="7"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (7 - 1) - var(--dbg-size) * 7 * 2) / 7);
+}
+
+split[wrap="8"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (8 - 1) - var(--dbg-size) * 8 * 2) / 8);
+}
+
+split[wrap="9"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (9 - 1) - var(--dbg-size) * 9 * 2) / 9);
+}
+
+split[wrap="10"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (10 - 1) - var(--dbg-size) * 10 * 2) / 10);
+}
+
+split[wrap="11"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (11 - 1) - var(--dbg-size) * 11 * 2) / 11);
+}
+
+split[wrap="12"] > * {
+  flex: 1 1 calc((100% - var(--split-gap-size) * (12 - 1) - var(--dbg-size) * 12 * 2) / 12);
+}
+
+split[gap="0"] {
+  --split-gap-size: 0;
+  gap: unset;
+}
+
+split[gap="1"] {
+  --split-gap-size: 1em;
+  gap: 1em;
+}
+
+split[gap="2"] {
+  --split-gap-size: 2em;
+  gap: 2em;
+}
+
+split[gap="3"] {
+  --split-gap-size: 3em;
+  gap: 3em;
+}
+
+split[gap="4"] {
+  --split-gap-size: 4em;
+  gap: 4em;
+}
+
+split[gap="5"] {
+  --split-gap-size: 5em;
+  gap: 5em;
+}
+
+split[left="1"] > *:first-child {
+  flex: 1;
+}
+
+split[middle="1"] > *:nth-child(2) {
+  flex: 1 !important;
+}
+
+split[right="1"] > *:nth-child(2) {
+  flex: 1;
+}
+
+split[right="1"] > *:nth-child(3) {
+  flex: 1;
+}
+
+split[left="2"] > *:first-child {
+  flex: 2;
+}
+
+split[middle="2"] > *:nth-child(2) {
+  flex: 2 !important;
+}
+
+split[right="2"] > *:nth-child(2) {
+  flex: 2;
+}
+
+split[right="2"] > *:nth-child(3) {
+  flex: 2;
+}
+
+split[left="3"] > *:first-child {
+  flex: 3;
+}
+
+split[middle="3"] > *:nth-child(2) {
+  flex: 3 !important;
+}
+
+split[right="3"] > *:nth-child(2) {
+  flex: 3;
+}
+
+split[right="3"] > *:nth-child(3) {
+  flex: 3;
+}
+
+split[left="4"] > *:first-child {
+  flex: 4;
+}
+
+split[middle="4"] > *:nth-child(2) {
+  flex: 4 !important;
+}
+
+split[right="4"] > *:nth-child(2) {
+  flex: 4;
+}
+
+split[right="4"] > *:nth-child(3) {
+  flex: 4;
+}
+
+split[left="5"] > *:first-child {
+  flex: 5;
+}
+
+split[middle="5"] > *:nth-child(2) {
+  flex: 5 !important;
+}
+
+split[right="5"] > *:nth-child(2) {
+  flex: 5;
+}
+
+split[right="5"] > *:nth-child(3) {
+  flex: 5;
+}
+
+split[left="6"] > *:first-child {
+  flex: 6;
+}
+
+split[middle="6"] > *:nth-child(2) {
+  flex: 6 !important;
+}
+
+split[right="6"] > *:nth-child(2) {
+  flex: 6;
+}
+
+split[right="6"] > *:nth-child(3) {
+  flex: 6;
+}
+
+split[left="7"] > *:first-child {
+  flex: 7;
+}
+
+split[middle="7"] > *:nth-child(2) {
+  flex: 7 !important;
+}
+
+split[right="7"] > *:nth-child(2) {
+  flex: 7;
+}
+
+split[right="7"] > *:nth-child(3) {
+  flex: 7;
+}
+
+split[left="8"] > *:first-child {
+  flex: 8;
+}
+
+split[middle="8"] > *:nth-child(2) {
+  flex: 8 !important;
+}
+
+split[right="8"] > *:nth-child(2) {
+  flex: 8;
+}
+
+split[right="8"] > *:nth-child(3) {
+  flex: 8;
+}
+
+split[left="9"] > *:first-child {
+  flex: 9;
+}
+
+split[middle="9"] > *:nth-child(2) {
+  flex: 9 !important;
+}
+
+split[right="9"] > *:nth-child(2) {
+  flex: 9;
+}
+
+split[right="9"] > *:nth-child(3) {
+  flex: 9;
+}
+
+split[left="10"] > *:first-child {
+  flex: 10;
+}
+
+split[middle="10"] > *:nth-child(2) {
+  flex: 10 !important;
+}
+
+split[right="10"] > *:nth-child(2) {
+  flex: 10;
+}
+
+split[right="10"] > *:nth-child(3) {
+  flex: 10;
+}
+
+split[left="11"] > *:first-child {
+  flex: 11;
+}
+
+split[middle="11"] > *:nth-child(2) {
+  flex: 11 !important;
+}
+
+split[right="11"] > *:nth-child(2) {
+  flex: 11;
+}
+
+split[right="11"] > *:nth-child(3) {
+  flex: 11;
+}
+
+section.align-left,
+div.align-left,
+.grid.align-left,
+.slides > section[align=left],
+.slides > section[align=topleft],
+.slides > section[align=bottomleft] {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+section.align-left h1, section.align-left h2, section.align-left h3, section.align-left h4, section.align-left h5, section.align-left h6, section.align-left p, section.align-left ul, section.align-left ol, section.align-left li, section.align-left blockquote,
+div.align-left h1,
+div.align-left h2,
+div.align-left h3,
+div.align-left h4,
+div.align-left h5,
+div.align-left h6,
+div.align-left p,
+div.align-left ul,
+div.align-left ol,
+div.align-left li,
+div.align-left blockquote,
+.grid.align-left h1,
+.grid.align-left h2,
+.grid.align-left h3,
+.grid.align-left h4,
+.grid.align-left h5,
+.grid.align-left h6,
+.grid.align-left p,
+.grid.align-left ul,
+.grid.align-left ol,
+.grid.align-left li,
+.grid.align-left blockquote,
+.slides > section[align=left] h1,
+.slides > section[align=left] h2,
+.slides > section[align=left] h3,
+.slides > section[align=left] h4,
+.slides > section[align=left] h5,
+.slides > section[align=left] h6,
+.slides > section[align=left] p,
+.slides > section[align=left] ul,
+.slides > section[align=left] ol,
+.slides > section[align=left] li,
+.slides > section[align=left] blockquote,
+.slides > section[align=topleft] h1,
+.slides > section[align=topleft] h2,
+.slides > section[align=topleft] h3,
+.slides > section[align=topleft] h4,
+.slides > section[align=topleft] h5,
+.slides > section[align=topleft] h6,
+.slides > section[align=topleft] p,
+.slides > section[align=topleft] ul,
+.slides > section[align=topleft] ol,
+.slides > section[align=topleft] li,
+.slides > section[align=topleft] blockquote,
+.slides > section[align=bottomleft] h1,
+.slides > section[align=bottomleft] h2,
+.slides > section[align=bottomleft] h3,
+.slides > section[align=bottomleft] h4,
+.slides > section[align=bottomleft] h5,
+.slides > section[align=bottomleft] h6,
+.slides > section[align=bottomleft] p,
+.slides > section[align=bottomleft] ul,
+.slides > section[align=bottomleft] ol,
+.slides > section[align=bottomleft] li,
+.slides > section[align=bottomleft] blockquote {
+  text-align: left !important;
+}
+section.align-left ul, section.align-left ol,
+div.align-left ul,
+div.align-left ol,
+.grid.align-left ul,
+.grid.align-left ol,
+.slides > section[align=left] ul,
+.slides > section[align=left] ol,
+.slides > section[align=topleft] ul,
+.slides > section[align=topleft] ol,
+.slides > section[align=bottomleft] ul,
+.slides > section[align=bottomleft] ol {
+  align-self: flex-start !important;
+  text-align: left !important;
+}
+section.align-left > *,
+div.align-left > *,
+.grid.align-left > *,
+.slides > section[align=left] > *,
+.slides > section[align=topleft] > *,
+.slides > section[align=bottomleft] > * {
+  align-self: flex-start;
+}
+section.align-left .callout, section.align-left .grid-split,
+div.align-left .callout,
+div.align-left .grid-split,
+.grid.align-left .callout,
+.grid.align-left .grid-split,
+.slides > section[align=left] .callout,
+.slides > section[align=left] .grid-split,
+.slides > section[align=topleft] .callout,
+.slides > section[align=topleft] .grid-split,
+.slides > section[align=bottomleft] .callout,
+.slides > section[align=bottomleft] .grid-split {
+  align-self: stretch !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-shrink: 0 !important;
+  text-align: left;
+}
+section.align-left table,
+div.align-left table,
+.grid.align-left table,
+.slides > section[align=left] table,
+.slides > section[align=topleft] table,
+.slides > section[align=bottomleft] table {
+  align-self: flex-start !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+
+section.align-center,
+div.align-center,
+.grid.align-center,
+.slides > section[align=center],
+.slides > section[align=top],
+.slides > section[align=bottom] {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+section.align-center h1, section.align-center h2, section.align-center h3, section.align-center h4, section.align-center h5, section.align-center h6, section.align-center p, section.align-center ul, section.align-center ol, section.align-center li, section.align-center blockquote,
+div.align-center h1,
+div.align-center h2,
+div.align-center h3,
+div.align-center h4,
+div.align-center h5,
+div.align-center h6,
+div.align-center p,
+div.align-center ul,
+div.align-center ol,
+div.align-center li,
+div.align-center blockquote,
+.grid.align-center h1,
+.grid.align-center h2,
+.grid.align-center h3,
+.grid.align-center h4,
+.grid.align-center h5,
+.grid.align-center h6,
+.grid.align-center p,
+.grid.align-center ul,
+.grid.align-center ol,
+.grid.align-center li,
+.grid.align-center blockquote,
+.slides > section[align=center] h1,
+.slides > section[align=center] h2,
+.slides > section[align=center] h3,
+.slides > section[align=center] h4,
+.slides > section[align=center] h5,
+.slides > section[align=center] h6,
+.slides > section[align=center] p,
+.slides > section[align=center] ul,
+.slides > section[align=center] ol,
+.slides > section[align=center] li,
+.slides > section[align=center] blockquote,
+.slides > section[align=top] h1,
+.slides > section[align=top] h2,
+.slides > section[align=top] h3,
+.slides > section[align=top] h4,
+.slides > section[align=top] h5,
+.slides > section[align=top] h6,
+.slides > section[align=top] p,
+.slides > section[align=top] ul,
+.slides > section[align=top] ol,
+.slides > section[align=top] li,
+.slides > section[align=top] blockquote,
+.slides > section[align=bottom] h1,
+.slides > section[align=bottom] h2,
+.slides > section[align=bottom] h3,
+.slides > section[align=bottom] h4,
+.slides > section[align=bottom] h5,
+.slides > section[align=bottom] h6,
+.slides > section[align=bottom] p,
+.slides > section[align=bottom] ul,
+.slides > section[align=bottom] ol,
+.slides > section[align=bottom] li,
+.slides > section[align=bottom] blockquote {
+  text-align: center !important;
+}
+section.align-center ul, section.align-center ol,
+div.align-center ul,
+div.align-center ol,
+.grid.align-center ul,
+.grid.align-center ol,
+.slides > section[align=center] ul,
+.slides > section[align=center] ol,
+.slides > section[align=top] ul,
+.slides > section[align=top] ol,
+.slides > section[align=bottom] ul,
+.slides > section[align=bottom] ol {
+  align-self: center !important;
+  text-align: left;
+}
+section.align-center > *,
+div.align-center > *,
+.grid.align-center > *,
+.slides > section[align=center] > *,
+.slides > section[align=top] > *,
+.slides > section[align=bottom] > * {
+  align-self: center;
+}
+section.align-center .callout, section.align-center .grid-split,
+div.align-center .callout,
+div.align-center .grid-split,
+.grid.align-center .callout,
+.grid.align-center .grid-split,
+.slides > section[align=center] .callout,
+.slides > section[align=center] .grid-split,
+.slides > section[align=top] .callout,
+.slides > section[align=top] .grid-split,
+.slides > section[align=bottom] .callout,
+.slides > section[align=bottom] .grid-split {
+  align-self: stretch !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-shrink: 0 !important;
+  text-align: left;
+}
+section.align-center table,
+div.align-center table,
+.grid.align-center table,
+.slides > section[align=center] table,
+.slides > section[align=top] table,
+.slides > section[align=bottom] table {
+  align-self: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.slides > section[align=top],
+.slides > section[align=topleft],
+.slides > section[align=topright],
+section[align=top],
+section[align=topleft],
+section[align=topright] {
+  justify-content: flex-start !important;
+}
+
+.slides > section[align=bottom],
+.slides > section[align=bottomleft],
+.slides > section[align=bottomright],
+section[align=bottom],
+section[align=bottomleft],
+section[align=bottomright] {
+  justify-content: flex-end !important;
+}
+
+.slides > section[align=center],
+section[align=center] {
+  justify-content: center !important;
+}
+
+section.align-right,
+div.align-right,
+.grid.align-right,
+.slides > section[align=right],
+.slides > section[align=topright],
+.slides > section[align=bottomright] {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: flex-end !important;
+  text-align: right !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+section.align-right h1, section.align-right h2, section.align-right h3, section.align-right h4, section.align-right h5, section.align-right h6, section.align-right p, section.align-right ul, section.align-right ol, section.align-right li, section.align-right blockquote,
+div.align-right h1,
+div.align-right h2,
+div.align-right h3,
+div.align-right h4,
+div.align-right h5,
+div.align-right h6,
+div.align-right p,
+div.align-right ul,
+div.align-right ol,
+div.align-right li,
+div.align-right blockquote,
+.grid.align-right h1,
+.grid.align-right h2,
+.grid.align-right h3,
+.grid.align-right h4,
+.grid.align-right h5,
+.grid.align-right h6,
+.grid.align-right p,
+.grid.align-right ul,
+.grid.align-right ol,
+.grid.align-right li,
+.grid.align-right blockquote,
+.slides > section[align=right] h1,
+.slides > section[align=right] h2,
+.slides > section[align=right] h3,
+.slides > section[align=right] h4,
+.slides > section[align=right] h5,
+.slides > section[align=right] h6,
+.slides > section[align=right] p,
+.slides > section[align=right] ul,
+.slides > section[align=right] ol,
+.slides > section[align=right] li,
+.slides > section[align=right] blockquote,
+.slides > section[align=topright] h1,
+.slides > section[align=topright] h2,
+.slides > section[align=topright] h3,
+.slides > section[align=topright] h4,
+.slides > section[align=topright] h5,
+.slides > section[align=topright] h6,
+.slides > section[align=topright] p,
+.slides > section[align=topright] ul,
+.slides > section[align=topright] ol,
+.slides > section[align=topright] li,
+.slides > section[align=topright] blockquote,
+.slides > section[align=bottomright] h1,
+.slides > section[align=bottomright] h2,
+.slides > section[align=bottomright] h3,
+.slides > section[align=bottomright] h4,
+.slides > section[align=bottomright] h5,
+.slides > section[align=bottomright] h6,
+.slides > section[align=bottomright] p,
+.slides > section[align=bottomright] ul,
+.slides > section[align=bottomright] ol,
+.slides > section[align=bottomright] li,
+.slides > section[align=bottomright] blockquote {
+  text-align: right !important;
+}
+section.align-right ul, section.align-right ol,
+div.align-right ul,
+div.align-right ol,
+.grid.align-right ul,
+.grid.align-right ol,
+.slides > section[align=right] ul,
+.slides > section[align=right] ol,
+.slides > section[align=topright] ul,
+.slides > section[align=topright] ol,
+.slides > section[align=bottomright] ul,
+.slides > section[align=bottomright] ol {
+  align-self: flex-end !important;
+  text-align: right !important;
+}
+section.align-right > *,
+div.align-right > *,
+.grid.align-right > *,
+.slides > section[align=right] > *,
+.slides > section[align=topright] > *,
+.slides > section[align=bottomright] > * {
+  align-self: flex-end;
+}
+section.align-right .callout, section.align-right .grid-split,
+div.align-right .callout,
+div.align-right .grid-split,
+.grid.align-right .callout,
+.grid.align-right .grid-split,
+.slides > section[align=right] .callout,
+.slides > section[align=right] .grid-split,
+.slides > section[align=topright] .callout,
+.slides > section[align=topright] .grid-split,
+.slides > section[align=bottomright] .callout,
+.slides > section[align=bottomright] .grid-split {
+  align-self: stretch !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  flex-shrink: 0 !important;
+  text-align: right;
+}
+section.align-right table,
+div.align-right table,
+.grid.align-right table,
+.slides > section[align=right] table,
+.slides > section[align=topright] table,
+.slides > section[align=bottomright] table {
+  align-self: flex-end !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+h1.align-left,
+h2.align-left,
+h3.align-left,
+h4.align-left,
+h5.align-left,
+h6.align-left,
+p.align-left {
+  text-align: left !important;
+  align-self: flex-start !important;
+}
+
+h1.align-right,
+h2.align-right,
+h3.align-right,
+h4.align-right,
+h5.align-right,
+h6.align-right,
+p.align-right {
+  text-align: right !important;
+  align-self: flex-end !important;
+}
+
+h1.align-center,
+h2.align-center,
+h3.align-center,
+h4.align-center,
+h5.align-center,
+h6.align-center,
+p.align-center {
+  text-align: center !important;
+  align-self: center !important;
+}
+
+.align-justify,
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.items-start {
+  align-items: flex-start !important;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+.items-end {
+  align-items: flex-end !important;
+}
+
+:root {
+  --animation-duration: 0.7s;
+}
+
+.slower {
+  --animation-duration: 1.3s;
+}
+
+.faster {
+  --animation-duration: 0.35s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.1, 0.25, 0.75, 0.9);
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes slideRightIn {
+  from {
+    transform: translate3d(-200px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideRightIn {
+  animation-name: fadeIn, slideRightIn;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes slideLeftIn {
+  from {
+    transform: translate3d(200px, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideLeftIn {
+  animation-name: fadeIn, slideLeftIn;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes slideUpIn {
+  from {
+    transform: translate3d(0, 150px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideUpIn {
+  animation-name: fadeIn, slideUpIn;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.5, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes slideDownIn {
+  from {
+    transform: translate3d(0, -150px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideDownIn {
+  animation-name: fadeIn, slideDownIn;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.5, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.1, 0.25, 0.75, 0.9);
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes slideRightOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(200px, 0, 0);
+  }
+}
+.slideRightOut {
+  animation-name: fadeOut, slideRightOut;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes slideLeftOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-200px, 0, 0);
+  }
+}
+.slideLeftOut {
+  animation-name: fadeOut, slideLeftOut;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes slideUpOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -150px, 0);
+  }
+}
+.slideUpOut {
+  animation-name: fadeOut, slideUpOut;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.5, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes slideDownOut {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 150px, 0);
+  }
+}
+.slideDownOut {
+  animation-name: fadeOut, slideDownOut;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.5, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale3d(0.78, 0.78, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.scaleUp {
+  animation-name: fadeIn, scaleUp;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes scaleUpOut {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(1.23, 1.23, 1);
+  }
+}
+.scaleUpOut {
+  animation-name: fadeOut, scaleUpOut;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.5, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale3d(1.23, 1.23, 1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.scaleDown {
+  animation-name: fadeIn, scaleDown;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  animation-fill-mode: both;
+}
+
+@keyframes scaleDownOut {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+  to {
+    transform: scale3d(0.78, 0.78, 1);
+  }
+}
+.scaleDownOut {
+  animation-name: fadeOut, scaleDownOut;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: cubic-bezier(0.1, 0.5, 1);
+  animation-fill-mode: both;
+}
+
+:root {
+  --callout-background-color: 255, 255, 255;
+}
+
+.callout-color1 {
+  --callout-color: 108, 192, 245;
+}
+
+.callout-color2 {
+  --callout-color: 109, 197, 217;
+}
+
+.callout-color3 {
+  --callout-color: 113, 208, 136;
+}
+
+.callout-color4 {
+  --callout-color: 160, 224, 107;
+}
+
+.callout-color5 {
+  --callout-color: 238, 177, 91;
+}
+
+.callout-color6 {
+  --callout-color: 234, 136, 133;
+}
+
+.callout-color7 {
+  --callout-color: 230, 98, 121;
+}
+
+.callout-color8 {
+  --callout-color: 152, 126, 243;
+}
+
+.callout-color9 {
+  --callout-color: 182, 182, 182;
+}
+
+.callout-color-default {
+  --callout-color: 129, 167, 244;
+}
+
+.callout-theorem {
+  --callout-color: 33, 90, 180;
+}
+
+.callout-lemma {
+  --callout-color: 0, 150, 166;
+}
+
+.callout-corollary {
+  --callout-color: 124, 58, 237;
+}
+
+.callout-definition {
+  --callout-color: 46, 125, 50;
+}
+
+.callout-proof {
+  --callout-color: 100, 116, 139;
+  font-style: italic;
+}
+
+.callout-proof .callout-content::after {
+  content: " ∎";
+  float: right;
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(var(--callout-color));
+}
+
+.callout-proposition {
+  --callout-color: 217, 119, 6;
+}
+
+.callout-algorithm {
+  --callout-color: 14, 116, 144;
+}
+
+.has-light-background {
+  --callout-background-color: 160, 160, 160;
+}
+
+.callout {
+  border-left: 4px solid rgb(var(--callout-color));
+  border-radius: 2px;
+  background-color: rgba(var(--callout-background-color), 0.2);
+  margin: 1em 0;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: left;
+  flex-shrink: 0 !important;
+  height: auto !important;
+  min-height: fit-content !important;
+}
+
+.callout-title {
+  padding: 10px 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: rgba(var(--callout-color), 0.3);
+  box-sizing: border-box;
+}
+
+.callout-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+  color: rgb(var(--callout-color));
+}
+
+.callout-title-inner {
+  flex: 1 1 0;
+  font-weight: 700;
+}
+
+.callout-content {
+  overflow-x: auto;
+  overflow-y: visible !important;
+  padding: 8px 16px;
+  box-sizing: border-box;
+  height: auto !important;
+}
+
+.stretch-column > * {
+  flex: 1;
+  height: 1%;
+  width: 100%;
+}
+
+.stretch-row > * {
+  flex: 1;
+  height: 100%;
+  width: 1%;
+}
+
+.stretch-column > * > p > img,
+.stretch-row > * > p > img,
+.stretch-column > * > p > video,
+.stretch-row > * > p > video,
+.stretch-column > * > p > iframe,
+.stretch-row > * > p > iframe {
+  height: 100%;
+  width: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover;
+}
+
+.stretch-column > * > .image-paragraph {
+  height: 100%;
+  width: 100%;
+}
+
+.arrowList ul {
+  margin: 0;
+}
+
+.arrowList li {
+  display: grid;
+  grid-template-columns: 1em auto;
+  align-items: center;
+  padding: 0;
+}
+
+.arrowList li:first-child {
+  padding-top: 0.5em;
+}
+
+.arrowList li:last-child {
+  padding-bottom: 0.5em;
+}
+
+.arrowList li:before {
+  content: "▶";
+  font-size: 0.75em;
+  color: var(--r-main-color);
+  top: 0.1em;
+  position: relative;
+}
+
+/* Multi-column table layout & structure integrity */
+.reveal table {
+  display: table !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 1em auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.reveal table thead {
+  display: table-header-group !important;
+}
+.reveal table tbody {
+  display: table-row-group !important;
+}
+.reveal table tfoot {
+  display: table-footer-group !important;
+}
+.reveal table tr {
+  display: table-row !important;
+}
+.reveal table th, .reveal table td {
+  display: table-cell !important;
+  vertical-align: middle;
+  padding: 0.35em 0.75em;
+  box-sizing: border-box;
+}
+.reveal table th {
+  font-weight: 700;
+}
+.reveal table th[align=left], .reveal table td[align=left] {
+  text-align: left !important;
+}
+.reveal table th[align=center], .reveal table td[align=center] {
+  text-align: center !important;
+}
+.reveal table th[align=right], .reveal table td[align=right] {
+  text-align: right !important;
+}
+
+.wideTable,
+.wideTable > table,
+table.wideTable {
+  width: 100% !important;
+}
+
+.noBorder td,
+.noBorder th {
+  border: none !important;
+}
+
+:root {
+  --dbg-size: 0;
+  --r-slide-padding: 0px;
+}
+
+.reveal .slides > section {
+  box-sizing: border-box !important;
+}
+
+.reveal .slides > section.drop > div {
+  box-sizing: border-box !important;
+  padding: var(--r-slide-padding);
+}
+
+.dbg,
+.dbg * {
+  --dbg-size: 1px;
+  border: 1px solid red;
+}
+
+.reset-margin {
+  --r-block-margin: 0;
+  --r-heading-margin: 0;
+}
+
+.flex-even > * {
+  flex: 1;
+}

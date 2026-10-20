@@ -1,0 +1,852 @@
+@charset "UTF-8";
+/**
+ * Beamer DBlue (Deep Blue Academic) Theme for Reveal.js
+ * Mimics custom LaTeX Beamer Metropolis + Beaver / Miniframes setup:
+ * - Brand Accent: #00466e (Deep Blue) & dblue!10 (#eaf0f5)
+ * - Canvas Background: #ffffff
+ * - Frame Titles: #00466e on #eaf0f5 header band with subtitle arrow indicator
+ * - Blocks / Theorems: White on #00466e header with #eaf0f5 body
+ * - Itemize Bullets: Square [square] in #00466e
+ * - Tables: LaTeX Booktabs styling (toprule, midrule, bottomrule)
+ * - Footline: Author | Title | Slide/Total in #00466e on #eaf0f5
+ */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+.reveal .has-light-background, .reveal .has-light-background h1, .reveal .has-light-background h2, .reveal .has-light-background h3, .reveal .has-light-background h4, .reveal .has-light-background h5, .reveal .has-light-background h6 {
+  color: #1e293b;
+}
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+:root {
+  --r-background-color: #ffffff;
+  --r-main-font: Fira Sans, Source Sans 3, Helvetica Neue, Arial, sans-serif;
+  --r-main-font-size: 21px;
+  --r-main-color: #1e293b;
+  --r-block-margin: 20px;
+  --r-heading-margin: 0 0 20px 0;
+  --r-heading-font: Fira Sans, Source Sans 3, Helvetica Neue, Arial, sans-serif;
+  --r-heading-color: #00466e;
+  --r-heading-line-height: 1.25em;
+  --r-heading-letter-spacing: 0.01em;
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: none;
+  --r-heading1-font-weight: 700;
+  --r-heading2-font-weight: 700;
+  --r-heading3-font-weight: 700;
+  --r-heading4-font-weight: 700;
+  --r-heading5-font-weight: 700;
+  --r-heading6-font-weight: 700;
+  --r-heading1-text-shadow: none;
+  --r-heading1-size: 3.77em;
+  --r-heading2-size: 2.11em;
+  --r-heading3-size: 1.55em;
+  --r-heading4-size: 1em;
+  --r-heading5-size: 0.8em;
+  --r-heading6-size: 0.6em;
+  --r-code-font: Fira Code, Consolas, monospace;
+  --r-link-color: #00466e;
+  --r-link-color-dark: rgb(0%, 8.3600713012%, 13.137254902%);
+  --r-link-color-hover: #002b44;
+  --r-selection-background-color: rgba(0, 70, 110, 0.2);
+  --r-selection-color: #fff;
+}
+
+.reveal-viewport {
+  background-color: #ffffff;
+  background-color: var(--r-background-color);
+}
+
+.reveal {
+  font-family: var(--r-main-font);
+  font-size: var(--r-main-font-size);
+  font-weight: normal;
+  color: var(--r-main-color);
+}
+
+.reveal ::selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+.reveal ::-moz-selection {
+  color: var(--r-selection-color);
+  background: var(--r-selection-background-color);
+  text-shadow: none;
+}
+
+.reveal .slides section,
+.reveal .slides section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: var(--r-heading-margin);
+  color: var(--r-heading-color);
+  font-family: var(--r-heading-font);
+  line-height: var(--r-heading-line-height);
+  letter-spacing: var(--r-heading-letter-spacing);
+  text-transform: var(--r-heading-text-transform);
+  text-shadow: var(--r-heading-text-shadow);
+  word-wrap: break-word;
+}
+
+.reveal h1 {
+  font-size: var(--r-heading1-size);
+}
+
+.reveal h2 {
+  font-size: var(--r-heading2-size);
+}
+
+.reveal h3 {
+  font-size: var(--r-heading3-size);
+}
+
+.reveal h4 {
+  font-size: var(--r-heading4-size);
+}
+
+.reveal h5 {
+  font-size: var(--r-heading5-size);
+}
+
+.reveal h6 {
+  font-size: var(--r-heading6-size);
+}
+
+.reveal h1 {
+  font-weight: var(--r-heading1-font-weight);
+}
+
+.reveal h2 {
+  font-weight: var(--r-heading2-font-weight);
+}
+
+.reveal h3 {
+  font-weight: var(--r-heading3-font-weight);
+}
+
+.reveal h4 {
+  font-weight: var(--r-heading4-font-weight);
+}
+
+.reveal h5 {
+  font-weight: var(--r-heading5-font-weight);
+}
+
+.reveal h6 {
+  font-weight: var(--r-heading6-font-weight);
+}
+
+.reveal h1 {
+  text-shadow: var(--r-heading1-text-shadow);
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+.reveal .slides > section.drop {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+}
+
+.reveal p {
+  margin: var(--r-block-margin) 0;
+  line-height: 1.3;
+}
+
+/* Remove trailing margins after titles */
+.reveal h1:last-child,
+.reveal h2:last-child,
+.reveal h3:last-child,
+.reveal h4:last-child,
+.reveal h5:last-child,
+.reveal h6:last-child {
+  margin-bottom: 0;
+}
+
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+.reveal em {
+  font-style: italic;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+.reveal ol {
+  list-style-type: decimal;
+}
+
+.reveal ul {
+  list-style-type: disc;
+}
+
+.reveal ul ul {
+  list-style-type: square;
+}
+
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+.reveal dt {
+  font-weight: bold;
+}
+
+.reveal dd {
+  margin-left: 40px;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: var(--r-block-margin) auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal q {
+  font-style: italic;
+}
+
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: var(--r-block-margin) auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: var(--r-code-font);
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.reveal code {
+  font-family: var(--r-code-font);
+  text-transform: none;
+  tab-size: 2;
+}
+
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}
+
+.reveal .code-wrapper {
+  white-space: normal;
+}
+
+.reveal .code-wrapper code {
+  white-space: pre;
+}
+
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+.reveal table th[align=center],
+.reveal table td[align=center] {
+  text-align: center;
+}
+
+.reveal table th[align=right],
+.reveal table td[align=right] {
+  text-align: right;
+}
+
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.reveal sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+.reveal small * {
+  vertical-align: top;
+}
+
+.reveal img {
+  margin: var(--r-block-margin) 0;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a {
+  color: var(--r-link-color);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.reveal a:hover {
+  color: var(--r-link-color-hover);
+  text-shadow: none;
+  border: none;
+}
+
+.reveal .roll span:after {
+  color: #fff;
+  background: var(--r-link-color-dark);
+}
+
+/*********************************************
+ * Frame helper
+ *********************************************/
+.reveal .r-frame {
+  border: 4px solid var(--r-main-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.reveal a .r-frame {
+  transition: all 0.15s linear;
+}
+
+.reveal a:hover .r-frame {
+  border-color: var(--r-link-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls {
+  color: var(--r-link-color) !important;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--r-link-color);
+}
+
+/*********************************************
+ * PRINT BACKGROUND
+ *********************************************/
+@media print {
+  .backgrounds {
+    background-color: var(--r-background-color);
+  }
+}
+/*********************************************
+ * CHART BACKGROUND
+ *********************************************/
+.has-dark-background canvas[data-chart] {
+  background-color: white;
+}
+
+.has-light-background canvas[data-chart] {
+  background-color: unset;
+}
+
+canvas[data-chart] {
+  padding: 0.5em;
+}
+
+/*********************************************
+ * Highlight.js
+ *********************************************/
+.reveal .hljs {
+  min-height: 50%;
+}
+
+/* Slide Canvas Layout */
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  padding: 22px 36px;
+}
+
+/* Title Slide Styling */
+.reveal .slides section:first-child h1,
+.reveal .slides section.title-slide h1 {
+  color: #00466e !important;
+  font-size: 1.85em;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+  border: none;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+
+.reveal .slides section:first-child h2,
+.reveal .slides section.title-slide h2 {
+  color: #475569 !important;
+  font-size: 1.15em;
+  font-weight: 500;
+  margin-bottom: 1.2em;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Frametitle Template (\setbeamertemplate{frametitle}) */
+.reveal h2 {
+  background-color: #eaf0f5;
+  color: #00466e !important;
+  font-size: 1.22em;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-left: 5px solid #00466e;
+  border-bottom: 1.5px solid rgba(0, 70, 110, 0.3);
+  border-radius: 4px;
+  margin-bottom: 22px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  letter-spacing: 0.01em;
+}
+
+/* Subtitles with LaTeX arrow symbol */
+.reveal h2 + p > strong:first-child,
+.reveal h3 {
+  color: #00466e;
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.reveal h3::before {
+  content: "→ ";
+  color: #00466e;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+/* Standard Paragraphs & Links */
+.reveal p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+  color: #1e293b;
+}
+
+.reveal a {
+  color: #00466e;
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 70, 110, 0.4);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+.reveal a:hover {
+  color: #002b44;
+  text-decoration-color: #002b44;
+}
+
+/* Square Itemize Bullets (\setbeamertemplate{items}[square]) */
+.reveal ul {
+  list-style: none;
+  padding-left: 1.25em;
+  line-height: 1.65;
+}
+
+.reveal ul > li {
+  position: relative;
+  margin-bottom: 0.4em;
+}
+
+.reveal ul > li::before {
+  content: "■";
+  color: #00466e;
+  font-size: 0.6em;
+  position: absolute;
+  left: -1.35em;
+  top: 0.22em;
+}
+
+/* Nested Sub-bullets (\setbeamertemplate{itemize subitem}[circle]) */
+.reveal ul ul {
+  padding-left: 1.25em;
+  margin-top: 0.25em;
+}
+
+.reveal ul ul > li::before {
+  content: "▫";
+  color: #00466e;
+  font-size: 0.7em;
+  left: -1.25em;
+  top: 0.15em;
+}
+
+.reveal ol {
+  padding-left: 1.35em;
+  line-height: 1.65;
+}
+
+.reveal ol > li {
+  margin-bottom: 0.4em;
+}
+
+.reveal ol > li::marker {
+  color: #00466e;
+  font-weight: 700;
+}
+
+/* MathJax & KaTeX Mathematical Formulas */
+.reveal .mjx-chtml, .reveal .katex-display {
+  margin: 1.15em auto !important;
+  color: #002438;
+  font-size: 1.06em;
+}
+
+/* LaTeX Beamer Blocks / Theorems (\setbeamercolor{block title/body}) */
+/* Title: White on dblue (#00466e), Body: dblue!10 (#eaf0f5) */
+.callout {
+  border-radius: 4px !important;
+  box-shadow: 0 3px 10px rgba(0, 70, 110, 0.08) !important;
+  overflow: visible !important;
+  border: 1px solid rgba(0, 70, 110, 0.25) !important;
+  margin: 1.15em 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: left;
+  flex-shrink: 0 !important;
+  height: auto !important;
+  min-height: fit-content !important;
+}
+
+.callout .callout-title {
+  background: #00466e !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 8px 16px !important;
+  border-bottom: none !important;
+  border-radius: 3px 3px 0 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.callout .callout-title .callout-icon {
+  color: #ffffff !important;
+}
+
+.callout .callout-title .callout-title-inner {
+  color: #ffffff !important;
+}
+
+.callout .callout-content {
+  background: #eaf0f5 !important; /* dblue!10 */
+  padding: 12px 18px !important;
+  color: #0f172a !important;
+  line-height: 1.6;
+  border-radius: 0 0 3px 3px !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Theorem Specifics */
+.callout-theorem .callout-title {
+  background: #00466e !important;
+}
+
+.callout-definition .callout-title {
+  background: #0b5c46 !important; /* Elegant Forest Green for definitions */
+}
+
+.callout-definition .callout-content {
+  background: #eef7f3 !important;
+}
+
+.callout-lemma .callout-title {
+  background: #005a8a !important; /* Steel Blue for lemmas */
+}
+
+.callout-lemma .callout-content {
+  background: #edf5fa !important;
+}
+
+.callout-proof {
+  border: 1px solid #94a3b8 !important;
+}
+
+.callout-proof .callout-title {
+  background: #475569 !important; /* Slate gray */
+}
+
+.callout-proof .callout-content {
+  background: #f8fafc !important;
+  font-style: italic;
+}
+
+.callout-proof .callout-content::after {
+  content: " ∎";
+  float: right;
+  font-style: normal;
+  font-weight: bold;
+  color: #00466e;
+}
+
+/* Listings Code Blocks (\usepackage{listings}) */
+.reveal pre code {
+  background: #f4f6f8;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  border-left: 4.5px solid #00466e;
+  border-radius: 4px;
+  padding: 14px 20px;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+/* LaTeX Booktabs Tables (\usepackage{booktabs}) */
+.reveal table {
+  border-collapse: collapse;
+  margin: 1.4em auto;
+  font-size: 0.88em;
+  width: auto;
+  border-top: 2.5px solid #00466e !important;
+  border-bottom: 2.5px solid #00466e !important;
+}
+
+.reveal table th {
+  border-bottom: 1.5px solid #00466e !important;
+  font-weight: 700;
+  padding: 9px 18px;
+  color: #00466e;
+  background: transparent;
+}
+
+.reveal table td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 9px 18px;
+  color: #1e293b;
+}
+
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reveal table tr:nth-child(even) td {
+  background: rgba(0, 70, 110, 0.025);
+}
+
+/* Slide Footline Badge (\setbeamertemplate{footline}) */
+.reveal .slide-number {
+  color: #00466e;
+  font-weight: 700;
+  font-size: 13px;
+  font-family: "Fira Code", monospace;
+  background: #eaf0f5; /* dblue!10 */
+  border: 1px solid rgba(0, 70, 110, 0.3);
+  padding: 4px 10px;
+  border-radius: 4px;
+  right: 18px;
+  bottom: 14px;
+}
+
+.reveal .progress {
+  height: 4px;
+  color: #00466e;
+}
+
+.reveal .progress span {
+  background: #00466e;
+}
+
+/* LaTeX Beamer Header Outline (Headline / Miniframes) */
+.beamer-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-bottom: 1.5px solid rgba(0, 70, 110, 0.18);
+  box-shadow: 0 2px 8px rgba(0, 70, 110, 0.05);
+  color: #00466e;
+  font-family: "Fira Sans", "Source Sans 3", sans-serif;
+  font-size: 13px;
+  height: 38px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 35 !important;
+  transition: opacity 0.2s ease;
+}
+
+.beamer-header-section {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #64748b;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.beamer-header-section:hover {
+  color: #00466e;
+  background: #eaf0f5;
+}
+.beamer-header-section.is-active {
+  color: #00466e;
+  font-weight: 700;
+  background: #eaf0f5; /* dblue!10 */
+  box-shadow: inset 0 -2px 0 #00466e;
+}
+
+.beamer-header-dots {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.beamer-header-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(0, 70, 110, 0.25);
+  transition: all 0.15s ease;
+}
+.beamer-header-dot:hover {
+  transform: scale(1.4);
+}
+.beamer-header-dot.is-active {
+  background: #00466e;
+  transform: scale(1.3);
+}
+
+/* LaTeX Beamer Footline / Infoline */
+.beamer-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: #eaf0f5; /* dblue!10 */
+  border-top: 1px solid rgba(0, 70, 110, 0.22);
+  color: #00466e;
+  font-family: "Fira Sans", "Source Sans 3", sans-serif;
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 35 !important;
+  transition: opacity 0.2s ease;
+}
+
+.beamer-footer-left {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 33%;
+}
+
+.beamer-footer-center {
+  font-weight: 500;
+  color: #00304d;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 40%;
+  text-align: center;
+}
+
+.beamer-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "Fira Code", monospace;
+  font-size: 11.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.beamer-footer-page {
+  background: rgba(0, 70, 110, 0.12);
+  padding: 1px 7px;
+  border-radius: 3px;
+}

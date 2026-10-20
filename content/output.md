@@ -104,6 +104,7 @@ Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery."
 Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. [PDF](https://ceur-ws.org/Vol-3792/paper20.pdf) #graphs
 
 ### preprints and manuscripts under review
+
 Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs" #graphs
 
 Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes." Preprint: [arXiv:2609.02585](https://arxiv.org/abs/2609.02585) #graphs
@@ -114,6 +115,8 @@ Petruskova, J., Pastorek, J., Mucskova, L., Harazim, H., Stourac, P. "Facial Rec
 
 ### in preparation
 
+Pastorek, J., Jančár, V., Varchol, S. "AI-resistant conjectures." #aimath #ai #graphs
+ 
 Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscience from a dynamical complex systems perspective." #complex
 
 Maceková, M., Pastorek, J., Soták, R., Švecová, D. "Four-color defective colorings of toroidal graphs." #graphs
@@ -147,6 +150,17 @@ Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdi
 	</details>
 
 ### contributed talks
+- Pastorek, J. (2026). "AI4math. Towards automated graph theory? A quest for interesting mathematical questions and conjectures in the age of AI" [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University, 19.10.2026 #aimath #ai #graphs 
+	<details class="abstract-inline">
+	<summary>Abstract</summary>
+	
+	OpenAI, Google DeepMind and Anthropic, along with their LLMs have undeniably demonstrated that math problem solving can be done at scale. Yet, the true open frontier remains autonomous discovery, i.e., knowing which questions are worth asking in the first place. Left unconstrained, computational discovery systems do not fail by getting stuck. They fail by drowning researchers in an “avalanche of triviality,” producing potentially millions of technically true but mathematically uninteresting statements.
+	
+	In this talk, we present results from our recent paper, where I introduce AutoGraphForge, a pipeline designed to autonomously hypothesize, refute, formalize, and verify conjectures in graph theory. The goal of this pipeline has been to find interesting conjectures that cannot be easily proved or disproved by such autonomous computational effort. To separate genuine mathematical interesting statements from combinatorial noise, the system couples counterexample-guided generation with a linear-programming novelty filter to eliminate consequences of a database of known theorems (knowledge base). It then subjects candidates to active counterexample search across hundreds of thousands of (extremal) graphs from our best graph-theoretical databases and by algorithms such as simulated annealing that modify graphs to find such counterexamples. The remaining statements are then exported to the Lean 4 proof assistant to be verified with the help of Lean hammers and LLMs. All partial results such as the effort spent and counterexamples are collected to help us look back and get insight. The hope is to get potentially interesting and somewhat computationally nontrivial statements worth further attention and research. 
+	
+	Finally, we will discuss what truly makes a mathematical question interesting
+	
+	</details>
 - Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery" at [ITAT 2026](https://itat.ics.upjs.sk/index.php?id=program#cadm2)  #ai #aimath #graphs
 - Pastorek, J. (2026). "AutoGraphForge: Conjecturing, Refutation and Lean Formalization in One Loop" at [CICM 2026, AI4Math](https://cicm-conference.org/2026/cicm.php?event=ai4math&menu=program) #ai #aimath #graphs 
 	<details class="abstract-inline">
