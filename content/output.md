@@ -175,7 +175,7 @@ tags:
 </script>
 
 ### peer-reviewed publications
-Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. [Preprint PDF](https://ics.upjs.sk/~antoni/ceur-ws.org_2026/Vol-0000/paper32.pdf)  . [arXiv:2609.03478](https://arxiv.org/abs/2609.03478)  #ai #aimath #graphs 
+Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." In ITAT 2026, Aachen: CEUR-WS, pp. 386-402. [PDF](https://ceur-ws.org/Vol-4323/paper32.pdf) . [arXiv:2609.03478](https://arxiv.org/abs/2609.03478) #ai #aimath #graphs 
 
 Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. [PDF](https://ceur-ws.org/Vol-3792/paper20.pdf) #graphs #algebra #complex #symmetry #symmetry-breaking
 
@@ -308,6 +308,6 @@ Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdi
 
 
 ### Software
-- **AutoGraphForge** — automated conjecturing, refutation and Lean formalization for graph theory ([ITAT 2026 paper](#papers-in-conference-proceedings)) #aimath #graphs
+- **AutoGraphForge** — automated conjecturing, refutation and Lean formalization for graph theory ([ITAT 2026 paper](#peer-reviewed-publications)) #aimath #graphs
 - **Parallel asymmetric-depth checker** — computes asymmetric depth on the Clara high-performance cluster; used to identify the extremal conference graph on 37 vertices #graphs #algebra #complex
 - Further repositories: [github.com/JanPastorek](https://github.com/JanPastorek?tab=repositories)
