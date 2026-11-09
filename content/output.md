@@ -125,7 +125,8 @@ tags:
         var active = false;
         if (!Object.is(topic, "all")) {
           if (Object.is(slug, topic) || Object.is(targetTopic, topic)) { active = true; }
-          if (Object.is(topic, "graphs") && (Object.is(slug, "graphs") || Object.is(slug, "algebra"))) { active = true; }
+          if (Object.is(topic, "graphs") && (Object.is(slug, "graphs") || Object.is(slug, "algebra") || Object.is(targetTopic, "alggraphs"))) { active = true; }
+          if (Object.is(topic, "alggraphs") && (Object.is(slug, "graphs") || Object.is(slug, "graph-theory"))) { active = true; }
         }
         a.classList.toggle("is-active", active);
       });
