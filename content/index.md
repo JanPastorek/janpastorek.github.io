@@ -59,7 +59,7 @@ More recently, with the advent of LLMs and groundbreaking results, I have been i
 
 ---
 # research interests
-- algebraic graph theory, particularly graph isomorphism problem, graph reconstruction conjecture, asymmetric graphs and partial automorphism inverse monoids of graphs and Weisfeiler-Leman algorithm <a class="evidence-link" href="./output#topic-graphs">see the work</a>
+- algebraic graph theory, particularly graph isomorphism problem, graph reconstruction conjecture, asymmetric graphs and partial automorphism inverse monoids of graphs and Weisfeiler-Leman algorithm <a class="evidence-link" href="./output#topic-alggraphs">see the work</a>
 - complex adaptive systems, particularly *"how can emergent states appear in complex systems?"* <a class="evidence-link" href="./output#topic-complex">see the work</a>
 - AI for mathematics, particularly automated conjecturing, refutation and formalization <a class="evidence-link" href="./output#topic-aimath">see the work</a>
 
