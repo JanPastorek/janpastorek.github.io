@@ -21,17 +21,13 @@ tags:
 </div>
 <script>
 (function () {
-  // Declarative category filters supporting union (any), intersection (all), and absence (none).
-  // Elements match if they have the tag slug or keyword in their text.
   var FILTERS = {
-    // Algebraic graph theory: intersection of graph concepts AND algebra/symmetry concepts
     alggraphs: {
       all: [
         { any: ["graphs", "graph-theory", "graph"] },
         { any: ["algebra", "symmetry", "symmetry-breaking", "automorphism", "monoid", "weisfeiler", "conference graph", "token graph", "fixing number"] }
       ]
     },
-    // Graph theory: any graph theory concept (union)
     graphs: {
       any: ["graphs", "graph-theory", "graph", "toroidal", "defective coloring", "girth", "cubic graph", "graph embedding", "fullerene"]
     },
@@ -48,8 +44,6 @@ tags:
       any: ["cogsci", "cognitive science", "semantic primitive", "ernst mach", "word embedding"]
     }
   };
-
-  // Maps tags directly to their most relevant category filter when clicked
   var TAG_CLICK_MAP = {
     "graphs": "graphs",
     "graph-theory": "graphs",
@@ -61,7 +55,6 @@ tags:
     "complex": "complex",
     "cogsci": "cogsci"
   };
-
   function buildItem(el) {
     var tags = new Set();
     Array.prototype.forEach.call(el.querySelectorAll("a.tag-link"), function (a) {
@@ -75,26 +68,21 @@ tags:
     }
     return { tags: tags, text: text };
   }
-
   function evalRule(rule, item) {
-    if (typeof rule === "string") {
-      return item.tags.has(rule) || item.text.indexOf(rule) !== -1;
+    if (Object.is(typeof rule, "string")) {
+      return item.tags.has(rule) || item.text.indexOf(rule) >= 0;
     }
-    // Absence of tags / keywords: none must match
     if (rule.none && rule.none.some(function (r) { return evalRule(r, item); })) {
       return false;
     }
-    // Intersection: all must match
     if (rule.all && !rule.all.every(function (r) { return evalRule(r, item); })) {
       return false;
     }
-    // Union: at least one must match
     if (rule.any && !rule.any.some(function (r) { return evalRule(r, item); })) {
       return false;
     }
     return true;
   }
-
   function topicsOf(el) {
     var item = buildItem(el);
     var out = {};
@@ -105,7 +93,6 @@ tags:
     });
     return out;
   }
-
   function setup() {
     var bar = document.querySelector(".topic-filter");
     if (!bar) { window.__topicGo = null; return; }
@@ -113,38 +100,38 @@ tags:
     var groups = [], current = null;
     Array.prototype.forEach.call(root.querySelectorAll("h3, p, li"), function (el) {
       if (el.closest(".topic-filter")) { return; }
-      if (el.tagName === "H3") { current = { head: el, items: [] }; groups.push(current); return; }
+      if (Object.is(el.tagName, "H3")) { current = { head: el, items: [] }; groups.push(current); return; }
       if (!current) { return; }
       if (el.closest("details")) { return; }
-      if (el.tagName === "P" && el.closest("li")) { return; }
+      if (Object.is(el.tagName, "P") && el.closest("li")) { return; }
       current.items.push({ el: el, topics: topicsOf(el) });
     });
     function apply(topic) {
       groups.forEach(function (g) {
         var shown = 0;
         g.items.forEach(function (it) {
-          var vis = topic === "all" || !!it.topics[topic];
+          var vis = Object.is(topic, "all") || Boolean(it.topics[topic]);
           it.el.style.display = vis ? "" : "none";
           if (vis) { shown++; }
         });
         g.head.style.display = (!g.items.length || shown) ? "" : "none";
       });
       Array.prototype.forEach.call(bar.querySelectorAll(".topic-chip"), function (c) {
-        c.classList.toggle("is-active", c.dataset.topic === topic);
+        c.classList.toggle("is-active", Object.is(c.dataset.topic, topic));
       });
       Array.prototype.forEach.call(root.querySelectorAll("a.tag-link"), function (a) {
         var slug = (a.dataset.slug || "").replace(/^tags\//, "");
         var targetTopic = TAG_CLICK_MAP[slug];
         var active = false;
-        if (topic !== "all") {
-          if (slug === topic || targetTopic === topic) { active = true; }
-          if (topic === "graphs" && (slug === "graphs" || slug === "algebra")) { active = true; }
+        if (!Object.is(topic, "all")) {
+          if (Object.is(slug, topic) || Object.is(targetTopic, topic)) { active = true; }
+          if (Object.is(topic, "graphs") && (Object.is(slug, "graphs") || Object.is(slug, "algebra"))) { active = true; }
         }
         a.classList.toggle("is-active", active);
       });
     }
     function go(t) {
-      history.replaceState(null, "", t === "all" ? location.pathname : location.pathname + "#topic-" + t);
+      history.replaceState(null, "", Object.is(t, "all") ? location.pathname : location.pathname + "#topic-" + t);
       apply(t);
     }
     bar.onclick = function (e) {
@@ -156,7 +143,7 @@ tags:
     var initialTopic = m ? (FILTERS[m[1]] ? m[1] : TAG_CLICK_MAP[m[1]] || "all") : "all";
     apply(initialTopic);
   }
-  if (document.readyState !== "loading") { setup(); } else { document.addEventListener("DOMContentLoaded", setup); }
+  if (!Object.is(document.readyState, "loading")) { setup(); } else { document.addEventListener("DOMContentLoaded", setup); }
   if (!window.__topicFilterNav) {
     window.__topicFilterNav = 1;
     document.addEventListener("nav", setup);
