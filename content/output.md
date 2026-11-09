@@ -19,18 +19,29 @@ tags:
 </div>
 <script>
 (function () {
+  var TAG_MAP = {
+    "graphs": "graphs",
+    "graph-theory": "graphs",
+    "symmetry": "graphs",
+    "symmetry-breaking": "graphs",
+    "aimath": "aimath",
+    "ai": "ai",
+    "complex": "complex",
+    "cogsci": "cogsci"
+  };
   var MAP = {
-    graphs: ["asymmetric", "automorphism", "weisfeiler", "toroidal", "fullerene", "conference graph", "graph isomorphism", "defective coloring", "token graph", "partial symmetr", "girth", "cubic graph", "graph embedding", "symmetry"],
+    graphs: ["asymmetric", "automorphism", "weisfeiler", "toroidal", "fullerene", "conference graph", "graph isomorphism", "defective coloring", "token graph", "partial symmetr", "girth", "cubic graph", "graph embedding", "symmetry", "symmetry-breaking"],
     aimath: ["autographforge", "lean formalization", "automated graph theory", "conjectur"],
     ai: ["autographforge", "natural language processing", "artificial intelligence", "machine learning", "reinforcement learning"],
-    complex: ["causal emergence", "social cohesion", "brain network", "emergent"],
+    complex: ["causal emergence", "social cohesion", "brain network", "emergent", "complex"],
     cogsci: ["cogsci", "cognitive science", "semantic primitive", "ernst mach", "word embedding"]
   };
   function topicsOf(el) {
     var out = {};
     Array.prototype.forEach.call(el.querySelectorAll("a.tag-link"), function (a) {
       var slug = (a.dataset.slug || "").replace(/^tags\//, "");
-      if (MAP[slug]) { out[slug] = true; }
+      var topic = TAG_MAP[slug] || (MAP[slug] ? slug : null);
+      if (topic) { out[topic] = true; }
     });
     var t = (el.textContent || "").toLowerCase();
     Object.keys(MAP).forEach(function (k) {
@@ -66,7 +77,8 @@ tags:
       });
       Array.prototype.forEach.call(root.querySelectorAll("a.tag-link"), function (a) {
         var slug = (a.dataset.slug || "").replace(/^tags\//, "");
-        a.classList.toggle("is-active", topic !== "all" && slug === topic);
+        var t = TAG_MAP[slug] || (MAP[slug] ? slug : null);
+        a.classList.toggle("is-active", topic !== "all" && (slug === topic || t === topic));
       });
     }
     function go(t) {
@@ -79,7 +91,7 @@ tags:
     };
     window.__topicGo = go;
     var m = /#topic-([a-z]+)/.exec(location.hash);
-    apply(m && MAP[m[1]] ? m[1] : "all");
+    apply(m && (MAP[m[1]] || TAG_MAP[m[1]]) ? (TAG_MAP[m[1]] || m[1]) : "all");
   }
   if (document.readyState !== "loading") { setup(); } else { document.addEventListener("DOMContentLoaded", setup); }
   if (!window.__topicFilterNav) {
@@ -89,10 +101,11 @@ tags:
       var a = e.target.closest && e.target.closest("a.tag-link");
       if (!a || !a.closest("article") || !window.__topicGo) { return; }
       var slug = (a.dataset.slug || "").replace(/^tags\//, "");
-      if (!MAP[slug]) { return; }
+      var topic = TAG_MAP[slug] || (MAP[slug] ? slug : null);
+      if (!topic) { return; }
       e.preventDefault();
       e.stopImmediatePropagation();
-      window.__topicGo(slug);
+      window.__topicGo(topic);
     }, true);
   }
 })();
@@ -101,13 +114,13 @@ tags:
 ### peer-reviewed publications
 Pastorek, J. (2026). "AutoGraphForge: Towards Automated Graph Theory Discovery." Accepted, to appear in ITAT 2026, Aachen: CEUR-WS. [Preprint PDF](https://ics.upjs.sk/~antoni/ceur-ws.org_2026/Vol-0000/paper32.pdf)  . [arXiv:2609.03478](https://arxiv.org/abs/2609.03478)  #ai #aimath #graphs 
 
-Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. [PDF](https://ceur-ws.org/Vol-3792/paper20.pdf) #graphs #symmetry #symmetry-breaking
+Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT 2024, Aachen: CEUR-WS, pp. 162-170. [PDF](https://ceur-ws.org/Vol-3792/paper20.pdf) #graphs #complex #symmetry #symmetry-breaking
 
 ### preprints and manuscripts under review
 
-Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs" #graphs #symmetry #symmetry-breaking
+Jajcayová, T., Pastorek, J. "Maximal asymmetric depth of graphs" #graphs #complex #symmetry #symmetry-breaking
 
-Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes." Preprint: [arXiv:2609.02585](https://arxiv.org/abs/2609.02585) #graphs #symmetry #symmetry-breaking
+Pastorek, J. "Extremal Asymmetric Depth of Planar Graphs and Hidden Near-Mirror Symmetries of IPR Fullerenes." Preprint: [arXiv:2609.02585](https://arxiv.org/abs/2609.02585) #graphs #complex #symmetry #symmetry-breaking
 
 Lane, J., Puga-Gonzalez, I., Normann, R., Shults, L. R., Pastorek, J. (2024). "Emotional Contagion in Scandinavia during the COVID-19 Public Health Crisis." Preprint: [PsyArXiv, 10.31234/osf.io/9e5f7](https://osf.io/preprints/psyarxiv/9e5f7) #complex #cogsci #ai
 
@@ -126,7 +139,7 @@ Jedlička, P., Pastorek, J., Varchola, J. "Causation and emergence in neuroscien
 Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdisciplinary Analysis of Ernst Mach's Contributions." #cogsci #complex #ai
 
 ### talks on seminars by invitation
-- Pastorek, J. (2026). "Hierarchy of Asymmetry of graphs", [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), planned for 18.11.2026 #graphs #symmetry #symmetry-breaking
+- Pastorek, J. (2026). "Hierarchy of Asymmetry of graphs", [Mirka Miller Combinatorics Webinar Series](http://combinatoricswiki.org/wiki/Mirka_Miller%27s_Combinatorics_Webinar_Series), planned for 18.11.2026 #graphs #complex #symmetry #symmetry-breaking
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 	
@@ -155,7 +168,7 @@ Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdi
 	While it is well-established that almost all graphs are asymmetric, possessing no nontrivial global automorphisms, all graphs contain non-trivial local symmetries which we study using isomorphisms between induced subgraphs, known as partial automorphisms. The set of all partial automorphisms, along with the operations of partial composition and partial inverse of partial maps, forms an inverse monoid, which is a rich and complex algebraic structure. However, it is hard to compute. In this talk, we are motivated by the study of partial automorphism inverse monoids of graphs initiated by [1]. We investigate the extent of these local symmetries through the measure of asymmetric depth of graphs defined through the rank of the largest non-trivial partial automorphism. We established a new, tight lower bound for the asymmetric depth of any simple graph $\Gamma$ on $n$ vertices. Any graph achieving this bound must be a strongly regular graph with parameters $(n, (n−1)/2, (n−5)/4, (n−1)/4)$, also known as a conference graph. We implemented a parallel algorithm for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that attains this bound, thereby proving its tightness. We also showed that it is one of the smallest possible graphs to attain this bound by checking all asymmetric conference graphs up to 37 vertices. We showed how the bound applies to sparse graphs such as planar graphs.
 	
 	</details>
-- Pastorek, J. (2025). "Maximal Asymmetric Depth and Conference Graphs." Bratislavský seminár z teórie grafov, 23.10.2025 #graphs
+- Pastorek, J. (2025). "Maximal Asymmetric Depth and Conference Graphs." Bratislavský seminár z teórie grafov, 23.10.2025 #graphs #complex
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 	
@@ -181,7 +194,7 @@ Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdi
 	<summary>Peer reviewed abstract</summary>
 	 [Abstract AI4MATH @ CICM 2026](https://cicm-conference.org/2026/ai4math/05-pastorek.pdf)
 	</details>
-- Pastorek, J. (2026). "Extremal asymmetric depth of planar and higher-genus graphs" at [CSGT 2026](https://csgt2026.tuke.sk/) #graphs
+- Pastorek, J. (2026). "Extremal asymmetric depth of planar and higher-genus graphs" at [CSGT 2026](https://csgt2026.tuke.sk/) #graphs #complex
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 	
@@ -195,20 +208,20 @@ Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdi
 	What are symmetries? Symmetries are typically understood globally: an object is symmetric if it has nontrivial automorphisms—transformations preserving the whole structure. It is well-established that almost all graphs are asymmetric, possessing no “global” symmetries. However, global asymmetry does not imply a lack of structure. Every graph exhibits rich “local” symmetries, which we study using isomorphisms between induced subgraphs, known as partial automorphisms. How far can graphs be from having global symmetries? We investigate this question through the measure of asymmetric depth of graphs defined through the order of the domain of the largest non-trivial partial automorphism. We will report on our progress from previous years. Earlier, we established a new, tight upper bound for the asymmetric depth of any graph. We proved that any graph achieving this bound must be a strongly regular graph. We implemented a parallel algorithm on high-performing cluster Clara for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that attains this bound, thereby proving its tightness. Given that most real-world networks such as brain networks are sparse due to connection costs, we have begun extending this investigation to sparse graphs where we can improve the general upper bound. For planar graphs, we established a tight upper bound by finding duals of asymmetric fullerenes.
 	
 	</details>
-- Pastorek, J. (2025). "Partial automorphisms and Asymmetric depth of graphs." 12th PhD Summer School in Discrete Mathematics, Koper, Slovenia #graphs
+- Pastorek, J. (2025). "Partial automorphisms and Asymmetric depth of graphs." 12th PhD Summer School in Discrete Mathematics, Koper, Slovenia #graphs #complex
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 	
 	While it is well-established that almost all graphs are asymmetric, possessing no nontrivial global automorphisms, all graphs contain non-trivial local symmetries which we study using isomorphisms between induced subgraphs, known as partial automorphisms. The set of all partial automorphisms, along with the operations of partial composition and partial inverse of partial maps, forms an inverse monoid, which is a rich and complex algebraic structure. However, it is hard to compute. In this talk, we are motivated by the study of partial automorphism inverse monoids of graphs initiated by [1]. We investigate the extent of these local symmetries through the measure of asymmetric depth of graphs defined through the rank of the largest non-trivial partial automorphism. In [2], we established a new, tight lower bound for the asymmetric depth of any simple graph $\Gamma$ on $n$ vertices. Any graph achieving this bound must be a strongly regular graph with parameters $(n , (n−1)/2 , (n−5)/4,(n −1) /4 )$ also known as conference graph. We implemented a parallel algorithm for checking asymmetric depth on a high-performance cluster. Using this algorithm, we identified an asymmetric conference graph on 37 vertices that meets this bound, thereby proving its tightness. We also showed that it is one of the smallest possible graphs to meet this bound by checking all asymmetric conference graphs up to 37 vertices.
 	
 	</details>
-- Pastorek, J. (2025). "Graph isomorphism, asymmetric graphs and partial symmetries", [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University in Bratislava #graphs
-- Pastorek, J., Jajcayová, T. (2024). "Asymmetric Graphs and Partial Automorphisms." In Abstracts, CSGT 2024, Ostrava: VŠB–TU Ostrava, pp. 28-29. #graphs
+- Pastorek, J. (2025). "Graph isomorphism, asymmetric graphs and partial symmetries", [Doctoral Colloquia](https://dai.fmph.uniba.sk/w/Doctoral_Colloquia/en) at Comenius University in Bratislava #graphs #complex
+- Pastorek, J., Jajcayová, T. (2024). "Asymmetric Graphs and Partial Automorphisms." In Abstracts, CSGT 2024, Ostrava: VŠB–TU Ostrava, pp. 28-29. #graphs #complex
 - Jajcayová, T., Pastorek, J. (2024). "Partial automorphism monoid of graphs and k-Weisfeiler-Leman." In [CSD 10](https://csd10.be/), Leuven: KU Leuven, p. 26. #graphs
 - Pastorek, J., Jajcayová, T. (2024). "Partial automorphism monoid of graphs and Weisfeiler-Leman." In [Študentská vedecká konferencia FMFI UK](https://zona.fmph.uniba.sk/fileadmin/fmfi/studentska_vedecka_konferencia/zbierka2024/svk2024_zbornik.pdf#page=376), Bratislava, p. 366. #graphs
-- Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT CADM 2024 #graphs
+- Cingel, V., Jajcayová, T., Pastorek, J. (2024). "Partial automorphisms and level of symmetry of asymmetric graphs." In ITAT CADM 2024 #graphs #complex
 - Pastorek, J. (2024). "Search for correspondences between operations on partial automorphisms and k-dimensional Weisfeiler-Leman algorithm." At the [Constructions of Expanders and Extremal Graphs](http://euler.doa.fmph.uniba.sk/Austria-Slovakia.html) workshop. #graphs
-- Pastorek, J. (2023). "Global Versus Local Symmetries." MEi: CogSci Conference. [[Projects/Website/content/publications/symmetries_extended_abstract_2023.pdf|PDF]] #cogsci #graphs
+- Pastorek, J. (2023). "Global Versus Local Symmetries." MEi: CogSci Conference. [[Projects/Website/content/publications/symmetries_extended_abstract_2023.pdf|PDF]] #cogsci #complex #graphs #symmetry
 	<details class="abstract-inline">
 	<summary>Abstract</summary>
 
@@ -233,5 +246,5 @@ Pastorek, J., Sarto-Jackson, I. "Austrian Roots of Cognitive Science: An Interdi
 
 ### Software
 - **AutoGraphForge** — automated conjecturing, refutation and Lean formalization for graph theory ([ITAT 2026 paper](#papers-in-conference-proceedings)) #aimath #graphs
-- **Parallel asymmetric-depth checker** — computes asymmetric depth on the Clara high-performance cluster; used to identify the extremal conference graph on 37 vertices #graphs
+- **Parallel asymmetric-depth checker** — computes asymmetric depth on the Clara high-performance cluster; used to identify the extremal conference graph on 37 vertices #graphs #complex
 - Further repositories: [github.com/JanPastorek](https://github.com/JanPastorek?tab=repositories)
